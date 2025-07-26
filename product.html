@@ -1,0 +1,863 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <!-- Google Fonts  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+        rel="stylesheet">
+
+    <link href="https://cdn.jsdelivr.net/npm/nouislider@15.7.0/dist/nouislider.min.css" rel="stylesheet">
+    <!-- Swiper Library      -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="./assets/css/all.min.css" />
+
+    <!-- Bootrstrap CSS  -->
+    <link rel="stylesheet" href="./assets/css/bootstrap.css" />
+
+    <!-- Custom Bass CSS  -->
+    <link rel="stylesheet" href="./assets/css/base.css" />
+
+    <!-- Custom CSS  -->
+    <link rel="stylesheet" href="./assets/css/main.css" />
+</head>
+
+<body>
+
+    <!-- Tob Bar  -->
+    <div class="container-fluid bg-dark text-white px-1 px-lg-5">
+        <div class="top-bar d-flex justify-content-between w-100 fs__13">
+            <div class="d-lg-flex gap-3 align-items-center d-none">
+                <a class="text-decoration-none text-white" href="#">Order Tracking</a>
+                <a class="text-decoration-none text-white" href="#">About Us</a>
+                <a class="text-decoration-none text-white" href="#">FAQs</a>
+            </div>
+            <div id="top-slide" class="carousel slide top-slide text-center" data-bs-touch="true"
+                data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active user-select-none pt-3" data-bs-interval="3000">
+                        <div class="slide d-flex flex-wrap gap-2 justify-content-center">
+                            <p>Celebrate our anniversary with exclusive deals! </p>
+                            <a class="text-white text-decoration-none" href="#">Shop Now <i
+                                    class="fa-solid fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                    <div class="carousel-item user-select-none pt-3" data-bs-interval="3000">
+                        <div class="slide d-flex flex-wrap gap-2 justify-content-center">
+                            <p>Sign up and get 10% off your first order! </p>
+                            <a class="text-white text-decoration-none" href="#">Shop Now <i
+                                    class="fa-solid fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                    <div class="carousel-item user-select-none pt-3" data-bs-interval="3000">
+                        <div class="slide d-flex flex-wrap gap-2 justify-content-center">
+                            <p>Enjoy free shipping on all orders this week!</p>
+                            <a class="text-white text-decoration-none" href="#">Shop Now <i
+                                    class="fa-solid fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <button class="carousel-control-prev fs__15 d-none d-lg-block" type="button" data-bs-target="#top-slide"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next fs__15 d-none d-lg-block" type="button" data-bs-target="#top-slide"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+            <div class="choices d-none d-lg-flex gap-2 align-items-center">
+                <div class="dropdown">
+                    <button class="btn text-white dropdown-toggle fs__13" type="button" data-bs-toggle="dropdown"
+                        aria-expanded="false">
+                        English
+                    </button>
+                    <ul class="dropdown-menu bg-dark rounded-3 rounded-top-0">
+                        <li><a class="dropdown-item fs__13" href="#">Spanish</a></li>
+                        <li><a class="dropdown-item fs__13" href="#">French</a></li>
+                        <li><a class="dropdown-item fs__13" href="#">German</a></li>
+                    </ul>
+                </div>
+                <div class="dropdown">
+                    <button class="btn text-white dropdown-toggle fs__13" type="button" data-bs-toggle="dropdown"
+                        aria-expanded="false">
+                        USD
+                    </button>
+                    <ul class="dropdown-menu bg-dark rounded-4 rounded-top-0">
+                        <li><a class="dropdown-item fs__13" href="#">EUR</a></li>
+                        <li><a class="dropdown-item fs__13" href="#">INR</a></li>
+                        <li><a class="dropdown-item fs__13" href="#">GBP</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="page rounded-page">
+        <div class="container-fluid px-1 px-lg-4 py-4">
+            <nav class="navbar navbar-expand-lg ">
+                <div class="container-fluid">
+                    <a class="navbar-brand site-logo" href="#">
+                        <img src="./assets/imgs/public/logo-black.png" alt="">
+                    </a>
+                    <button class="order-first border border-0 navbar-toggler" type="button" data-bs-toggle="offcanvas"
+                        data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse d-none d-lg-flex" id="navbarSupportedContent">
+                        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="./index.html">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="./shop.html?category=all&page=1">Shop</a>
+                            </li>
+
+                            <li class="nav-item">
+                                <a class="nav-link" href="./blogs.html">Blog</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="./contact.html">Contact</a>
+                            </li>
+
+                        </ul>
+                    </div>
+                    <div class="offcanvas nav-canvas offcanvas-start rounded-4 d-lg-none" tabindex="-1"
+                        id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+                        <div class="offcanvas-header">
+                            <h5 class="offcanvas-title fs-6" id="offcanvasNavbarLabel">Menu</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="offcanvas"
+                                aria-label="Close"></button>
+                        </div>
+                        <div class="offcanvas-body">
+                            <ul class="navbar-nav justify-content-start flex-grow-1 pe-3">
+                                <li class="nav-item"><a class="nav-link active" href="./index.html">Home</a></li>
+                                <li class="nav-item"><a class="nav-link" href="./shop.html?category=all&page=1">Shop</a>
+                                </li>
+
+                                <li class="nav-item"><a class="nav-link" href="./blogs.html">Blog</a></li>
+                                <li class="nav-item"><a class="nav-link" href="./contact.html">Contact</a></li>
+                            </ul>
+
+                        </div>
+                    </div>
+                    <div class="icons d-flex gap-4 align-items-center">
+                        <div class="icon d-none d-lg-block cursor__pointer"  data-bs-toggle="offcanvas" data-bs-target="#search-canvas" aria-controls="search-canvas">
+                            <i class="fa-solid fa-magnifying-glass"></i>
+                        </div>
+                        <div class="icon d-none d-lg-flex align-items-center gap-1 cursor__pointer"
+                            data-bs-toggle="modal" data-bs-target="#login">
+                            <i class="fa-solid fa-circle-user"></i>
+                            <span class="fw-normal">Account</span>
+                        </div>
+                        <div class="icon count position-relative d-none d-lg-block cursor__pointer" data-count="0" data-bs-toggle="offcanvas" data-bs-target="#wish-canvas" aria-controls="wish-canvas">
+                            <i class="fa-regular fa-heart"></i>
+                            <div class="wishlist"></div>
+                        </div>
+                        <div class="icon d-none d-lg-block cursor__pointer">
+                            <i class="fa-solid fa-repeat"></i>
+                        </div>
+                        <div class="icon count position-relative cursor__pointer" data-count="0">
+                            <i class="fa-solid fa-cart-shopping" data-bs-toggle="offcanvas"
+                                data-bs-target="#offcanvasRight" aria-controls="offcanvasRight"></i>
+                        </div>
+                    </div>
+
+
+
+                </div>
+
+            </nav>
+            <div class="offcanvas offcanvas-end search-canvas rounded-5" tabindex="-1" id="search-canvas"
+                aria-labelledby="search-canvas">
+                <div class="offcanvas-header border border-0 border-bottom">
+                    <h5 id="search-canvas" class = "p-2 fw-semibold">Search</h5>
+                    <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas"
+                        aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body">
+                    <div class = "position-relative">
+                        <input class="form-control form-control-lg border-0 search-bar ps-5" type="text" placeholder="Search every thing..." aria-label=".form-control-lg example">
+                        <i class="fa-solid fa-magnifying-glass position-absolute top-50 translate-middle-y search-canvas-icon"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="offcanvas offcanvas-end wish-canvas rounded-5" tabindex="-1" id="wish-canvas"
+                aria-labelledby="wish-canvas">
+                <div class="offcanvas-header border border-0 border-bottom">
+                    <h5 id="search-canvas" class = "p-2 fw-semibold">Wishlist</h5>
+                    <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas"
+                        aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body">
+                    <div class = "empty-list-message d-flex flex-column justify-content-center align-items-center gap-2 h-100">
+                        <i class="fa-regular fa-heart"></i>
+                        <p class = "fw-medium">The wishlist is empty</p>
+                        <a class = "text-decoration-none py-3 px-4 rounded-4 bg-black text-white" href="./shop.html?category=all&page=1">Return to shop</a>
+                    </div>
+                </div>
+            </div>
+            <div class="offcanvas cart-canvas offcanvas-end rounded-5" tabindex="-1" id="offcanvasRight"
+                aria-labelledby="offcanvasRightLabel">
+                <div class="offcanvas-header">
+                    <h5 class="offcanvas-title fw-bold" id="offcanvasRightLabel">Your Cart</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body w-100">
+                    <div class="body-head py-3">
+                        <p class="fs__14 text-center">
+                            Add <span class="badge border__main offer-price">$500.00</span> to cart and get free
+                            shipping!
+                        </p>
+                        <div class="progress position-relative rounded-pill">
+
+                        </div>
+                    </div>
+                    <div class="cart-body">
+                        <div class="empty-message d-flex flex-column align-items-center p-5 gap-2">
+                            <i class="fa-solid fa-cart-shopping"></i>
+                            <h3>Your cart is empty</h3>
+                            <p class="text-center fs__14">
+                                You may check out all the available products and buy some in the shop..
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Modal -->
+            <div class="modal fade login-modal " id="login" tabindex="-1" aria-labelledby="login" aria-hidden="true">
+                <div class="modal-dialog modal-xl modal-fullscreen-lg-down 100vh">
+                    <div class="modal-content d-flex flex-row flex-wrap">
+                        <div class="login-image mb-0 h-100 w-50 d-xl-block d-none">
+                            <img class="img-fluid w-100 h-100 object-fit-cover"
+                                src="./assets/imgs/login_register/collection-speakers.jpg" alt="">
+                        </div>
+                        <div class="login-body w-50">
+                            <div class="modal-header border-0">
+
+                                </h1>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                    aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                                <h1 class="modal-title fs-5 ms-auto text-center mb-0 pb-0" id="login-title">Login</h1>
+                                <form class="login-form d-flex flex-column gap-3 p-5 mt-0" action="">
+                                    <div>
+                                        <label for="username" class="form-label fs__15 fw-medium">Username or email
+                                            address*</label>
+                                        <input name="username" id="username" class="form-control form-control-lg"
+                                            type="text" aria-label=".form-control-lg username">
+                                    </div>
+                                    <div>
+                                        <label for="password" class="form-label fs__15 fw-medium">password*</label>
+                                        <input name="password" id="password" class="form-control form-control-lg"
+                                            type="password" aria-describedby="passwordHelpBlock">
+                                    </div>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" value="" id="remember">
+                                        <label class="form-check-label fs__15 fw-medium" for="remember">
+                                            Remember me
+                                        </label>
+                                    </div>
+
+                                    <input class="login-submit fs__14 fw-semibold border-0 py-3 rounded-pill"
+                                        type="submit" value="Login">
+
+                                    <div class="p-3 fs__13 fw-bold border d-none">
+                                        Error: <span class="error-message fw-normal"></span>
+                                    </div>
+                                    <div class="text-center">
+                                        <a class="text-decoration-none text-black fs__15 fw-semibold" href="#">Lost your
+                                            password?</a>
+                                    </div>
+
+
+                                    <p class="fs__13 text-center mt-3">
+                                        By continuing, you accept the Website Regulations , Regulations for the sale of
+                                        alcoholic beverages and the <a href="#">Privacy Policy</a>
+                                    </p>
+                                    <p class="text-center fs__15 mb-0 border border-0 border-top pt-5">
+                                        You dont have an account yet? <a href="./register.html">Register Now</a>
+                                    </p>
+
+                                </form>
+
+
+
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="custom__container">
+            <div class="product-details row">
+                <div class="col-lg-6">
+                    <div class="img-side d-flex flex-column gap-2 my-3">
+                        <div class="image-to-show">
+                            <img class = "w-100 h-100" src="" />
+
+                        </div>
+                        <div class="pagination-images d-flex gap-1">
+
+                        </div>
+
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="content-side">
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="custom__container">
+            <ul class="nav nav-tabs mb-3 product-tabs" id="myTab" role="tablist">
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link active" id="description-tab" data-bs-toggle="tab"
+                        data-bs-target="#description-tab-pane" type="button" role="tab"
+                        aria-controls="description-tab-pane" aria-selected="true">Description</button>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link" id="specification-tab" data-bs-toggle="tab"
+                        data-bs-target="#specification-tab-pane" type="button" role="tab"
+                        aria-controls="specification-tab-pane" aria-selected="false">Specification</button>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link" id="reviews-tab" data-bs-toggle="tab" data-bs-target="#reviews-tab-pane"
+                        type="button" role="tab" aria-controls="reviews-tab-pane" aria-selected="false">Review(<span
+                            class="number-reviews">3</span>)</button>
+                </li>
+
+            </ul>
+            <div class="tab-content mb-3" id="myTabContent">
+                <div class="tab-pane fade show active fw-semibold lh-base fs__14" id="description-tab-pane"
+                    role="tabpanel" aria-labelledby="description-tab" tabindex="0">
+                    Quisque varius diam vel metus mattis, id aliquam diam rhoncus. Proin vitae magna in dui finibus
+                    malesuada et at nulla. Morbi elit ex, viverra vitae ante vel, blandit feugiat ligula. Fusce
+                    fermentum iaculis nibh, at sodales leo maximus a. Nullam ultricies sodales nunc, in pellentesque
+                    lorem mattis quis. Cras imperdiet est in nunc tristique lacinia. Nullam aliquam mauris eu accumsan
+                    tincidunt. Suspendisse velit ex, aliquet vel ornare vel, dignissim a tortor.
+
+                    Morbi ut sapien vitae odio accumsan gravida. Morbi vitae erat auctor, eleifend nunc a, lobortis
+                    neque. Praesent aliquam dignissim viverra. Maecenas lacus odio, feugiat eu nunc sit amet, maximus
+                    sagittis dolor. Vivamus nisi sapien, elementum sit amet eros sit amet, ultricies cursus ipsum. Sed
+                    consequat luctus ligula. Curabitur laoreet rhoncus blandit. Aenean vel diam ut arcu pharetra
+                    dignissim ut sed leo. Vivamus faucibus, ipsum in vestibulum vulputate, lorem orci convallis quam,
+                    sit amet consequat nulla felis pharetra lacus. Duis semper erat mauris, sed egestas purus commodo
+                    vel.
+                </div>
+                <div class="tab-pane fade" id="specification-tab-pane" role="tabpanel"
+                    aria-labelledby="specification-tab" tabindex="0">
+                    <div class="specs-table mt-4">
+                        <h5 class="fw-bold mb-3 text-uppercase">General</h5>
+                        <table class="table">
+                            <tbody>
+                                <tr>
+                                    <td>Alternate names</td>
+                                    <td>iPad 5</td>
+                                </tr>
+                                <tr>
+                                    <td>Brand</td>
+                                    <td>Apple</td>
+                                </tr>
+                                <tr>
+                                    <td>Model</td>
+                                    <td>iPad Air Wi-Fi + Cellular</td>
+                                </tr>
+                                <tr>
+                                    <td>Release date</td>
+                                    <td>September 2013</td>
+                                </tr>
+                                <tr>
+                                    <td>Dimensions (mm)</td>
+                                    <td>240.00 x 169.50 x 7.50</td>
+                                </tr>
+                                <tr>
+                                    <td>Weight (g)</td>
+                                    <td>478.00</td>
+                                </tr>
+                                <tr>
+                                    <td>Battery capacity (mAh)</td>
+                                    <td>8820</td>
+                                </tr>
+                                <tr>
+                                    <td>Removable battery</td>
+                                    <td>No</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div class="specs-table mt-4">
+                        <h5 class="fw-bold mb-3 text-uppercase">Display</h5>
+                        <table class="table">
+                            <tbody>
+                                <tr>
+                                    <td>Screen size (inches)</td>
+                                    <td>9.70</td>
+                                </tr>
+                                <tr>
+                                    <td>Touchscreen</td>
+                                    <td>No</td>
+                                </tr>
+                                <tr>
+                                    <td>Resolution</td>
+                                    <td>1536x2048 pixels</td>
+                                </tr>
+                                <tr>
+                                    <td>Pixels per inch (PPI)</td>
+                                    <td>264</td>
+                                </tr>
+                                <tr>
+                                    <td>Dimensions (mm)</td>
+                                    <td>240.00 x 169.50 x 7.50</td>
+                                </tr>
+                                <tr>
+                                    <td>Weight (g)</td>
+                                    <td>478.00</td>
+                                </tr>
+                                <tr>
+                                    <td>Battery capacity (mAh)</td>
+                                    <td>8820</td>
+                                </tr>
+                                <tr>
+                                    <td>Removable battery</td>
+                                    <td>No</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div class="specs-table mt-4">
+                        <h5 class="fw-bold mb-3 text-uppercase">Camera</h5>
+                        <table class="table">
+                            <tbody>
+                                <tr>
+                                    <td>Rear camera</td>
+                                    <td>5-megapixel</td>
+                                </tr>
+                                <tr>
+                                    <td>Front camera</td>
+                                    <td>1.2-megapixel</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+
+                    <div class="specs-table mt-4">
+                        <h5 class="fw-bold mb-3 text-uppercase">Software</h5>
+                        <table class="table">
+                            <tbody>
+                                <tr>
+                                    <td>Operating system</td>
+                                    <td>iOS 7</td>
+                                </tr>
+
+                            </tbody>
+                        </table>
+                    </div>
+
+                </div>
+                <div class="tab-pane fade" id="reviews-tab-pane" role="tabpanel" aria-labelledby="reviews-tab"
+                    tabindex="0">
+                    <h3 class="fw-semibold my-4 fs__17">3 reviews for 3.5mm audio jack cable</h3>
+                    <div class="d-flex gap-5 align-items-center flex-column flex-lg-row">
+                        <span class="rating-number">4.00</span>
+                        <div class="d-flex flex-column gap-2 justify-content-center pt-4">
+                            <div class="stars">
+                                <i class="fa-solid fa-star text-warning"></i>
+                                <i class="fa-solid fa-star text-warning"></i>
+                                <i class="fa-solid fa-star text-warning"></i>
+                                <i class="fa-solid fa-star text-warning"></i>
+                                <i class="fa-solid fa-star text__gray"></i>
+                            </div>
+                            <p class="fw-semibold">Average of <span class="number-of-reviews">3</span> reviews</p>
+                        </div>
+
+                        <div class="rating-tabs d-flex flex-column gap-2">
+                            <div id="tab-5"
+                                class="rating-tab active py-1 px-3 rounded-pill d-flex gap-3 align-items-center cursor__pointer"
+                                data-count="2">
+                                <div class="star-num fs__14 fw-semibold"><i class="fa-solid fa-star text-warning"></i>
+                                    <span>5</span>
+                                </div>
+                                <div class="progress rating-progress" role="progressbar" aria-label="Example with label"
+                                    aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">
+                                    <div class="progress-bar bg-warning"></div>
+                                </div>
+                                <div class="count fs__15">2</div>
+                            </div>
+                            <div id="tab-4"
+                                class="rating-tab d-flex gap-3 py-1 px-3 rounded-pill align-items-center cursor__pointer"
+                                data-count="0">
+                                <div class="star-num fs__14 fw-semibold"><i class="fa-solid fa-star text-warning"></i>
+                                    <span>4</span>
+                                </div>
+                                <div class="progress rating-progress" role="progressbar" aria-label="Example with label"
+                                    aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">
+                                    <div class="progress-bar bg-warning"></div>
+                                </div>
+                                <div class="count fs__15">0</div>
+                            </div>
+                            <div id="tab-3"
+                                class="rating-tab py-1 px-3 rounded-pill d-flex gap-3 align-items-center cursor__pointer"
+                                data-count="0">
+                                <div class="star-num fs__14 fw-semibold"><i class="fa-solid fa-star text-warning"></i>
+                                    <span>3</span>
+                                </div>
+                                <div class="progress rating-progress" role="progressbar" aria-label="Example with label"
+                                    aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">
+                                    <div class="progress-bar bg-warning"></div>
+                                </div>
+                                <div class="count fs__15">0</div>
+                            </div>
+                            <div id="tab-2"
+                                class="rating-tab py-1 px-3 rounded-pill d-flex gap-3 align-items-center cursor__pointer"
+                                data-count="1">
+                                <div class="star-num fs__14 fw-semibold"><i class="fa-solid fa-star text-warning"></i>
+                                    <span>2</span>
+                                </div>
+                                <div class="progress rating-progress" role="progressbar" aria-label="Example with label"
+                                    aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">
+                                    <div class="progress-bar bg-warning"></div>
+                                </div>
+                                <div class="count fs__15">1</div>
+                            </div>
+                            <div id="tab-1"
+                                class="rating-tab py-1 px-3 rounded-pill d-flex gap-3 align-items-center cursor__pointer"
+                                data-count="0">
+                                <div class="star-num fs__14 fw-semibold"><i class="fa-solid fa-star text-warning"></i>
+                                    <span>1</span>
+                                </div>
+                                <div class="progress rating-progress" role="progressbar" aria-label="Example with label"
+                                    aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">
+                                    <div class="progress-bar bg-warning"></div>
+                                </div>
+                                <div class="count fs__15">0</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="reviews">
+                        <div class="reviews-group" data-count="2">
+                            <div class="review d-flex gap-4 py-5 border border-0 border-bottom">
+                                <div class="image">
+                                    <img class="img-fluid rounded-circle" src="./assets/imgs/public/reviewer.jpeg"
+                                        alt="">
+                                </div>
+                                <div class="content d-flex flex-column gap-1">
+                                    <div class="review-stars fs__14">
+                                        <i class="fa-solid fa-star text-warning"></i>
+                                        <i class="fa-solid fa-star text-warning"></i>
+                                        <i class="fa-solid fa-star text-warning"></i>
+                                        <i class="fa-solid fa-star text-warning"></i>
+                                        <i class="fa-solid fa-star text-warning"></i>
+                                    </div>
+                                    <div class="personal-info fs__14 text__777">
+                                        <span class="name">admin</span> <i class="fa-solid fa-minus"></i> <span
+                                            class="data">December 19, 2024</span>
+                                    </div>
+                                    <p class="fs__14 fw-semibold">
+                                        Commodi perspiciatis unde omnis iste natus aliquam sit voluptatem exercitationem
+                                        doloremque laudantium
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="review d-flex gap-4 py-5 border border-0 border-bottom">
+                                <div class="image">
+                                    <img class="img-fluid rounded-circle" src="./assets/imgs/public/reviewer.jpeg"
+                                        alt="">
+                                </div>
+                                <div class="content d-flex flex-column gap-1">
+                                    <div class="review-stars fs__14">
+                                        <i class="fa-solid fa-star text-warning"></i>
+                                        <i class="fa-solid fa-star text-warning"></i>
+                                        <i class="fa-solid fa-star text-warning"></i>
+                                        <i class="fa-solid fa-star text-warning"></i>
+                                        <i class="fa-solid fa-star text-warning"></i>
+                                    </div>
+                                    <div class="personal-info fs__14 text__777">
+                                        <span class="name">admin</span> <i class="fa-solid fa-minus"></i> <span
+                                            class="data">December 19, 2024</span>
+                                    </div>
+                                    <p class="fs__14 fw-semibold">
+                                        Commodi perspiciatis unde omnis iste natus aliquam sit voluptatem exercitationem
+                                        doloremque laudantium
+                                    </p>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="reviews-group" data-count="1">
+                            <div class="review d-flex gap-4 py-5 border border-0 border-bottom">
+                                <div class="image">
+                                    <img class="img-fluid rounded-circle" src="./assets/imgs/public/reviewer.jpeg"
+                                        alt="">
+                                </div>
+                                <div class="content d-flex flex-column gap-1">
+                                    <div class="review-stars fs__14">
+                                        <i class="fa-solid fa-star text-warning"></i>
+                                        <i class="fa-solid fa-star text-warning"></i>
+                                        <i class="fa-solid fa-star text__gray"></i>
+                                        <i class="fa-solid fa-star text__gray"></i>
+                                        <i class="fa-solid fa-star text__gray"></i>
+                                    </div>
+                                    <div class="personal-info fs__14 text__777">
+                                        <span class="name">admin</span> <i class="fa-solid fa-minus"></i> <span
+                                            class="data">December 19, 2024</span>
+                                    </div>
+                                    <p class="fs__14 fw-semibold">
+                                        Commodi perspiciatis unde omnis iste natus aliquam sit voluptatem exercitationem
+                                        doloremque laudantium
+                                    </p>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="add-review py-5">
+                        <h3 class="fs__18 fw-semibold">Add a review</h3>
+                        <p>Your email address will not be published. Required fields are marked *</p>
+                        <div>
+                            <span class="fs__14">Your rating*</span>
+                            <div class="your-review-stars mt-2 d-flex align-items-center">
+                                <div class="border-0 pe-1 border-end fs__13"><i class="fa-solid fa-star"></i></div>
+                                <div class="ps-3 pe-1 border border-0 border-end fs__13">
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                </div>
+                                <div class="ps-3 pe-1 border border-0 border-end fs__13">
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                </div>
+                                <div class="ps-3 pe-1 border border-0 border-end fs__13">
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                </div>
+                                <div class="ps-3 pe-1 border border-0 border-end fs__13">
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                </div>
+
+                            </div>
+                            <div class="my-3">
+                                <label for="review-textarea" class="form-label fs__14">Your review*</label>
+                                <textarea class="form-control" id="review-textarea" rows="5"></textarea>
+                            </div>
+                            <div class="my-3">
+                                <label for="name-input" class="form-label fs__14">Name*</label>
+                                <input class="form-control form-control-lg" type="text" id="name-input"
+                                    aria-label=".form-control-lg example">
+                            </div>
+                            <div class="my-3">
+                                <label for="email" class="form-label">Email*</label>
+                                <input type="email" class="form-control form-control-lg" id="email">
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input form-check-input-sm" type="checkbox" value="" id="save-me">
+                                <label class="form-check-label fs__13" for="save-me">
+                                    Save my name, email, and website in this browser for the next time I comment.
+                                </label>
+                            </div>
+                             <button type="submit" class="btn btn-dark fw-semibold mt-3">Submit</button>
+                        </div>
+
+
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+        <!-- Services  -->
+        <div class="services px-5">
+            <div>
+                <div class="swiper mySwiper services-swiper swiper-customization">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide d-flex gap-4">
+                            <div class="icon">
+                                <img src="./assets/imgs/public/service-01.png" alt="">
+                            </div>
+                            <div class="content">
+                                <h3 class="fw-bold fs__16">Customer Service</h3>
+                                <p class="lh-base text__pColor fs__14">
+                                    it's not actually free we just price it into products.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="swiper-slide d-flex gap-4">
+                            <div class="icon">
+                                <img src="./assets/imgs/public/services-1.png" alt="">
+                            </div>
+                            <div class="content">
+                                <h3 class="fw-bold fs__16">FastFree Shipping</h3>
+                                <p class="lh-base text__pColor fs__14">
+                                    Get free shipping in order of $150 or more (within the US)
+                                </p>
+                            </div>
+                        </div>
+                        <div class="swiper-slide d-flex gap-4">
+                            <div class="icon">
+                                <img src="./assets/imgs/public/services-2.png" alt="">
+                            </div>
+                            <div class="content">
+                                <h3 class="fw-bold fs__16">Returns & Exchanges</h3>
+                                <p class="lh-base text__pColor fs__14">
+                                    We offer free returns and exchanges withing 30 days of purchase.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="swiper-slide d-flex gap-4">
+                            <div class="icon">
+                                <img src="./assets/imgs/public/services-3.png" alt="">
+                            </div>
+                            <div class="content">
+                                <h3 class="fw-bold fs__16">Secure Payment</h3>
+                                <p class="lh-base text__pColor fs__14">
+                                    Your payment information are proccessed securely and encrypted
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="d-none d-md-block d-lg-none swiper-button swiper-button-next"></div>
+                    <div class="d-none d-md-block d-lg-none swiper-button swiper-button-prev"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="footer overflow-hidden">
+        <div class="custom__container pb-5">
+            <div class="footer-top">
+                <div class="row g-5">
+                    <div class="col-lg-3 d-flex flex-column gap-3 fs__14 fw-bold">
+                        <a class="logo img-fluid" href="#">
+                            <img src="./assets/imgs/public/logo-light.png" alt="">
+                        </a>
+                        <div class="address text__777 lh-base">
+                            Address: 1234 Fashion Street, Suite 567, New York, NY
+                        </div>
+                        <div class="phone text__777">
+                            Phone: +123 456 7890
+                        </div>
+                        <div class="email text__777">
+                            Email: info@example.com
+                        </div>
+                    </div>
+                    <div class="col-lg-2">
+                        <h3 class="text-white fs-5">Get to Know Us</h3>
+                        <nav class="fw-semibold d-flex flex-column gap-1">
+                            <a class="text-decoration-none underline__hover fs__14 text__777" href="#">Careers for
+                                Fynode</a>
+                            <a class="text-decoration-none underline__hover fs__14 text__777" href="#">About Fynode</a>
+                            <a class="text-decoration-none underline__hover fs__14 text__777" href="#">Inverstor
+                                Relations</a>
+                            <a class="text-decoration-none underline__hover fs__14 text__777" href="#">Fynode
+                                Devices</a>
+                            <a class="text-decoration-none underline__hover fs__14 text__777" href="#">Customer
+                                reviews</a>
+                            <a class="text-decoration-none underline__hover fs__14 text__777" href="#">Privacy
+                                Policy</a>
+                            <a class="text-decoration-none underline__hover fs__14 text__777" href="#">Social
+                                Responsibility</a>
+                            <a class="text-decoration-none underline__hover fs__14 text__777" href="#">Store
+                                Locations</a>
+
+                        </nav>
+                    </div>
+                    <div class="col-lg-2">
+                        <h3 class="text-white fs-5">Let Us Help You</h3>
+                        <nav class="fw-semibold d-flex flex-column gap-1">
+                            <a class="text-decoration-none underline__hover fs__14 text__777" href="#">Accessibility
+                                Statement</a>
+                            <a class="text-decoration-none underline__hover fs__14 text__777" href="#">Your Orders</a>
+                            <a class="text-decoration-none underline__hover fs__14 text__777" href="#">Returns &
+                                Replacements</a>
+                            <a class="text-decoration-none underline__hover fs__14 text__777" href="#">Shipping Rates &
+                                Policies</a>
+                            <a class="text-decoration-none underline__hover fs__14 text__777" href="#">Refund and
+                                Returns Policy</a>
+                            <a class="text-decoration-none underline__hover fs__14 text__777" href="#">Privacy
+                                Policy</a>
+                            <a class="text-decoration-none underline__hover fs__14 text__777" href="#">Terms and
+                                Conditions</a>
+                            <a class="text-decoration-none underline__hover fs__14 text__777" href="#">Cookie
+                                Settings</a>
+                            <a class="text-decoration-none underline__hover fs__14 text__777" href="#">Help Center</a>
+                        </nav>
+                    </div>
+                    <div class="col-lg-4 ms-auto">
+                        <div class="d-flex flex-column gap-1">
+                            <h3 class="text-white fs-5">Sign Up for Email</h3>
+                            <p class="text__777 fs__14">
+                                Sign up to get first dibs on new arrivals, sales, exclusive content, events and more!
+                            </p>
+                            <form class="footer-form rounded-pill py-2 px-3 d-flex">
+                                <input class="bg-transparent border-0 flex-grow-1 text__777" type="text"
+                                    placeholder="Enter your email address" />
+                                <input class="text-white py-2 px-3 fw-semibold rounded-3 fs__14  border-0 bg__000"
+                                    type="submit" value="SEND">
+                            </form>
+                            <div>
+                                <span class="text__777 fs__13">By subscribing you agree to our</span>
+                                <a class="text-white fs__13" href="#"> Terms & Conditions and Privacy & Cookies
+                                    Policy.</a>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="custom__container">
+            <div class="footer-bottom d-flex flex-wrap justify-content-between py-5 border border-0 border-top border-dark">
+                <div class="text__777 fs__14">
+                    Copyright © 2025 <a class="text-white" href="#">Mohammed Taysir</a>. All rights reserved.
+                </div>
+                <div class="payments">
+                    <img class="img-fluid bg-white p-2 rounded-1 my-2" src="./assets/imgs/payments/payment.png" alt="">
+                    <img class="img-fluid bg-white p-2 rounded-1" src="./assets/imgs/payments/payment2.png" alt="">
+                    <img class="img-fluid bg-white p-2 rounded-1" src="./assets/imgs/payments/payment3.png" alt="">
+                    <img class="img-fluid bg-white p-2 rounded-1" src="./assets/imgs/payments/payment4.png" alt="">
+                    <img class="img-fluid bg-white p-2 rounded-1" src="./assets/imgs/payments/payment5.png" alt="">
+                </div>
+            </div>
+        </div>
+
+    </footer>
+
+    <!-- Axios cdn  -->
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+
+
+    <!-- Swipper Library  -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <!-- Bootstrap JS  -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Custom Swiper JS  -->
+    <script src="assets/js/customSwiper.js"></script>
+
+    <!-- Custom Js File  -->
+    <script src="./assets//js/product.js"></script>
+</body>
+
+</html>

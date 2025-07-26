@@ -1,0 +1,125 @@
+
+
+/* Fonts  */
+
+.fs__12 {
+    font-size: 12px;
+}
+
+.fs__13 {
+    font-size: 13px;
+}
+
+.fs__14 {
+    font-size: 14px;
+}
+
+.fs__15 {
+    font-size: 15px;
+}
+
+.fs__16 {
+    font-size: 16px;
+}
+
+.fs__17 {
+    font-size: 17px;
+}
+
+.fs__18 {
+    font-size: 18px;
+}
+
+
+/* Pointers  */
+
+.cursor__pointer {
+    cursor: pointer;
+}
+
+
+/* Borders  */
+
+.border__main {
+    border: 1px solid var(--mainColor);
+}
+
+
+
+/* Centering  */
+
+.center__translate {
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.center__translate__y {
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.center__translate__x {
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+/* Width  */
+
+.width__fit-content {
+    width: fit-content;
+}
+
+
+/* Colors  */
+
+.gradient__text {
+    background-image: linear-gradient(to-right, #fff, #666);
+    background-clip:text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.bg__card {
+    background-color: var(--cardsColor);
+}
+
+.text__777 {
+    color: #777;
+}
+
+.text__pColor {
+    color: var(--pColor);
+}
+
+
+
+.text__000 {
+    color: #000;
+}
+
+.text__gray {
+    color: var(--grayColor);
+}
+
+.bg__gray {
+    background-color: #e9ecef;
+}
+
+.bg__000 {
+    background-color: #000;
+}
+
+.underline__hover {
+    transition: 0.3s;
+}
+
+.underline__hover:hover {
+    text-decoration: underline !important;
+}
+
+
+
+.box__border {
+    box-sizing: border-box;;
+}
