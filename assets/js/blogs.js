@@ -1,4 +1,32 @@
-import { createBlogsWidgets } from "./module.js";
+import { 
+    createBlogsWidgets,
+    addToCart,
+    displayCart,
+    deleteFromCart,
+    editCartNumber,
+    handleCartHeader,
+    calculateTotalPrice,
+    showToast,
+    addToWishList,
+    displayWishList,
+    deleteFromWishList,
+    handleWishCounter
+ } from "./module.js";
+
+window.addToCart =addToCart;
+window.deleteFromCart = deleteFromCart;
+window.editCartNumber = editCartNumber;
+window.handleCartHeader = handleCartHeader;
+window.calculateTotalPrice = calculateTotalPrice;
+window.addToWishList = addToWishList;
+window.deleteFromWishList = deleteFromWishList;
+window.handleWishCounter = handleWishCounter;
+window.showToast = window.showToast;
+
+displayCart();
+displayWishList();
+handleWishCounter();
+editCartNumber();
 const blogs = [
     {
         id: "1",
@@ -85,7 +113,7 @@ function createBlogs(page = 1) {
                     <div class = "lh-base my-3">
                         ${blog.shortDescription}
                     </div>
-                    <button class = "btn btn-dark fw-semibold">Read More</button>
+                    <a href = "./blog.html?id=${blog.id}" class = "btn btn-dark fw-semibold">Read More</a>
                 </div>
             </div>
         

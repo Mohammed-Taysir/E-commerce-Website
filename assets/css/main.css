@@ -178,7 +178,7 @@ body {
   }
 }
 
-.page .wish-canvas i {
+.page .wish-canvas .wishing-icon {
   font-size: 80px;
 }
 
@@ -207,7 +207,7 @@ body {
   color: black;
 }
 
-.page .cart-body i {
+.page .cart-body .shopping-icon {
   font-size: 70px;
   color: var(--mainColor);
 }
@@ -229,6 +229,19 @@ body {
   color: #bfbfbf; 
   left: 20px;
 }
+
+
+.mobile-icons {
+  z-index: 999;
+  box-shadow: 0 0 5px #ddd;
+}
+
+
+.mobile-icons i {
+  font-size: 20px;
+}
+
+
 
 
 /* Headphone Slider Swiper  */
@@ -1245,6 +1258,15 @@ body {
     padding: 20px;
   }
 }
+
+
+/* Cart Design  */
+
+.item-img img {
+  width: 60px;
+  height: 60px;
+}
+
 
 
 /* Loader  */

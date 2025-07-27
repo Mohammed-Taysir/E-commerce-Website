@@ -151,7 +151,8 @@
                         </div>
                     </div>
                     <div class="icons d-flex gap-4 align-items-center">
-                        <div class="icon d-none d-lg-block cursor__pointer"  data-bs-toggle="offcanvas" data-bs-target="#search-canvas" aria-controls="search-canvas">
+                        <div class="icon d-none d-lg-block cursor__pointer" data-bs-toggle="offcanvas"
+                            data-bs-target="#search-canvas" aria-controls="search-canvas">
                             <i class="fa-solid fa-magnifying-glass"></i>
                         </div>
                         <div class="icon d-none d-lg-flex align-items-center gap-1 cursor__pointer"
@@ -159,14 +160,14 @@
                             <i class="fa-solid fa-circle-user"></i>
                             <span class="fw-normal">Account</span>
                         </div>
-                        <div class="icon count position-relative d-none d-lg-block cursor__pointer" data-count="0" data-bs-toggle="offcanvas" data-bs-target="#wish-canvas" aria-controls="wish-canvas">
+                        <div class="icon wish-count count position-relative d-none d-lg-block cursor__pointer"
+                            data-count="0" data-bs-toggle="offcanvas" data-bs-target="#wish-canvas"
+                            aria-controls="wish-canvas">
                             <i class="fa-regular fa-heart"></i>
                             <div class="wishlist"></div>
                         </div>
-                        <div class="icon d-none d-lg-block cursor__pointer">
-                            <i class="fa-solid fa-repeat"></i>
-                        </div>
-                        <div class="icon count position-relative cursor__pointer" data-count="0">
+
+                        <div class="icon cart-count count position-relative cursor__pointer" data-count="0">
                             <i class="fa-solid fa-cart-shopping" data-bs-toggle="offcanvas"
                                 data-bs-target="#offcanvasRight" aria-controls="offcanvasRight"></i>
                         </div>
@@ -180,30 +181,28 @@
             <div class="offcanvas offcanvas-end search-canvas rounded-5" tabindex="-1" id="search-canvas"
                 aria-labelledby="search-canvas">
                 <div class="offcanvas-header border border-0 border-bottom">
-                    <h5 id="search-canvas" class = "p-2 fw-semibold">Search</h5>
+                    <h5 id="search-canvas" class="p-2 fw-semibold">Search</h5>
                     <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas"
                         aria-label="Close"></button>
                 </div>
                 <div class="offcanvas-body">
-                    <div class = "position-relative">
-                        <input class="form-control form-control-lg border-0 search-bar ps-5" type="text" placeholder="Search every thing..." aria-label=".form-control-lg example">
-                        <i class="fa-solid fa-magnifying-glass position-absolute top-50 translate-middle-y search-canvas-icon"></i>
+                    <div class="position-relative">
+                        <input class="form-control form-control-lg border-0 search-bar ps-5" type="text"
+                            placeholder="Search every thing..." aria-label=".form-control-lg example">
+                        <i
+                            class="fa-solid fa-magnifying-glass position-absolute top-50 translate-middle-y search-canvas-icon"></i>
                     </div>
                 </div>
             </div>
             <div class="offcanvas offcanvas-end wish-canvas rounded-5" tabindex="-1" id="wish-canvas"
                 aria-labelledby="wish-canvas">
                 <div class="offcanvas-header border border-0 border-bottom">
-                    <h5 id="search-canvas" class = "p-2 fw-semibold">Wishlist</h5>
+                    <h5 id="search-canvas" class="p-2 fw-semibold">Wishlist</h5>
                     <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas"
                         aria-label="Close"></button>
                 </div>
-                <div class="offcanvas-body">
-                    <div class = "empty-list-message d-flex flex-column justify-content-center align-items-center gap- h-100">
-                        <i class="fa-regular fa-heart"></i>
-                        <p class = "fw-medium">The wishlist is empty</p>
-                        <a class = "text-decoration-none py-3 px-4 rounded-4 bg-black text-white" href="./shop.html?category=all&page=1">Return to shop</a>
-                    </div>
+                <div class="offcanvas-body wishlist-body">
+
                 </div>
             </div>
             <div class="offcanvas cart-canvas offcanvas-end rounded-5" tabindex="-1" id="offcanvasRight"
@@ -215,21 +214,16 @@
                 <div class="offcanvas-body w-100">
                     <div class="body-head py-3">
                         <p class="fs__14 text-center">
-                            Add <span class="badge border__main offer-price">$500.00</span> to cart and get free
+                            Add $<span class="badge border__main offer-price">500.00</span> to cart and get free
                             shipping!
                         </p>
-                        <div class="progress position-relative rounded-pill">
+                        <div class="progress offer-progress position-relative rounded-pill">
+                            <div class="position-absolute bg-dark  h-100 top-0 start-0"></div>
 
                         </div>
                     </div>
                     <div class="cart-body">
-                        <div class="empty-message d-flex flex-column align-items-center p-5 gap-2">
-                            <i class="fa-solid fa-cart-shopping"></i>
-                            <h3>Your cart is empty</h3>
-                            <p class="text-center fs__14">
-                                You may check out all the available products and buy some in the shop..
-                            </p>
-                        </div>
+
                     </div>
                 </div>
             </div>
@@ -401,7 +395,7 @@
                                 alt="">
                         </div>
                         <div class="cat-footer">
-                            <a href="#"
+                            <a href="./shop.html?category=earphone&page=1"
                                 class="view-products text-decoration-none text-dark fw-bold rounded-pill bg-white width__fit-content fs__14">View
                                 Products</a>
                         </div>
@@ -416,7 +410,7 @@
                                 alt="">
                         </div>
                         <div class="cat-footer">
-                            <a href="#"
+                            <a href="./shop.html?category=headphones&page=1"
                                 class="view-products text-decoration-none text-dark fw-bold rounded-pill bg-white width__fit-content fs__14">View
                                 Products</a>
                         </div>
@@ -431,7 +425,7 @@
                                 alt="">
                         </div>
                         <div class="cat-footer">
-                            <a href="#"
+                            <a href="./shop.html?category=microphones&page=1"
                                 class="view-products text-decoration-none text-dark fw-bold rounded-pill bg-white width__fit-content fs__14">View
                                 Products</a>
                         </div>
@@ -445,7 +439,7 @@
                             <img class="img-fluid" src="./assets/imgs/products/categories/smartwatch.svg" alt="">
                         </div>
                         <div class="cat-footer">
-                            <a href="#"
+                            <a href="./shop.html?category=smartwatches&page=1"
                                 class="view-products text-decoration-none text-dark fw-bold rounded-pill bg-white width__fit-content fs__14">View
                                 Products</a>
                         </div>
@@ -459,7 +453,7 @@
                             <img class="img-fluid" src="./assets/imgs/products/categories/category-speakers.png" alt="">
                         </div>
                         <div class="cat-footer">
-                            <a href="#"
+                            <a href="./shop.html?category=speakers&page=1"
                                 class="view-products text-decoration-none text-dark fw-bold rounded-pill bg-white width__fit-content fs__14">View
                                 Products</a>
                         </div>
@@ -483,7 +477,7 @@
                     <p class="headphone-description">Elevate your life with electronics designed for style and
                         performance</p>
                     <a class="shop-now text-decoration-none text-dark fw-bold rounded-pill bg-white width__fit-content"
-                        href="#">Shop Now <i class="fa-solid fa-arrow-right"></i></a>
+                        href="./shop.html?category=headphones&page=1">Shop Now <i class="fa-solid fa-arrow-right"></i></a>
                 </div>
             </div>
 
@@ -497,7 +491,7 @@
                         <a class="shop-now text-decoration-none text-dark fw-bold rounded-pill bg-white width__fit-content"
                             href="#">Shop Now <i class="fa-solid fa-arrow-right"></i></a>
                     </div>
-                    <img class="img-fluid rounded-4 h-100" src="./assets/imgs/public/banner-01.jpg" alt="">
+                    <img class="img-fluid rounded-4 h-100 w-100" src="./assets/imgs/public/banner-01.jpg" alt="">
                 </div>
                 <div class="col-md-12 col-lg-6 min-vh-100 position-relative py-4 rounded-4 overflow-hidden">
                     <div
@@ -506,15 +500,20 @@
                         <h3 class="text-center row-banner-title">Smart Solutions Sleek, Designs</h3>
                         <p class="row-banner-description">Smart solutions for a connected world</p>
                         <a class="shop-now text-decoration-none text-dark fw-bold rounded-pill bg-white width__fit-content"
-                            href="#">Shop Now <i class="fa-solid fa-arrow-right"></i></a>
+                            href="./shop.html?category=speakers&page=1">Shop Now <i class="fa-solid fa-arrow-right"></i></a>
                     </div>
-                    <img class="img-fluid rounded-4 h-100" src="./assets/imgs/public/banner-03.jpg" alt="">
+                    <img class="img-fluid rounded-4 h-100 w-100" src="./assets/imgs/public/banner-03.jpg" alt="">
                 </div>
             </div>
         </div>
 
         <!-- Most Solid Of The Week  -->
-        <div class="custom__container most-solid pb-4">
+        <div class="custom__container most-solid pb-4 position-relative">
+            <div
+                class="loader-container position-absolute bg-transparent top-0 bottom-0 start-0 end-0 d-flex align-items-center justify-content-center">
+                <div class="loader"></div>
+
+            </div>
             <div class="d-flex gap-lg-5 flex-wrap">
                 <h2 class="d-flex align-items-center justify-content-center fw-bolder">Most Solid Of The Week</h2>
                 <nav>
@@ -869,6 +868,44 @@
                 </div>
             </div>
         </div>
+        <div class="position-fixed bottom-0 end-0 p-3" style="z-index: 9999">
+            <div id="globalToast" class="toast align-items-center text-bg-success border-0" role="alert"
+                aria-live="assertive" aria-atomic="true">
+                <div class="d-flex">
+                    <div class="toast-body" id="globalToastBody"></div>
+                    <button type="button" class="btn-close btn-close-white me-2 m-auto" data-bs-dismiss="toast"
+                        aria-label="Close"></button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="mobile-icons py-3 px-2 d-lg-none position-fixed w-100 bottom-0 start-0 bg-white px-3">
+
+        <div class="icons d-flex gap-4 align-items-center justify-content-between">
+                        <div class="icon d-block cursor__pointer" data-bs-toggle="offcanvas"
+                            data-bs-target="#search-canvas" aria-controls="search-canvas">
+                            <i class="fa-solid fa-magnifying-glass"></i>
+                        </div>
+                        <div class="icon  d-flex align-items-center gap-1 cursor__pointer"
+                            data-bs-toggle="modal" data-bs-target="#login">
+                            <i class="fa-solid fa-circle-user"></i>
+                            
+                        </div>
+                        <div class="icon wish-count count position-relative d-none d-lg-block cursor__pointer"
+                            data-count="0" data-bs-toggle="offcanvas" data-bs-target="#wish-canvas"
+                            aria-controls="wish-canvas">
+                            <i class="fa-regular fa-heart"></i>
+                            <div class="wishlist"></div>
+                        </div>
+
+                        <div class="icon cart-count count position-relative cursor__pointer" data-count="0">
+                            <i class="fa-solid fa-cart-shopping" data-bs-toggle="offcanvas"
+                                data-bs-target="#offcanvasRight" aria-controls="offcanvasRight"></i>
+                        </div>
+                    </div>
+
     </div>
 
     <!-- Start Footer  -->
@@ -989,9 +1026,12 @@
 
     <script src="assets/js/customSwiper.js"></script>
 
+    <!-- Custom JS Files  -->
+
     <script src="./assets/js/main.js" type="module"></script>
 
     <script src="./assets/js/openBlog.js"></script>
+
 
 
 

@@ -1,13 +1,58 @@
+import { 
+    addToCart,
+    displayCart,
+    deleteFromCart,
+    editCartNumber,
+    handleCartHeader,
+    calculateTotalPrice,
+    showToast,
+    addToWishList,
+    displayWishList,
+    deleteFromWishList,
+    handleWishCounter
+ } from "./module.js";
 
+window.handleCartAddtion = handleCartAddtion;
+window.handleWishListAddition = handleWishListAddition;
+
+window.addToCart =addToCart;
+window.deleteFromCart = deleteFromCart;
+window.editCartNumber = editCartNumber;
+window.handleCartHeader = handleCartHeader;
+window.calculateTotalPrice = calculateTotalPrice;
+window.addToWishList = addToWishList;
+window.deleteFromWishList = deleteFromWishList;
+window.handleWishCounter = handleWishCounter;
+window.showToast = window.showToast;
+
+handleCartHeader();
+
+displayCart();
+displayWishList();
+handleWishCounter();
+editCartNumber();
 async function getProductDetails() {
-    const params = new URLSearchParams(window.location.search);
-    const prodcutId = params.get("id");
+    try {
+        const params = new URLSearchParams(window.location.search);
+        const prodcutId = params.get("id");
 
-    const { data } = await axios.get(`https://klbtheme.com/fynode/wp-json/wc/store/products/${prodcutId}`);
-    createImageSlider(data);
-    customizeDetails(data);
-    chooseColor();
-    handleQuantity();
+        const { data } = await axios.get(`https://klbtheme.com/fynode/wp-json/wc/store/products/${prodcutId}`);
+        createImageSlider(data);
+        customizeDetails(data);
+        chooseColor();
+        handleQuantity();
+    }catch(error) {
+        Swal.fire({
+      icon: "error",
+      title: "Oops...",
+      text: "Something went wrong!",
+      footer: '<a href="#">Why do I have this issue?</a>',
+    }).then(() => {
+      location.href = "./index.html";
+    });
+    }finally {
+        document.querySelector(".loader-container").classList.add("d-none");
+    }
 }
 
 
@@ -52,12 +97,12 @@ function customizeDetails(productDetails) {
                         <span class = "value fw-semibold">1</span>
                         <span class = "plus fw-bold cursor__pointer fs__18">+</span>
                     </div>
-                    <button class = "add-to-cart border-0 bg-black text-white py-2 flex-grow-1 rounded-pill fw-semibold">Add to cart</button>
+                    <button class = "add-to-cart border-0 bg-black text-white py-2 flex-grow-1 rounded-pill fw-semibold" onclick = "handleCartAddtion('${productDetails.name}', '${productDetails.images[0].src}', '${productDetails.prices.sale_price}')">Add to cart</button>
                 </div>
 
                 <div class = "d-flex my-3 gap-4">
-                    <button class = "buy-now border-0 bg__gray py-2 flex-grow-1 rounded-pill">Buy Now</button>
-                    <div class = "icon-holder d-flex justify-content-center align-items-center rounded-circle cursor__pointer"><i class="fa-regular fa-heart"></i></div>
+                    <a href = "./checkout.html" class = "buy-now text-decoration-none d-flex justify-content-center align-items-center text-black fw-semibold border-0 bg__gray py-2 flex-grow-1 rounded-pill">Buy Now</a>
+                    <div class = "icon-holder d-flex justify-content-center align-items-center rounded-circle cursor__pointer" onclick = "handleWishListAddition('${productDetails.name}', '${productDetails.images[0].src}', '${productDetails.id}')"><i class="fa-regular fa-heart"></i></div>
                 </div>
 
                 
@@ -283,6 +328,29 @@ function yourRating() {
         star.classList.add("active");
         })
     })
+}
+
+
+function handleCartAddtion(productName, productImg, productPrice) {
+    const product = {name: productName, images: [
+        {
+            src: productImg,
+        },
+        
+        ],
+        prices: {
+            "sale_price": productPrice,
+        } 
+    };
+
+    const quantity = document.querySelector(".quantity .value").textContent;
+
+    addToCart(product, quantity);
+}
+
+
+function handleWishListAddition(productName, productImg, productId) {
+    addToWishList(productName, productImg, productId);
 }
 
 getProductDetails();

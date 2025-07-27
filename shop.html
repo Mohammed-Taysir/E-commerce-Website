@@ -162,14 +162,12 @@
                             <i class="fa-solid fa-circle-user"></i>
                             <span class="fw-normal">Account</span>
                         </div>
-                        <div class="icon count position-relative d-none d-lg-block cursor__pointer" data-count="0" data-bs-toggle="offcanvas" data-bs-target="#wish-canvas" aria-controls="wish-canvas">
+                        <div class="icon wish-count count position-relative d-none d-lg-block cursor__pointer" data-count="0" data-bs-toggle="offcanvas" data-bs-target="#wish-canvas" aria-controls="wish-canvas">
                             <i class="fa-regular fa-heart"></i>
                             <div class="wishlist"></div>
                         </div>
-                        <div class="icon d-none d-lg-block cursor__pointer">
-                            <i class="fa-solid fa-repeat"></i>
-                        </div>
-                        <div class="icon count position-relative cursor__pointer" data-count="0">
+                        
+                        <div class="icon cart-count count position-relative cursor__pointer" data-count="0">
                             <i class="fa-solid fa-cart-shopping" data-bs-toggle="offcanvas"
                                 data-bs-target="#offcanvasRight" aria-controls="offcanvasRight"></i>
                         </div>
@@ -201,12 +199,8 @@
                     <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas"
                         aria-label="Close"></button>
                 </div>
-                <div class="offcanvas-body">
-                    <div class = "empty-list-message d-flex flex-column justify-content-center align-items-center gap-2 h-100">
-                        <i class="fa-regular fa-heart"></i>
-                        <p class = "fw-medium">The wishlist is empty</p>
-                        <a class = "text-decoration-none py-3 px-4 rounded-4 bg-black text-white" href="./shop.html?category=all&page=1">Return to shop</a>
-                    </div>
+                <div class="offcanvas-body wishlist-body">
+                    
                 </div>
             </div>
             <div class="offcanvas cart-canvas offcanvas-end rounded-5" tabindex="-1" id="offcanvasRight"
@@ -218,21 +212,16 @@
                 <div class="offcanvas-body w-100">
                     <div class="body-head py-3">
                         <p class="fs__14 text-center">
-                            Add <span class="badge border__main offer-price">$500.00</span> to cart and get free
+                            Add $<span class="badge border__main offer-price">500.00</span> to cart and get free
                             shipping!
                         </p>
-                        <div class="progress position-relative rounded-pill">
+                        <div class="progress offer-progress position-relative rounded-pill">
+                            <div class = "position-absolute bg-dark  h-100 top-0 start-0"></div>
 
                         </div>
                     </div>
                     <div class="cart-body">
-                        <div class="empty-message d-flex flex-column align-items-center p-5 gap-2">
-                            <i class="fa-solid fa-cart-shopping"></i>
-                            <h3>Your cart is empty</h3>
-                            <p class="text-center fs__14">
-                                You may check out all the available products and buy some in the shop..
-                            </p>
-                        </div>
+                        
                     </div>
                 </div>
             </div>
@@ -581,7 +570,32 @@
             </div>
         </div>
     </div>
+    <div class="mobile-icons py-3 px-2 d-lg-none position-fixed w-100 bottom-0 start-0 bg-white px-3">
 
+        <div class="icons d-flex gap-4 align-items-center justify-content-between">
+                        <div class="icon d-block cursor__pointer" data-bs-toggle="offcanvas"
+                            data-bs-target="#search-canvas" aria-controls="search-canvas">
+                            <i class="fa-solid fa-magnifying-glass"></i>
+                        </div>
+                        <div class="icon  d-flex align-items-center gap-1 cursor__pointer"
+                            data-bs-toggle="modal" data-bs-target="#login">
+                            <i class="fa-solid fa-circle-user"></i>
+                            
+                        </div>
+                        <div class="icon wish-count count position-relative d-none d-lg-block cursor__pointer"
+                            data-count="0" data-bs-toggle="offcanvas" data-bs-target="#wish-canvas"
+                            aria-controls="wish-canvas">
+                            <i class="fa-regular fa-heart"></i>
+                            <div class="wishlist"></div>
+                        </div>
+
+                        <div class="icon cart-count count position-relative cursor__pointer" data-count="0">
+                            <i class="fa-solid fa-cart-shopping" data-bs-toggle="offcanvas"
+                                data-bs-target="#offcanvasRight" aria-controls="offcanvasRight"></i>
+                        </div>
+                    </div>
+
+    </div>
     <!-- Start Footer  -->
 
     <footer class="footer overflow-hidden">
