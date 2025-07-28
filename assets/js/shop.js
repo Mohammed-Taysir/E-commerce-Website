@@ -28,6 +28,7 @@ window.addToWishList = addToWishList;
 window.deleteFromWishList = deleteFromWishList;
 window.handleWishCounter = handleWishCounter;
 window.showToast = window.showToast;
+window.initImgSwiper = initImgSwiper;
 
 displayCart();
 displayWishList();
@@ -102,6 +103,7 @@ async function getProducts() {
 
     customPagination(numOfPages, parseInt(page), category);
     addActivePage(page);
+
   } catch (error) {
     Swal.fire({
       icon: "error",

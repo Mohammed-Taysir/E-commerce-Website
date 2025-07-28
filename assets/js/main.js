@@ -63,7 +63,14 @@ async function createProducts(category, container, limit) {
     displayCart();
     displayWishList();
   } catch (error) {
-    console.log(error);
+    Swal.fire({
+      icon: "error",
+      title: "Oops...",
+      text: "Something went wrong!",
+      footer: '<a href="#">Why do I have this issue?</a>',
+    }).then(() => {
+      location.reload();
+    });
   } finally {
     document.querySelector(".loader-container").classList.add("d-none");
   }
