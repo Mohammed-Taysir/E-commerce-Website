@@ -119,6 +119,12 @@
                             <li class="nav-item">
                                 <a class="nav-link" href="./shop.html?category=all&page=1">Shop</a>
                             </li>
+                            <li class="nav-item"><a class="nav-link"
+                                    href="./shop.html?category=headphones&page=1">Headphones</a>
+                            </li>
+                            <li class="nav-item"><a class="nav-link"
+                                    href="./shop.html?category=accessories&page=1">Accessories</a>
+                            </li>
 
                             <li class="nav-item">
                                 <a class="nav-link" href="./blogs.html">Blog</a>
@@ -140,6 +146,13 @@
                             <ul class="navbar-nav justify-content-start flex-grow-1 pe-3">
                                 <li class="nav-item"><a class="nav-link active" href="./index.html">Home</a></li>
                                 <li class="nav-item"><a class="nav-link" href="./shop.html?category=all&page=1">Shop</a>
+                                </li>
+
+                                <li class="nav-item"><a class="nav-link"
+                                        href="./shop.html?category=headphones&page=1">Headphones</a>
+                                </li>
+                                <li class="nav-item"><a class="nav-link"
+                                        href="./shop.html?category=accessories&page=1">Accessories</a>
                                 </li>
 
                                 <li class="nav-item"><a class="nav-link" href="./blogs.html">Blog</a></li>
@@ -337,7 +350,8 @@
                                 <div class="flex-grow-1">
                                     <label for="firstName" class="form-label fs__13 fw-medium">First name*</label>
                                     <input class="form-control form-control-lg" type="text"
-                                        aria-label=".form-control-lg example" name="firstName" id="firstName" data-required="true">
+                                        aria-label=".form-control-lg example" name="firstName" id="firstName"
+                                        data-required="true">
                                 </div>
                                 <div class="flex-grow-1">
                                     <label for="lastName" class="form-label fs__13 fw-medium">Last name*</label>
@@ -345,11 +359,12 @@
                                         id="lastName">
                                 </div>
                             </div>
-                            
+
                             <div>
                                 <label for="company" class="form-label fs__13 fw-medium">Company name (optional)</label>
                                 <input class="form-control form-control-lg" type="text"
-                                    aria-label=".form-control-lg example" name="company" id="company" data-required = "false">
+                                    aria-label=".form-control-lg example" name="company" id="company"
+                                    data-required="false">
                             </div>
                             <div>
                                 <label for="country" class="fs__13 fw-medium">Select country*</label>
@@ -371,7 +386,8 @@
                             <div class="d-flex flex-column gap-2">
                                 <label for="company" class="form-label fs__13 fw-medium">Street address*</label>
                                 <input class="form-control form-control-lg" type="text"
-                                    aria-label=".form-control-lg example" name="street" id="street" data-required="true">
+                                    aria-label=".form-control-lg example" name="street" id="street"
+                                    data-required="true">
                                 <input class="form-control form-control-lg checkout-input" type="text"
                                     aria-label=".form-control-lg example" name="apartment" id="apartment"
                                     placeholder="Apartment, suit, unit, etc(optional)" data-required="false">
@@ -388,13 +404,13 @@
                             </div>
                             <div>
                                 <label for="email" class="form-label fs__13 fw-medium">Email address*</label>
-                                <input class="form-control form-control-lg" type="email" 
+                                <input class="form-control form-control-lg" type="email"
                                     aria-label=".form-control-lg example" name="email" id="email" data-required="true">
                             </div>
                             <div>
                                 <label for="notes" class="form-label fs__13 fw-medium">Order notes (optional)</label>
 
-                                <textarea class="form-control" id="notes" rows="3" data-required = "false"></textarea>
+                                <textarea class="form-control" id="notes" rows="3" data-required="false"></textarea>
                             </div>
                         </form>
                     </div>
@@ -478,7 +494,8 @@
                             </label>
                         </div>
 
-                        <button class = "place-order mt-3 bg-dark text-white fs__15 rounded-4 py-3 fw-semibold">Place order</button>
+                        <button class="place-order mt-3 bg-dark text-white fs__15 rounded-4 py-3 fw-semibold">Place
+                            order</button>
 
                     </div>
                 </div>
@@ -548,6 +565,9 @@
     <div class="mobile-icons py-3 px-2 d-lg-none position-fixed w-100 bottom-0 start-0 bg-white px-3">
 
         <div class="icons d-flex gap-4 align-items-center justify-content-between">
+            <div class="icon">
+                <a class="text-decoration-none text-black" href="./index.html"><i class="fa-solid fa-house"></i></a>
+            </div>
             <div class="icon d-block cursor__pointer" data-bs-toggle="offcanvas" data-bs-target="#search-canvas"
                 aria-controls="search-canvas">
                 <i class="fa-solid fa-magnifying-glass"></i>
@@ -674,7 +694,7 @@
 
     </footer>
 
-    
+
 
 
     <!-- Axios cdn  -->

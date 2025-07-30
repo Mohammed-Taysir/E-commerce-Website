@@ -409,7 +409,7 @@ button {
 }
 
 
-.swiper-customization.swiper-button-next.swiper-button-disabled,
+.swiper-customization .swiper-button-next.swiper-button-disabled,
 .swiper-customization .swiper-button-prev.swiper-button-disabled{
   display: none;
 }
