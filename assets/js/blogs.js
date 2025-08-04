@@ -1,5 +1,6 @@
 import { 
     createBlogsWidgets,
+    openBlogWithId,
     addToCart,
     displayCart,
     deleteFromCart,
@@ -12,7 +13,7 @@ import {
     deleteFromWishList,
     handleWishCounter
  } from "./module.js";
-
+window.openBlogWithId = openBlogWithId;
 window.addToCart =addToCart;
 window.deleteFromCart = deleteFromCart;
 window.editCartNumber = editCartNumber;

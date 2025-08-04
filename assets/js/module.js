@@ -105,7 +105,7 @@ export function createBlogsWidgets(blogs) {
                 </div>
 
                 <div class = "content">
-                    <h3 class = "fs__14 w-100 fw-bold lh-base underline__hover cursor__pointer">${blog.title}</h3>
+                    <h3 class = "fs__14 w-100 fw-bold lh-base underline__hover cursor__pointer" onclick = "openBlogWithId('${blog.id}')">${blog.title}</h3>
                     <div class = "date fs__13 text__777">${blog.date}</div>
                 
                 </div>
@@ -113,6 +113,10 @@ export function createBlogsWidgets(blogs) {
             </div>
         `;
     }).join("");
+}
+
+export function openBlogWithId(blogId) {
+    window.location.href = `./blog.html?id=${blogId}`;
 }
 
 
