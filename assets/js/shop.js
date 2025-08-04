@@ -85,12 +85,12 @@ async function getProducts() {
     let products;
     if (category !== "all") {
       const { data } = await axios.get(
-        `https://klbtheme.com/fynode/wp-json/wc/store/products?category=${category}&per_page=${limit}&page=${page}`
+        `https://corsproxy.io/?https://klbtheme.com/fynode/wp-json/wc/store/products?category=${category}&per_page=${limit}&page=${page}`
       );
       products = data;
     } else {
       const { data } = await axios.get(
-        `https://klbtheme.com/fynode/wp-json/wc/store/products?per_page=${limit}&page=${page}`
+        `https://corsproxy.io/?https://klbtheme.com/fynode/wp-json/wc/store/products?per_page=${limit}&page=${page}`
       );
       products = data;
     }

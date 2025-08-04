@@ -42,7 +42,7 @@ async function getProducts(apiLink) {
 async function createProducts(category, container, limit) {
   try {
     const products = await getProducts(
-      `https://klbtheme.com/fynode/wp-json/wc/store/products?category=${category}&per_page=${limit}`
+      `https://corsproxy.io/?https://klbtheme.com/fynode/wp-json/wc/store/products?category=${category}&per_page=${limit}`
     );
 
     const productsContainer = document.querySelector(container);

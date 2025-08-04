@@ -36,7 +36,7 @@ async function getProductDetails() {
         const params = new URLSearchParams(window.location.search);
         const prodcutId = params.get("id");
 
-        const { data } = await axios.get(`https://klbtheme.com/fynode/wp-json/wc/store/products/${prodcutId}`);
+        const { data } = await axios.get(`https://corsproxy.io/?https://klbtheme.com/fynode/wp-json/wc/store/products/${prodcutId}`);
         createImageSlider(data);
         customizeDetails(data);
         chooseColor();
