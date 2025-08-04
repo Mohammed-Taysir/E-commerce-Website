@@ -100,54 +100,27 @@
     </div>
 
     <div class="page rounded-page">
-        <div class="container-fluid px-1 px-lg-4 py-4">
-            <nav class="navbar navbar-expand-lg ">
-                <div class="container-fluid">
-                    <a class="navbar-brand site-logo" href="#">
-                        <img src="./assets/imgs/public/logo-black.png" alt="">
-                    </a>
-                    <button class="order-first border border-0 navbar-toggler" type="button" data-bs-toggle="offcanvas"
-                        data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+        <header>
+            <div class="container-fluid px-1 px-lg-4 py-4">
+                <nav class="navbar navbar-expand-lg ">
+                    <div class="container-fluid">
+                        <a class="navbar-brand site-logo" href="#">
+                            <img src="./assets/imgs/public/logo-black.png" alt="">
+                        </a>
+                        <button class="order-first border border-0 navbar-toggler" type="button"
+                            data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
+                            aria-controls="offcanvasNavbar">
 
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
-                    <div class="collapse navbar-collapse d-none d-lg-flex" id="navbarSupportedContent">
-                        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                            <li class="nav-item">
-                                <a class="nav-link active" aria-current="page" href="./index.html">Home</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="./shop.html?category=all&page=1">Shop</a>
-                            </li>
-                            <li class="nav-item"><a class="nav-link"
-                                    href="./shop.html?category=headphones&page=1">Headphones</a>
-                            </li>
-                            <li class="nav-item"><a class="nav-link"
-                                    href="./shop.html?category=accessories&page=1">Accessories</a>
-                            </li>
-
-                            <li class="nav-item">
-                                <a class="nav-link" href="./blogs.html">Blog</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="./contact.html">Contact</a>
-                            </li>
-
-                        </ul>
-                    </div>
-                    <div class="offcanvas nav-canvas offcanvas-start rounded-4 d-lg-none" tabindex="-1"
-                        id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
-                        <div class="offcanvas-header">
-                            <h5 class="offcanvas-title fs-6" id="offcanvasNavbarLabel">Menu</h5>
-                            <button type="button" class="btn-close" data-bs-dismiss="offcanvas"
-                                aria-label="Close"></button>
-                        </div>
-                        <div class="offcanvas-body">
-                            <ul class="navbar-nav justify-content-start flex-grow-1 pe-3">
-                                <li class="nav-item"><a class="nav-link active" href="./index.html">Home</a></li>
-                                <li class="nav-item"><a class="nav-link" href="./shop.html?category=all&page=1">Shop</a>
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <div class="collapse navbar-collapse d-none d-lg-flex" id="navbarSupportedContent">
+                            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                                <li class="nav-item">
+                                    <a class="nav-link active" aria-current="page" href="./index.html">Home</a>
                                 </li>
-
+                                <li class="nav-item">
+                                    <a class="nav-link" href="./shop.html?category=all&page=1">Shop</a>
+                                </li>
                                 <li class="nav-item"><a class="nav-link"
                                         href="./shop.html?category=headphones&page=1">Headphones</a>
                                 </li>
@@ -155,411 +128,472 @@
                                         href="./shop.html?category=accessories&page=1">Accessories</a>
                                 </li>
 
-                                <li class="nav-item"><a class="nav-link" href="./blogs.html">Blog</a></li>
-                                <li class="nav-item"><a class="nav-link" href="./contact.html">Contact</a></li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="./blogs.html">Blog</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="./contact.html">Contact</a>
+                                </li>
+
                             </ul>
-
                         </div>
-                    </div>
-                    <div class="icons d-flex gap-4 align-items-center">
-                        <div class="icon d-none d-lg-block cursor__pointer" data-bs-toggle="offcanvas"
-                            data-bs-target="#search-canvas" aria-controls="search-canvas">
-                            <i class="fa-solid fa-magnifying-glass"></i>
-                        </div>
-                        <div class="icon d-none d-lg-flex align-items-center gap-1 cursor__pointer"
-                            data-bs-toggle="modal" data-bs-target="#login">
-                            <i class="fa-solid fa-circle-user"></i>
-                            <span class="fw-normal">Account</span>
-                        </div>
-                        <div class="icon wish-count count position-relative d-none d-lg-block cursor__pointer"
-                            data-count="0" data-bs-toggle="offcanvas" data-bs-target="#wish-canvas"
-                            aria-controls="wish-canvas">
-                            <i class="fa-regular fa-heart"></i>
-                            <div class="wishlist"></div>
-                        </div>
-
-                        <div class="icon cart-count count position-relative cursor__pointer" data-count="0">
-                            <i class="fa-solid fa-cart-shopping" data-bs-toggle="offcanvas"
-                                data-bs-target="#offcanvasRight" aria-controls="offcanvasRight"></i>
-                        </div>
-                    </div>
-
-
-
-                </div>
-
-            </nav>
-            <div class="offcanvas offcanvas-end search-canvas rounded-5" tabindex="-1" id="search-canvas"
-                aria-labelledby="search-canvas">
-                <div class="offcanvas-header border border-0 border-bottom">
-                    <h5 id="search-canvas" class="p-2 fw-semibold">Search</h5>
-                    <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas"
-                        aria-label="Close"></button>
-                </div>
-                <div class="offcanvas-body">
-                    <div class="position-relative">
-                        <input class="form-control form-control-lg border-0 search-bar ps-5" type="text"
-                            placeholder="Search every thing..." aria-label=".form-control-lg example">
-                        <i
-                            class="fa-solid fa-magnifying-glass position-absolute top-50 translate-middle-y search-canvas-icon"></i>
-                    </div>
-                </div>
-            </div>
-            <div class="offcanvas offcanvas-end wish-canvas rounded-5" tabindex="-1" id="wish-canvas"
-                aria-labelledby="wish-canvas">
-                <div class="offcanvas-header border border-0 border-bottom">
-                    <h5 id="search-canvas" class="p-2 fw-semibold">Wishlist</h5>
-                    <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas"
-                        aria-label="Close"></button>
-                </div>
-                <div class="offcanvas-body wishlist-body">
-
-                </div>
-            </div>
-            <div class="offcanvas cart-canvas offcanvas-end rounded-5" tabindex="-1" id="offcanvasRight"
-                aria-labelledby="offcanvasRightLabel">
-                <div class="offcanvas-header">
-                    <h5 class="offcanvas-title fw-bold" id="offcanvasRightLabel">Your Cart</h5>
-                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-                </div>
-                <div class="offcanvas-body w-100">
-                    <div class="body-head py-3">
-                        <p class="fs__14 text-center">
-                            Add $<span class="badge border__main offer-price">500.00</span> to cart and get free
-                            shipping!
-                        </p>
-                        <div class="progress offer-progress position-relative rounded-pill">
-                            <div class="position-absolute bg-dark  h-100 top-0 start-0"></div>
-
-                        </div>
-                    </div>
-                    <div class="cart-body">
-
-                    </div>
-                </div>
-            </div>
-            <!-- Modal -->
-            <div class="modal fade login-modal " id="login" tabindex="-1" aria-labelledby="login" aria-hidden="true">
-                <div class="modal-dialog modal-xl modal-fullscreen-lg-down 100vh">
-                    <div class="modal-content d-flex flex-row flex-wrap">
-                        <div class="login-image mb-0 h-100 w-50 d-xl-block d-none">
-                            <img class="img-fluid w-100 h-100 object-fit-cover"
-                                src="./assets/imgs/login_register/collection-speakers.jpg" alt="">
-                        </div>
-                        <div class="login-body w-50">
-                            <div class="modal-header border-0">
-
-                                </h1>
-                                <button type="button" class="btn-close" data-bs-dismiss="modal"
+                        <div class="offcanvas nav-canvas offcanvas-start rounded-4 d-lg-none" tabindex="-1"
+                            id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+                            <div class="offcanvas-header">
+                                <h5 class="offcanvas-title fs-6" id="offcanvasNavbarLabel">Menu</h5>
+                                <button type="button" class="btn-close" data-bs-dismiss="offcanvas"
                                     aria-label="Close"></button>
                             </div>
-                            <div class="modal-body">
-                                <h1 class="modal-title fs-5 ms-auto text-center mb-0 pb-0" id="login-title">Login</h1>
-                                <form class="login-form d-flex flex-column gap-3 p-5 mt-0" action="">
+                            <div class="offcanvas-body">
+                                <ul class="navbar-nav justify-content-start flex-grow-1 pe-3">
+                                    <li class="nav-item"><a class="nav-link active" href="./index.html">Home</a></li>
+                                    <li class="nav-item"><a class="nav-link"
+                                            href="./shop.html?category=all&page=1">Shop</a>
+                                    </li>
+
+                                    <li class="nav-item"><a class="nav-link"
+                                            href="./shop.html?category=headphones&page=1">Headphones</a>
+                                    </li>
+                                    <li class="nav-item"><a class="nav-link"
+                                            href="./shop.html?category=accessories&page=1">Accessories</a>
+                                    </li>
+
+                                    <li class="nav-item"><a class="nav-link" href="./blogs.html">Blog</a></li>
+                                    <li class="nav-item"><a class="nav-link" href="./contact.html">Contact</a></li>
+                                </ul>
+
+                            </div>
+                        </div>
+                        <div class="icons d-flex gap-4 align-items-center">
+                            <div class="icon d-none d-lg-block cursor__pointer" data-bs-toggle="offcanvas"
+                                data-bs-target="#search-canvas" aria-controls="search-canvas">
+                                <i class="fa-solid fa-magnifying-glass"></i>
+                            </div>
+                            <div class="icon d-none d-lg-flex align-items-center gap-1 cursor__pointer"
+                                data-bs-toggle="modal" data-bs-target="#login">
+                                <i class="fa-solid fa-circle-user"></i>
+                                <span class="fw-normal">Account</span>
+                            </div>
+                            <div class="icon wish-count count position-relative d-none d-lg-block cursor__pointer"
+                                data-count="0" data-bs-toggle="offcanvas" data-bs-target="#wish-canvas"
+                                aria-controls="wish-canvas">
+                                <i class="fa-regular fa-heart"></i>
+                                <div class="wishlist"></div>
+                            </div>
+
+                            <div class="icon cart-count count position-relative cursor__pointer" data-count="0">
+                                <i class="fa-solid fa-cart-shopping" data-bs-toggle="offcanvas"
+                                    data-bs-target="#offcanvasRight" aria-controls="offcanvasRight"></i>
+                            </div>
+                        </div>
+
+
+
+                    </div>
+
+                </nav>
+                <div class="offcanvas offcanvas-end search-canvas rounded-5" tabindex="-1" id="search-canvas"
+                    aria-labelledby="search-canvas">
+                    <div class="offcanvas-header border border-0 border-bottom">
+                        <h5 id="search-canvas" class="p-2 fw-semibold">Search</h5>
+                        <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas"
+                            aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body">
+                        <div class="position-relative">
+                            <input class="form-control form-control-lg border-0 search-bar ps-5" type="text"
+                                placeholder="Search every thing..." aria-label=".form-control-lg example">
+                            <i
+                                class="fa-solid fa-magnifying-glass position-absolute top-50 translate-middle-y search-canvas-icon"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="offcanvas offcanvas-end wish-canvas rounded-5" tabindex="-1" id="wish-canvas"
+                    aria-labelledby="wish-canvas">
+                    <div class="offcanvas-header border border-0 border-bottom">
+                        <h5 id="search-canvas" class="p-2 fw-semibold">Wishlist</h5>
+                        <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas"
+                            aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body wishlist-body">
+
+                    </div>
+                </div>
+                <div class="offcanvas cart-canvas offcanvas-end rounded-5" tabindex="-1" id="offcanvasRight"
+                    aria-labelledby="offcanvasRightLabel">
+                    <div class="offcanvas-header">
+                        <h5 class="offcanvas-title fw-bold" id="offcanvasRightLabel">Your Cart</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body w-100">
+                        <div class="body-head py-3">
+                            <p class="fs__14 text-center">
+                                Add $<span class="badge border__main offer-price">500.00</span> to cart and get free
+                                shipping!
+                            </p>
+                            <div class="progress offer-progress position-relative rounded-pill">
+                                <div class="position-absolute bg-dark  h-100 top-0 start-0"></div>
+
+                            </div>
+                        </div>
+                        <div class="cart-body">
+
+                        </div>
+                    </div>
+                </div>
+                <!-- Modal -->
+                <div class="modal fade login-modal " id="login" tabindex="-1" aria-labelledby="login"
+                    aria-hidden="true">
+                    <div class="modal-dialog modal-xl modal-fullscreen-lg-down 100vh">
+                        <div class="modal-content d-flex flex-row flex-wrap">
+                            <div class="login-image mb-0 h-100 w-50 d-xl-block d-none">
+                                <img class="img-fluid w-100 h-100 object-fit-cover"
+                                    src="./assets/imgs/login_register/collection-speakers.jpg" alt="">
+                            </div>
+                            <div class="login-body w-50">
+                                <div class="modal-header border-0">
+
+                                    </h1>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                        aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                    <h1 class="modal-title fs-5 ms-auto text-center mb-0 pb-0" id="login-title">Login
+                                    </h1>
+                                    <form class="login-form d-flex flex-column gap-3 p-5 mt-0" action="">
+                                        <div>
+                                            <label for="username" class="form-label fs__15 fw-medium">Username or email
+                                                address*</label>
+                                            <input name="username" id="username" class="form-control form-control-lg"
+                                                type="text" aria-label=".form-control-lg username">
+                                        </div>
+                                        <div>
+                                            <label for="password" class="form-label fs__15 fw-medium">password*</label>
+                                            <input name="password" id="password" class="form-control form-control-lg"
+                                                type="password" aria-describedby="passwordHelpBlock">
+                                        </div>
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="checkbox" value="" id="remember">
+                                            <label class="form-check-label fs__15 fw-medium" for="remember">
+                                                Remember me
+                                            </label>
+                                        </div>
+
+                                        <input class="login-submit fs__14 fw-semibold border-0 py-3 rounded-pill"
+                                            type="submit" value="Login">
+
+                                        <div class="p-3 fs__13 fw-bold border d-none">
+                                            Error: <span class="error-message fw-normal"></span>
+                                        </div>
+                                        <div class="text-center">
+                                            <a class="text-decoration-none text-black fs__15 fw-semibold" href="#">Lost
+                                                your
+                                                password?</a>
+                                        </div>
+
+
+                                        <p class="fs__13 text-center mt-3">
+                                            By continuing, you accept the Website Regulations , Regulations for the sale
+                                            of
+                                            alcoholic beverages and the <a href="#">Privacy Policy</a>
+                                        </p>
+                                        <p class="text-center fs__15 mb-0 border border-0 border-top pt-5">
+                                            You dont have an account yet? <a href="./register.html">Register Now</a>
+                                        </p>
+
+                                    </form>
+
+
+
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <main>
+            <section>
+                <div class="custom__container mb-3">
+                    <div class="accordion" id="accordionExample">
+                        <div class="accordion-item cupon-accordion">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                    <div class="d-flex gap-2 fs__14">
+                                        <i class="fa-regular fa-bookmark"></i>
+                                        <span>Have a coupon? click here enter your code </span>
+                                    </div>
+                                </button>
+                            </h2>
+                            <div id="collapseOne" class="accordion-collapse collapse show"
+                                data-bs-parent="#accordionExample">
+                                <div class="accordion-body">
+                                    <input class="form-control form-control-lg checkout-input" type="text"
+                                        placeholder="Cupon code" aria-label=".form-control-lg example">
+                                    <button
+                                        class="apply-cupon border-0 py-2 px-5 fs__14 fw-semibold rounded-pill mt-2">Apply
+                                        Cupon</button>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </section>
+
+            <section>
+                <div class="custom__container">
+                    <div class="row">
+                        <div class="col-lg-8">
+                            <div>
+                                <div class="shipping-offer d-flex flex-column gap-2 px-3 py-2 border rounded-4">
+                                    <div class="d-flex gap-1 align-items-center">
+                                        <img class="img-fluid" src="./assets/imgs/public/services-1.png" />
+                                        <p class="fs__13 fw-semibold pt-3">Add $<span
+                                                class="offer-free-shipping-value">500</span> to cart and get free
+                                            shipping!
+                                        </p>
+                                    </div>
+                                    <div class="free-progress position-relative rounded-pill">
+                                        <span class="position-absolute h-100 top-0 left-0"></span>
+                                    </div>
+                                </div>
+                                <form action="" class="checkout-form d-flex flex-column gap-3 my-3">
+                                    <div class="d-flex gap-3">
+                                        <div class="flex-grow-1">
+                                            <label for="firstName" class="form-label fs__13 fw-medium">First
+                                                name*</label>
+                                            <input class="form-control form-control-lg" type="text"
+                                                aria-label=".form-control-lg example" name="firstName" id="firstName"
+                                                data-required="true">
+                                        </div>
+                                        <div class="flex-grow-1">
+                                            <label for="lastName" class="form-label fs__13 fw-medium">Last name*</label>
+                                            <input type="text" name="lastName" class="form-control form-control-lg"
+                                                id="lastName">
+                                        </div>
+                                    </div>
+
                                     <div>
-                                        <label for="username" class="form-label fs__15 fw-medium">Username or email
-                                            address*</label>
-                                        <input name="username" id="username" class="form-control form-control-lg"
-                                            type="text" aria-label=".form-control-lg username">
+                                        <label for="company" class="form-label fs__13 fw-medium">Company name
+                                            (optional)</label>
+                                        <input class="form-control form-control-lg" type="text"
+                                            aria-label=".form-control-lg example" name="company" id="company"
+                                            data-required="false">
                                     </div>
                                     <div>
-                                        <label for="password" class="form-label fs__15 fw-medium">password*</label>
-                                        <input name="password" id="password" class="form-control form-control-lg"
-                                            type="password" aria-describedby="passwordHelpBlock">
+                                        <label for="country" class="fs__13 fw-medium">Select country*</label>
+                                        <select class="form-select form-control-lg" aria-label="select country"
+                                            id="country">
+                                            <option>Palestine</option>
+                                            <option>Egypt</option>
+                                            <option>Jordan</option>
+                                            <option>Saudi Arabia</option>
+                                            <option>United Arab Emirates</option>
+                                            <option>Qatar</option>
+                                            <option>Lebanon</option>
+                                            <option>Syria</option>
+                                            <option>Iraq</option>
+                                            <option>Morocco</option>
+                                            <option>Algeria</option>
+                                            <option>Yemen</option>
+                                        </select>
                                     </div>
-                                    <div class="form-check">
-                                        <input class="form-check-input" type="checkbox" value="" id="remember">
-                                        <label class="form-check-label fs__15 fw-medium" for="remember">
-                                            Remember me
-                                        </label>
+                                    <div class="d-flex flex-column gap-2">
+                                        <label for="company" class="form-label fs__13 fw-medium">Street address*</label>
+                                        <input class="form-control form-control-lg" type="text"
+                                            aria-label=".form-control-lg example" name="street" id="street"
+                                            data-required="true">
+                                        <input class="form-control form-control-lg checkout-input" type="text"
+                                            aria-label=".form-control-lg example" name="apartment" id="apartment"
+                                            placeholder="Apartment, suit, unit, etc(optional)" data-required="false">
                                     </div>
-
-                                    <input class="login-submit fs__14 fw-semibold border-0 py-3 rounded-pill"
-                                        type="submit" value="Login">
-
-                                    <div class="p-3 fs__13 fw-bold border d-none">
-                                        Error: <span class="error-message fw-normal"></span>
+                                    <div>
+                                        <label for="zip" class="form-label fs__13 fw-medium">Zip code*</label>
+                                        <input class="form-control form-control-lg" type="text"
+                                            aria-label=".form-control-lg example" name="zip" id="zip"
+                                            data-required="true">
                                     </div>
-                                    <div class="text-center">
-                                        <a class="text-decoration-none text-black fs__15 fw-semibold" href="#">Lost your
-                                            password?</a>
+                                    <div>
+                                        <label for="phone" class="form-label fs__13 fw-medium">Phone*</label>
+                                        <input class="form-control form-control-lg" type="text"
+                                            aria-label=".form-control-lg example" name="phone" id="phone"
+                                            data-required="true">
                                     </div>
+                                    <div>
+                                        <label for="email" class="form-label fs__13 fw-medium">Email address*</label>
+                                        <input class="form-control form-control-lg" type="email"
+                                            aria-label=".form-control-lg example" name="email" id="email"
+                                            data-required="true">
+                                    </div>
+                                    <div>
+                                        <label for="notes" class="form-label fs__13 fw-medium">Order notes
+                                            (optional)</label>
 
-
-                                    <p class="fs__13 text-center mt-3">
-                                        By continuing, you accept the Website Regulations , Regulations for the sale of
-                                        alcoholic beverages and the <a href="#">Privacy Policy</a>
-                                    </p>
-                                    <p class="text-center fs__15 mb-0 border border-0 border-top pt-5">
-                                        You dont have an account yet? <a href="./register.html">Register Now</a>
-                                    </p>
-
+                                        <textarea class="form-control" id="notes" rows="3"
+                                            data-required="false"></textarea>
+                                    </div>
                                 </form>
-
-
-
                             </div>
 
                         </div>
-                    </div>
-                </div>
-            </div>
-        </div>
+                        <div class="col-lg-4">
+                            <div class="p-4 d-flex flex-column rounded-4 order-detials">
+                                <span class="fs__15 fw-semibold">Your order</span>
+                                <table class="w-100">
+                                    <thead>
+                                        <tr class="d-flex justify-content-between flex-wrap">
+                                            <td class="fs__13 text__777 fw-semibold">Product</td>
+                                            <td class="fs__13 text__777 fw-semibold">Subtotal</td>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr
+                                            class="d-flex justify-content-between flex-wrap border border-0 border-bottom py-2">
+                                            <td class="fs__13 fw-semibold">3.5mm audio jack cable × 1</td>
+                                            <td class="fs__13 fw-semibold">$7.98</td>
+                                        </tr>
+                                        <tr
+                                            class="d-flex justify-content-between align-items-center flex-wrap border border-0 border-bottom py-2">
+                                            <td class="text__777 fs__13 fw-semibold">Shipping</td>
+                                            <td class="fs__13">
+                                                <div class="form-check">
+                                                    <input class="form-check-input" type="radio" name="radioDefault"
+                                                        id="falte-rate">
+                                                    <label class="form-check-label" for="falte-rate">
+                                                        Flat rate: $15.00
+                                                    </label>
+                                                </div>
+                                                <div class="form-check">
+                                                    <input class="form-check-input" type="radio" name="radioDefault"
+                                                        id="packup">
+                                                    <label class="form-check-label" for="packup">
+                                                        Local pickup
+                                                    </label>
+                                                </div>
+                                            </td>
 
-        <div class="custom__container mb-3">
-            <div class="accordion" id="accordionExample">
-                <div class="accordion-item cupon-accordion">
-                    <h2 class="accordion-header">
-                        <button class="accordion-button" type="button" data-bs-toggle="collapse"
-                            data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                            <div class="d-flex gap-2 fs__14">
-                                <i class="fa-regular fa-bookmark"></i>
-                                <span>Have a coupon? click here enter your code </span>
+                                        </tr>
+                                        <tr class="border border-0 border-bottom">
+
+
+                                            <td class="form-check fs__14 fw-semibold pt-3">
+                                                <input class="form-check-input" type="radio" name="radioDefault"
+                                                    id="direct">
+                                                <label class="form-check-label" for="direct">
+                                                    Direct bank transfer
+                                                </label>
+                                            </td>
+                                            <td class="form-check fs__14 fw-semibold">
+                                                <input class="form-check-input" type="radio" name="radioDefault"
+                                                    id="payments">
+                                                <label class="form-check-label" for="payments">
+                                                    Check payments
+                                                </label>
+                                            </td>
+                                            <td class="form-check fs__14 fw-semibold pb-3">
+                                                <input class="form-check-input" type="radio" name="radioDefault"
+                                                    id="delivery">
+                                                <label class="form-check-label" for="delivery">
+                                                    Cash on delivery
+                                                </label>
+                                            </td>
+
+
+                                        </tr>
+                                    </tbody>
+                                </table>
+
+                                <p class="text__777 fs__13 my-4">
+                                    Your personal data will be used to process your order, support your experience
+                                    throughout
+                                    this website, and for other purposes described in our
+                                    <a href="#" class="fs__13 text-black">
+                                        privacy policy
+                                    </a>
+                                </p>
+
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value="" id="checkDefault">
+                                    <label class="form-check-label fs__13 " for="checkDefault">
+                                        I have read and agree to the website <a href="#">terms and conditions</a>
+                                    </label>
+                                </div>
+
+                                <button
+                                    class="place-order mt-3 bg-dark text-white fs__15 rounded-4 py-3 fw-semibold">Place
+                                    order</button>
+
                             </div>
-                        </button>
-                    </h2>
-                    <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
-                        <div class="accordion-body">
-                            <input class="form-control form-control-lg checkout-input" type="text"
-                                placeholder="Cupon code" aria-label=".form-control-lg example">
-                            <button class="apply-cupon border-0 py-2 px-5 fs__14 fw-semibold rounded-pill mt-2">Apply
-                                Cupon</button>
                         </div>
                     </div>
                 </div>
+            </section>
 
-            </div>
-        </div>
 
-        <div class="custom__container">
-            <div class="row">
-                <div class="col-lg-8">
+            <!-- Services  -->
+            <section>
+                <div class="services px-5">
                     <div>
-                        <div class="shipping-offer d-flex flex-column gap-2 px-3 py-2 border rounded-4">
-                            <div class="d-flex gap-1 align-items-center">
-                                <img class="img-fluid" src="./assets/imgs/public/services-1.png" />
-                                <p class="fs__13 fw-semibold pt-3">Add $<span
-                                        class="offer-free-shipping-value">500</span> to cart and get free shipping!</p>
-                            </div>
-                            <div class="free-progress position-relative rounded-pill">
-                                <span class="position-absolute h-100 top-0 left-0"></span>
-                            </div>
-                        </div>
-                        <form action="" class="checkout-form d-flex flex-column gap-3 my-3">
-                            <div class="d-flex gap-3">
-                                <div class="flex-grow-1">
-                                    <label for="firstName" class="form-label fs__13 fw-medium">First name*</label>
-                                    <input class="form-control form-control-lg" type="text"
-                                        aria-label=".form-control-lg example" name="firstName" id="firstName"
-                                        data-required="true">
+                        <div class="swiper mySwiper services-swiper swiper-customization">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide d-flex gap-4">
+                                    <div class="icon">
+                                        <img src="./assets/imgs/public/service-01.png" alt="">
+                                    </div>
+                                    <div class="content">
+                                        <h3 class="fw-bold fs__16">Customer Service</h3>
+                                        <p class="lh-base text__pColor fs__14">
+                                            it's not actually free we just price it into products.
+                                        </p>
+                                    </div>
                                 </div>
-                                <div class="flex-grow-1">
-                                    <label for="lastName" class="form-label fs__13 fw-medium">Last name*</label>
-                                    <input type="text" name="lastName" class="form-control form-control-lg"
-                                        id="lastName">
+                                <div class="swiper-slide d-flex gap-4">
+                                    <div class="icon">
+                                        <img src="./assets/imgs/public/services-1.png" alt="">
+                                    </div>
+                                    <div class="content">
+                                        <h3 class="fw-bold fs__16">FastFree Shipping</h3>
+                                        <p class="lh-base text__pColor fs__14">
+                                            Get free shipping in order of $150 or more (within the US)
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide d-flex gap-4">
+                                    <div class="icon">
+                                        <img src="./assets/imgs/public/services-2.png" alt="">
+                                    </div>
+                                    <div class="content">
+                                        <h3 class="fw-bold fs__16">Returns & Exchanges</h3>
+                                        <p class="lh-base text__pColor fs__14">
+                                            We offer free returns and exchanges withing 30 days of purchase.
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide d-flex gap-4">
+                                    <div class="icon">
+                                        <img src="./assets/imgs/public/services-3.png" alt="">
+                                    </div>
+                                    <div class="content">
+                                        <h3 class="fw-bold fs__16">Secure Payment</h3>
+                                        <p class="lh-base text__pColor fs__14">
+                                            Your payment information are proccessed securely and encrypted
+                                        </p>
+                                    </div>
                                 </div>
                             </div>
 
-                            <div>
-                                <label for="company" class="form-label fs__13 fw-medium">Company name (optional)</label>
-                                <input class="form-control form-control-lg" type="text"
-                                    aria-label=".form-control-lg example" name="company" id="company"
-                                    data-required="false">
-                            </div>
-                            <div>
-                                <label for="country" class="fs__13 fw-medium">Select country*</label>
-                                <select class="form-select form-control-lg" aria-label="select country" id="country">
-                                    <option>Palestine</option>
-                                    <option>Egypt</option>
-                                    <option>Jordan</option>
-                                    <option>Saudi Arabia</option>
-                                    <option>United Arab Emirates</option>
-                                    <option>Qatar</option>
-                                    <option>Lebanon</option>
-                                    <option>Syria</option>
-                                    <option>Iraq</option>
-                                    <option>Morocco</option>
-                                    <option>Algeria</option>
-                                    <option>Yemen</option>
-                                </select>
-                            </div>
-                            <div class="d-flex flex-column gap-2">
-                                <label for="company" class="form-label fs__13 fw-medium">Street address*</label>
-                                <input class="form-control form-control-lg" type="text"
-                                    aria-label=".form-control-lg example" name="street" id="street"
-                                    data-required="true">
-                                <input class="form-control form-control-lg checkout-input" type="text"
-                                    aria-label=".form-control-lg example" name="apartment" id="apartment"
-                                    placeholder="Apartment, suit, unit, etc(optional)" data-required="false">
-                            </div>
-                            <div>
-                                <label for="zip" class="form-label fs__13 fw-medium">Zip code*</label>
-                                <input class="form-control form-control-lg" type="text"
-                                    aria-label=".form-control-lg example" name="zip" id="zip" data-required="true">
-                            </div>
-                            <div>
-                                <label for="phone" class="form-label fs__13 fw-medium">Phone*</label>
-                                <input class="form-control form-control-lg" type="text"
-                                    aria-label=".form-control-lg example" name="phone" id="phone" data-required="true">
-                            </div>
-                            <div>
-                                <label for="email" class="form-label fs__13 fw-medium">Email address*</label>
-                                <input class="form-control form-control-lg" type="email"
-                                    aria-label=".form-control-lg example" name="email" id="email" data-required="true">
-                            </div>
-                            <div>
-                                <label for="notes" class="form-label fs__13 fw-medium">Order notes (optional)</label>
 
-                                <textarea class="form-control" id="notes" rows="3" data-required="false"></textarea>
-                            </div>
-                        </form>
-                    </div>
-
-                </div>
-                <div class="col-lg-4">
-                    <div class="p-4 d-flex flex-column rounded-4 order-detials">
-                        <span class="fs__15 fw-semibold">Your order</span>
-                        <table class="w-100">
-                            <thead>
-                                <tr class="d-flex justify-content-between flex-wrap">
-                                    <td class="fs__13 text__777 fw-semibold">Product</td>
-                                    <td class="fs__13 text__777 fw-semibold">Subtotal</td>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr class="d-flex justify-content-between flex-wrap border border-0 border-bottom py-2">
-                                    <td class="fs__13 fw-semibold">3.5mm audio jack cable × 1</td>
-                                    <td class="fs__13 fw-semibold">$7.98</td>
-                                </tr>
-                                <tr
-                                    class="d-flex justify-content-between align-items-center flex-wrap border border-0 border-bottom py-2">
-                                    <td class="text__777 fs__13 fw-semibold">Shipping</td>
-                                    <td class="fs__13">
-                                        <div class="form-check">
-                                            <input class="form-check-input" type="radio" name="radioDefault"
-                                                id="falte-rate">
-                                            <label class="form-check-label" for="falte-rate">
-                                                Flat rate: $15.00
-                                            </label>
-                                        </div>
-                                        <div class="form-check">
-                                            <input class="form-check-input" type="radio" name="radioDefault"
-                                                id="packup">
-                                            <label class="form-check-label" for="packup">
-                                                Local pickup
-                                            </label>
-                                        </div>
-                                    </td>
-
-                                </tr>
-                                <tr class="border border-0 border-bottom">
-
-
-                                    <td class="form-check fs__14 fw-semibold pt-3">
-                                        <input class="form-check-input" type="radio" name="radioDefault" id="direct">
-                                        <label class="form-check-label" for="direct">
-                                            Direct bank transfer
-                                        </label>
-                                    </td>
-                                    <td class="form-check fs__14 fw-semibold">
-                                        <input class="form-check-input" type="radio" name="radioDefault" id="payments">
-                                        <label class="form-check-label" for="payments">
-                                            Check payments
-                                        </label>
-                                    </td>
-                                    <td class="form-check fs__14 fw-semibold pb-3">
-                                        <input class="form-check-input" type="radio" name="radioDefault" id="delivery">
-                                        <label class="form-check-label" for="delivery">
-                                            Cash on delivery
-                                        </label>
-                                    </td>
-
-
-                                </tr>
-                            </tbody>
-                        </table>
-
-                        <p class="text__777 fs__13 my-4">
-                            Your personal data will be used to process your order, support your experience throughout
-                            this website, and for other purposes described in our
-                            <a href="#" class="fs__13 text-black">
-                                privacy policy
-                            </a>
-                        </p>
-
-                        <div class="form-check">
-                            <input class="form-check-input" type="checkbox" value="" id="checkDefault">
-                            <label class="form-check-label fs__13 " for="checkDefault">
-                                I have read and agree to the website <a href="#">terms and conditions</a>
-                            </label>
-                        </div>
-
-                        <button class="place-order mt-3 bg-dark text-white fs__15 rounded-4 py-3 fw-semibold">Place
-                            order</button>
-
-                    </div>
-                </div>
-            </div>
-        </div>
-
-
-        <!-- Services  -->
-        <div class="services px-5">
-            <div>
-                <div class="swiper mySwiper services-swiper swiper-customization">
-                    <div class="swiper-wrapper">
-                        <div class="swiper-slide d-flex gap-4">
-                            <div class="icon">
-                                <img src="./assets/imgs/public/service-01.png" alt="">
-                            </div>
-                            <div class="content">
-                                <h3 class="fw-bold fs__16">Customer Service</h3>
-                                <p class="lh-base text__pColor fs__14">
-                                    it's not actually free we just price it into products.
-                                </p>
-                            </div>
-                        </div>
-                        <div class="swiper-slide d-flex gap-4">
-                            <div class="icon">
-                                <img src="./assets/imgs/public/services-1.png" alt="">
-                            </div>
-                            <div class="content">
-                                <h3 class="fw-bold fs__16">FastFree Shipping</h3>
-                                <p class="lh-base text__pColor fs__14">
-                                    Get free shipping in order of $150 or more (within the US)
-                                </p>
-                            </div>
-                        </div>
-                        <div class="swiper-slide d-flex gap-4">
-                            <div class="icon">
-                                <img src="./assets/imgs/public/services-2.png" alt="">
-                            </div>
-                            <div class="content">
-                                <h3 class="fw-bold fs__16">Returns & Exchanges</h3>
-                                <p class="lh-base text__pColor fs__14">
-                                    We offer free returns and exchanges withing 30 days of purchase.
-                                </p>
-                            </div>
-                        </div>
-                        <div class="swiper-slide d-flex gap-4">
-                            <div class="icon">
-                                <img src="./assets/imgs/public/services-3.png" alt="">
-                            </div>
-                            <div class="content">
-                                <h3 class="fw-bold fs__16">Secure Payment</h3>
-                                <p class="lh-base text__pColor fs__14">
-                                    Your payment information are proccessed securely and encrypted
-                                </p>
-                            </div>
+                            <div class="d-none d-md-block d-lg-none swiper-button swiper-button-next"></div>
+                            <div class="d-none d-md-block d-lg-none swiper-button swiper-button-prev"></div>
                         </div>
                     </div>
-
-
-                    <div class="d-none d-md-block d-lg-none swiper-button swiper-button-next"></div>
-                    <div class="d-none d-md-block d-lg-none swiper-button swiper-button-prev"></div>
                 </div>
-            </div>
-        </div>
+            </section>
+        </main>
     </div>
 
     <div class="mobile-icons py-3 px-2 d-lg-none position-fixed w-100 bottom-0 start-0 bg-white px-3">

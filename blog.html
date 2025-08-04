@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -25,6 +26,7 @@
     <!-- Custom CSS  -->
     <link rel="stylesheet" href="./assets/css/main.css" />
 </head>
+
 <body>
 
     <!-- Tob Bar  -->
@@ -99,387 +101,414 @@
     </div>
 
     <div class="page rounded-page">
-       <div class="container-fluid px-1 px-lg-4 py-4">
-            <nav class="navbar navbar-expand-lg ">
-                <div class="container-fluid">
-                    <a class="navbar-brand site-logo" href="#">
-                        <img src="./assets/imgs/public/logo-black.png" alt="">
-                    </a>
-                    <button class="order-first border border-0 navbar-toggler" type="button" data-bs-toggle="offcanvas"
-                        data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+        <header>
+            <div class="container-fluid px-1 px-lg-4 py-4">
+                <nav class="navbar navbar-expand-lg ">
+                    <div class="container-fluid">
+                        <a class="navbar-brand site-logo" href="#">
+                            <img src="./assets/imgs/public/logo-black.png" alt="">
+                        </a>
+                        <button class="order-first border border-0 navbar-toggler" type="button"
+                            data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
+                            aria-controls="offcanvasNavbar">
 
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
-                    <div class="collapse navbar-collapse d-none d-lg-flex" id="navbarSupportedContent">
-                        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                            <li class="nav-item">
-                                <a class="nav-link active" aria-current="page" href="./index.html">Home</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="./shop.html?category=all&page=1">Shop</a>
-                            </li>
-
-                            <li class="nav-item"><a class="nav-link" href="./shop.html?category=headphones&page=1">Headphones</a>
-                            </li>
-                            <li class="nav-item"><a class="nav-link" href="./shop.html?category=accessories&page=1">Accessories</a>
-                            </li>
-
-                            <li class="nav-item">
-                                <a class="nav-link" href="./blogs.html">Blog</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="./contact.html">Contact</a>
-                            </li>
-
-                        </ul>
-                    </div>
-                    <div class="offcanvas nav-canvas offcanvas-start rounded-4 d-lg-none" tabindex="-1"
-                        id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
-                        <div class="offcanvas-header">
-                            <h5 class="offcanvas-title fs-6" id="offcanvasNavbarLabel">Menu</h5>
-                            <button type="button" class="btn-close" data-bs-dismiss="offcanvas"
-                                aria-label="Close"></button>
-                        </div>
-                        <div class="offcanvas-body">
-                            <ul class="navbar-nav justify-content-start flex-grow-1 pe-3">
-                                <li class="nav-item"><a class="nav-link active" href="./index.html">Home</a></li>
-                                <li class="nav-item"><a class="nav-link" href="./shop.html?category=all&page=1">Shop</a>
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <div class="collapse navbar-collapse d-none d-lg-flex" id="navbarSupportedContent">
+                            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                                <li class="nav-item">
+                                    <a class="nav-link active" aria-current="page" href="./index.html">Home</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="./shop.html?category=all&page=1">Shop</a>
                                 </li>
 
-                                <li class="nav-item"><a class="nav-link" href="./shop.html?category=headphones&page=1">Headphones</a>
+                                <li class="nav-item"><a class="nav-link"
+                                        href="./shop.html?category=headphones&page=1">Headphones</a>
                                 </li>
-                                <li class="nav-item"><a class="nav-link" href="./shop.html?category=accessories&page=1">Accessories</a>
+                                <li class="nav-item"><a class="nav-link"
+                                        href="./shop.html?category=accessories&page=1">Accessories</a>
                                 </li>
 
-                                <li class="nav-item"><a class="nav-link" href="./blogs.html">Blog</a></li>
-                                <li class="nav-item"><a class="nav-link" href="./contact.html">Contact</a></li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="./blogs.html">Blog</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="./contact.html">Contact</a>
+                                </li>
+
                             </ul>
-
                         </div>
-                    </div>
-                    <div class="icons d-flex gap-4 align-items-center">
-                        <div class="icon d-none d-lg-block cursor__pointer"  data-bs-toggle="offcanvas" data-bs-target="#search-canvas" aria-controls="search-canvas">
-                            <i class="fa-solid fa-magnifying-glass"></i>
-                        </div>
-                        <div class="icon d-none d-lg-flex align-items-center gap-1 cursor__pointer"
-                            data-bs-toggle="modal" data-bs-target="#login">
-                            <i class="fa-solid fa-circle-user"></i>
-                            <span class="fw-normal">Account</span>
-                        </div>
-                        <div class="icon wish-count count position-relative d-none d-lg-block cursor__pointer" data-count="0" data-bs-toggle="offcanvas" data-bs-target="#wish-canvas" aria-controls="wish-canvas">
-                            <i class="fa-regular fa-heart"></i>
-                            <div class="wishlist"></div>
-                        </div>
-                        
-                        <div class="icon cart-count count position-relative cursor__pointer" data-count="0">
-                            <i class="fa-solid fa-cart-shopping" data-bs-toggle="offcanvas"
-                                data-bs-target="#offcanvasRight" aria-controls="offcanvasRight"></i>
-                        </div>
-                    </div>
-
-
-
-                </div>
-
-            </nav>
-            <div class="offcanvas offcanvas-end search-canvas rounded-5" tabindex="-1" id="search-canvas"
-                aria-labelledby="search-canvas">
-                <div class="offcanvas-header border border-0 border-bottom">
-                    <h5 id="search-canvas" class = "p-2 fw-semibold">Search</h5>
-                    <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas"
-                        aria-label="Close"></button>
-                </div>
-                <div class="offcanvas-body">
-                    <div class = "position-relative">
-                        <input class="form-control form-control-lg border-0 search-bar ps-5" type="text" placeholder="Search every thing..." aria-label=".form-control-lg example">
-                        <i class="fa-solid fa-magnifying-glass position-absolute top-50 translate-middle-y search-canvas-icon"></i>
-                    </div>
-                </div>
-            </div>
-            <div class="offcanvas offcanvas-end wish-canvas rounded-5" tabindex="-1" id="wish-canvas"
-                aria-labelledby="wish-canvas">
-                <div class="offcanvas-header border border-0 border-bottom">
-                    <h5 id="search-canvas" class = "p-2 fw-semibold">Wishlist</h5>
-                    <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas"
-                        aria-label="Close"></button>
-                </div>
-                <div class="offcanvas-body wishlist-body">
-                    
-                </div>
-            </div>
-            <div class="offcanvas cart-canvas offcanvas-end rounded-5" tabindex="-1" id="offcanvasRight"
-                aria-labelledby="offcanvasRightLabel">
-                <div class="offcanvas-header">
-                    <h5 class="offcanvas-title fw-bold" id="offcanvasRightLabel">Your Cart</h5>
-                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-                </div>
-                <div class="offcanvas-body w-100">
-                    <div class="body-head py-3">
-                        <p class="fs__14 text-center">
-                            Add $<span class="badge border__main offer-price">500.00</span> to cart and get free
-                            shipping!
-                        </p>
-                        <div class="progress offer-progress position-relative rounded-pill">
-                            <div class = "position-absolute bg-dark  h-100 top-0 start-0"></div>
-
-                        </div>
-                    </div>
-                    <div class="cart-body">
-                        
-                    </div>
-                </div>
-            </div>
-            <!-- Modal -->
-            <div class="modal fade login-modal " id="login" tabindex="-1" aria-labelledby="login" aria-hidden="true">
-                <div class="modal-dialog modal-xl modal-fullscreen-lg-down 100vh">
-                    <div class="modal-content d-flex flex-row flex-wrap">
-                        <div class="login-image mb-0 h-100 w-50 d-xl-block d-none">
-                            <img class="img-fluid w-100 h-100 object-fit-cover"
-                                src="./assets/imgs/login_register/collection-speakers.jpg" alt="">
-                        </div>
-                        <div class="login-body w-50">
-                            <div class="modal-header border-0">
-
-                                </h1>
-                                <button type="button" class="btn-close" data-bs-dismiss="modal"
+                        <div class="offcanvas nav-canvas offcanvas-start rounded-4 d-lg-none" tabindex="-1"
+                            id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+                            <div class="offcanvas-header">
+                                <h5 class="offcanvas-title fs-6" id="offcanvasNavbarLabel">Menu</h5>
+                                <button type="button" class="btn-close" data-bs-dismiss="offcanvas"
                                     aria-label="Close"></button>
                             </div>
-                            <div class="modal-body">
-                                <h1 class="modal-title fs-5 ms-auto text-center mb-0 pb-0" id="login-title">Login</h1>
-                                <form class="login-form d-flex flex-column gap-3 p-5 mt-0" action="">
-                                    <div>
-                                        <label for="username" class="form-label fs__15 fw-medium">Username or email
-                                            address*</label>
-                                        <input name="username" id="username" class="form-control form-control-lg"
-                                            type="text" aria-label=".form-control-lg username">
-                                    </div>
-                                    <div>
-                                        <label for="password" class="form-label fs__15 fw-medium">password*</label>
-                                        <input name="password" id="password" class="form-control form-control-lg"
-                                            type="password" aria-describedby="passwordHelpBlock">
-                                    </div>
-                                    <div class="form-check">
-                                        <input class="form-check-input" type="checkbox" value="" id="remember">
-                                        <label class="form-check-label fs__15 fw-medium" for="remember">
-                                            Remember me
-                                        </label>
-                                    </div>
+                            <div class="offcanvas-body">
+                                <ul class="navbar-nav justify-content-start flex-grow-1 pe-3">
+                                    <li class="nav-item"><a class="nav-link active" href="./index.html">Home</a></li>
+                                    <li class="nav-item"><a class="nav-link"
+                                            href="./shop.html?category=all&page=1">Shop</a>
+                                    </li>
 
-                                    <input class="login-submit fs__14 fw-semibold border-0 py-3 rounded-pill"
-                                        type="submit" value="Login">
+                                    <li class="nav-item"><a class="nav-link"
+                                            href="./shop.html?category=headphones&page=1">Headphones</a>
+                                    </li>
+                                    <li class="nav-item"><a class="nav-link"
+                                            href="./shop.html?category=accessories&page=1">Accessories</a>
+                                    </li>
 
-                                    <div class="p-3 fs__13 fw-bold border d-none">
-                                        Error: <span class="error-message fw-normal"></span>
-                                    </div>
-                                    <div class="text-center">
-                                        <a class="text-decoration-none text-black fs__15 fw-semibold" href="#">Lost your
-                                            password?</a>
-                                    </div>
-
-
-                                    <p class="fs__13 text-center mt-3">
-                                        By continuing, you accept the Website Regulations , Regulations for the sale of
-                                        alcoholic beverages and the <a href="#">Privacy Policy</a>
-                                    </p>
-                                    <p class="text-center fs__15 mb-0 border border-0 border-top pt-5">
-                                        You dont have an account yet? <a href="./register.html">Register Now</a>
-                                    </p>
-
-                                </form>
-
-
+                                    <li class="nav-item"><a class="nav-link" href="./blogs.html">Blog</a></li>
+                                    <li class="nav-item"><a class="nav-link" href="./contact.html">Contact</a></li>
+                                </ul>
 
                             </div>
+                        </div>
+                        <div class="icons d-flex gap-4 align-items-center">
+                            <div class="icon d-none d-lg-block cursor__pointer" data-bs-toggle="offcanvas"
+                                data-bs-target="#search-canvas" aria-controls="search-canvas">
+                                <i class="fa-solid fa-magnifying-glass"></i>
+                            </div>
+                            <div class="icon d-none d-lg-flex align-items-center gap-1 cursor__pointer"
+                                data-bs-toggle="modal" data-bs-target="#login">
+                                <i class="fa-solid fa-circle-user"></i>
+                                <span class="fw-normal">Account</span>
+                            </div>
+                            <div class="icon wish-count count position-relative d-none d-lg-block cursor__pointer"
+                                data-count="0" data-bs-toggle="offcanvas" data-bs-target="#wish-canvas"
+                                aria-controls="wish-canvas">
+                                <i class="fa-regular fa-heart"></i>
+                                <div class="wishlist"></div>
+                            </div>
+
+                            <div class="icon cart-count count position-relative cursor__pointer" data-count="0">
+                                <i class="fa-solid fa-cart-shopping" data-bs-toggle="offcanvas"
+                                    data-bs-target="#offcanvasRight" aria-controls="offcanvasRight"></i>
+                            </div>
+                        </div>
+
+
+
+                    </div>
+
+                </nav>
+                <div class="offcanvas offcanvas-end search-canvas rounded-5" tabindex="-1" id="search-canvas"
+                    aria-labelledby="search-canvas">
+                    <div class="offcanvas-header border border-0 border-bottom">
+                        <h5 id="search-canvas" class="p-2 fw-semibold">Search</h5>
+                        <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas"
+                            aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body">
+                        <div class="position-relative">
+                            <input class="form-control form-control-lg border-0 search-bar ps-5" type="text"
+                                placeholder="Search every thing..." aria-label=".form-control-lg example">
+                            <i
+                                class="fa-solid fa-magnifying-glass position-absolute top-50 translate-middle-y search-canvas-icon"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="offcanvas offcanvas-end wish-canvas rounded-5" tabindex="-1" id="wish-canvas"
+                    aria-labelledby="wish-canvas">
+                    <div class="offcanvas-header border border-0 border-bottom">
+                        <h5 id="search-canvas" class="p-2 fw-semibold">Wishlist</h5>
+                        <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas"
+                            aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body wishlist-body">
+
+                    </div>
+                </div>
+                <div class="offcanvas cart-canvas offcanvas-end rounded-5" tabindex="-1" id="offcanvasRight"
+                    aria-labelledby="offcanvasRightLabel">
+                    <div class="offcanvas-header">
+                        <h5 class="offcanvas-title fw-bold" id="offcanvasRightLabel">Your Cart</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body w-100">
+                        <div class="body-head py-3">
+                            <p class="fs__14 text-center">
+                                Add $<span class="badge border__main offer-price">500.00</span> to cart and get free
+                                shipping!
+                            </p>
+                            <div class="progress offer-progress position-relative rounded-pill">
+                                <div class="position-absolute bg-dark  h-100 top-0 start-0"></div>
+
+                            </div>
+                        </div>
+                        <div class="cart-body">
 
                         </div>
                     </div>
                 </div>
-            </div>
-        </div>
-
-        <div class="custom__container">
-            
-            <div class="row justify-content-between gx-5">
-                
-                    <div class="col-lg-9">
-                        <div class="blog-content d-flex flex-column gap-4 h-100 py-4 position-relative">
-                            <h2 class="blog-heading lh-base underline__hover fw-bold"></h2>
-                            <div class="blog-img w-100">
-                                <img class = "img-fluid w-100 rounded-4" src="" alt="">
+                <!-- Modal -->
+                <div class="modal fade login-modal " id="login" tabindex="-1" aria-labelledby="login"
+                    aria-hidden="true">
+                    <div class="modal-dialog modal-xl modal-fullscreen-lg-down 100vh">
+                        <div class="modal-content d-flex flex-row flex-wrap">
+                            <div class="login-image mb-0 h-100 w-50 d-xl-block d-none">
+                                <img class="img-fluid w-100 h-100 object-fit-cover"
+                                    src="./assets/imgs/login_register/collection-speakers.jpg" alt="">
                             </div>
-                            <ul class = "list-unstyled d-flex">
-                                <li class = "publish-date pe-2 border border-0 border-end fs__13 text__777"></li>
-                                <li class = "category ps-2 fs__13 text__777"></li>
-                            </ul>
-                            <div class="description lh-base">
+                            <div class="login-body w-50">
+                                <div class="modal-header border-0">
 
-                            </div>               
-                        </div> 
-                       
-                    </div>
-                    <div class="col-lg-3">
-                        <div class="widgets w-100 py-4">
-                            <div>
-                                <h3 class = "fs__18 my-3 fw-semibold">Post Widget</h3>
-                                <div class="blogs-widgets d-flex flex-column gap-3">
+                                    </h1>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                        aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                    <h1 class="modal-title fs-5 ms-auto text-center mb-0 pb-0" id="login-title">Login
+                                    </h1>
+                                    <form class="login-form d-flex flex-column gap-3 p-5 mt-0" action="">
+                                        <div>
+                                            <label for="username" class="form-label fs__15 fw-medium">Username or email
+                                                address*</label>
+                                            <input name="username" id="username" class="form-control form-control-lg"
+                                                type="text" aria-label=".form-control-lg username">
+                                        </div>
+                                        <div>
+                                            <label for="password" class="form-label fs__15 fw-medium">password*</label>
+                                            <input name="password" id="password" class="form-control form-control-lg"
+                                                type="password" aria-describedby="passwordHelpBlock">
+                                        </div>
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="checkbox" value="" id="remember">
+                                            <label class="form-check-label fs__15 fw-medium" for="remember">
+                                                Remember me
+                                            </label>
+                                        </div>
+
+                                        <input class="login-submit fs__14 fw-semibold border-0 py-3 rounded-pill"
+                                            type="submit" value="Login">
+
+                                        <div class="p-3 fs__13 fw-bold border d-none">
+                                            Error: <span class="error-message fw-normal"></span>
+                                        </div>
+                                        <div class="text-center">
+                                            <a class="text-decoration-none text-black fs__15 fw-semibold" href="#">Lost
+                                                your
+                                                password?</a>
+                                        </div>
+
+
+                                        <p class="fs__13 text-center mt-3">
+                                            By continuing, you accept the Website Regulations , Regulations for the sale
+                                            of
+                                            alcoholic beverages and the <a href="#">Privacy Policy</a>
+                                        </p>
+                                        <p class="text-center fs__15 mb-0 border border-0 border-top pt-5">
+                                            You dont have an account yet? <a href="./register.html">Register Now</a>
+                                        </p>
+
+                                    </form>
+
+
 
                                 </div>
-                            </div>
-                            <div class="social-media-wedgets">
-                                <h3 class = "fs__18 my-3 fw-semibold">Social Media Widget</h3>
-                                <div class = "d-flex flex-column gap-3">
-                                    <div class="social-widget facebook d-flex justify-content-between align-items-center fs__14 px-3 py-2 rounded-pill text-white cursor__pointer">
-                                        <div class = "d-flex align-items-center gap-3">
-                                            <div class="social-icon">
-                                            <i class="fa-brands fa-facebook-f"></i>
-                                            </div>
-                                            <span>facebook</span>
-                                        </div>
-                                        <span class = "text-uppercase">follow</span>
-                                        
-                                    </div>
-                                    <div class="social-widget insta d-flex justify-content-between align-items-center fs__14 px-3 py-2 rounded-pill text-white cursor__pointer">
-                                        <div class = "d-flex align-items-center gap-3">
-                                            <div class="social-icon">
-                                                <i class="fa-brands fa-instagram"></i>
-                                            </div>
-                                            <span>instagram</span>
-                                        </div>
-                                        <span class = "text-uppercase">follow</span>
-                                        
-                                    </div>
-                                    <div class="social-widget youtube d-flex justify-content-between align-items-center fs__14 px-3 py-2 rounded-pill text-white cursor__pointer">
-                                        <div class = "d-flex align-items-center gap-3">
-                                            <div class="social-icon">
-                                                <i class="fa-brands fa-youtube"></i>
-                                            </div>
-                                            <span>youtube</span>
-                                        </div>
-                                        <span class = "text-uppercase">follow</span>
-                                        
-                                    </div>
-                                    <div class="social-widget pinterest d-flex justify-content-between align-items-center fs__14 px-3 py-2 rounded-pill text-white cursor__pointer">
-                                        <div class = "d-flex align-items-center gap-3">
-                                            <div class="social-icon">
-                                            <i class="fa-brands fa-pinterest"></i>
-                                            </div>
-                                            <span>pinterest</span>
-                                        </div>
-                                        <span class = "text-uppercase">follow</span>
-                                        
-                                    </div>
-                                    <div class="social-widget facebook d-flex justify-content-between align-items-center fs__14 px-3 py-2 rounded-pill text-white cursor__pointer">
-                                        <div class = "d-flex align-items-center gap-3">
-                                            <div class="social-icon">
-                                            <i class="fa-brands fa-facebook-f"></i>
-                                            </div>
-                                            <span>facebook</span>
-                                        </div>
-                                        <span class = "text-uppercase">follow</span>
-                                        
-                                    </div>
-                                </div>
-                            </div>
 
-                        </div>
-                    </div>
-            </div>
-            
-            <!-- <h3 class = "fs-5 fw-bold">3 thoughts on <q class = "thoughts"></q> </h3> -->
-        
-        </div>
-
-
-
-
-        <!-- Services  -->
-        <div class="services px-5">
-            <div>
-                <div class="swiper mySwiper services-swiper swiper-customization">
-                    <div class="swiper-wrapper">
-                        <div class="swiper-slide d-flex gap-4">
-                            <div class="icon">
-                                <img src="./assets/imgs/public/service-01.png" alt="">
-                            </div>
-                            <div class="content">
-                                <h3 class="fw-bold fs__16">Customer Service</h3>
-                                <p class="lh-base text__pColor fs__14">
-                                    it's not actually free we just price it into products.
-                                </p>
-                            </div>
-                        </div>
-                        <div class="swiper-slide d-flex gap-4">
-                            <div class="icon">
-                                <img src="./assets/imgs/public/services-1.png" alt="">
-                            </div>
-                            <div class="content">
-                                <h3 class="fw-bold fs__16">FastFree Shipping</h3>
-                                <p class="lh-base text__pColor fs__14">
-                                    Get free shipping in order of $150 or more (within the US)
-                                </p>
-                            </div>
-                        </div>
-                        <div class="swiper-slide d-flex gap-4">
-                            <div class="icon">
-                                <img src="./assets/imgs/public/services-2.png" alt="">
-                            </div>
-                            <div class="content">
-                                <h3 class="fw-bold fs__16">Returns & Exchanges</h3>
-                                <p class="lh-base text__pColor fs__14">
-                                    We offer free returns and exchanges withing 30 days of purchase.
-                                </p>
-                            </div>
-                        </div>
-                        <div class="swiper-slide d-flex gap-4">
-                            <div class="icon">
-                                <img src="./assets/imgs/public/services-3.png" alt="">
-                            </div>
-                            <div class="content">
-                                <h3 class="fw-bold fs__16">Secure Payment</h3>
-                                <p class="lh-base text__pColor fs__14">
-                                    Your payment information are proccessed securely and encrypted
-                                </p>
                             </div>
                         </div>
                     </div>
-
-
-                    <div class="d-none d-md-block d-lg-none swiper-button swiper-button-next"></div>
-                    <div class="d-none d-md-block d-lg-none swiper-button swiper-button-prev"></div>
                 </div>
             </div>
-        </div>
+        </header>
+
+        <main>
+            <section>
+                <div class="custom__container">
+
+                    <div class="row justify-content-between gx-5">
+
+                        <div class="col-lg-9">
+                            <div class="blog-content d-flex flex-column gap-4 h-100 py-4 position-relative">
+                                <h2 class="blog-heading lh-base underline__hover fw-bold"></h2>
+                                <div class="blog-img w-100">
+                                    <img class="img-fluid w-100 rounded-4" src="" alt="">
+                                </div>
+                                <ul class="list-unstyled d-flex">
+                                    <li class="publish-date pe-2 border border-0 border-end fs__13 text__777"></li>
+                                    <li class="category ps-2 fs__13 text__777"></li>
+                                </ul>
+                                <div class="description lh-base">
+
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="col-lg-3">
+                            <div class="widgets w-100 py-4">
+                                <div>
+                                    <h3 class="fs__18 my-3 fw-semibold">Post Widget</h3>
+                                    <div class="blogs-widgets d-flex flex-column gap-3">
+
+                                    </div>
+                                </div>
+                                <div class="social-media-wedgets">
+                                    <h3 class="fs__18 my-3 fw-semibold">Social Media Widget</h3>
+                                    <div class="d-flex flex-column gap-3">
+                                        <div
+                                            class="social-widget facebook d-flex justify-content-between align-items-center fs__14 px-3 py-2 rounded-pill text-white cursor__pointer">
+                                            <div class="d-flex align-items-center gap-3">
+                                                <div class="social-icon">
+                                                    <i class="fa-brands fa-facebook-f"></i>
+                                                </div>
+                                                <span>facebook</span>
+                                            </div>
+                                            <span class="text-uppercase">follow</span>
+
+                                        </div>
+                                        <div
+                                            class="social-widget insta d-flex justify-content-between align-items-center fs__14 px-3 py-2 rounded-pill text-white cursor__pointer">
+                                            <div class="d-flex align-items-center gap-3">
+                                                <div class="social-icon">
+                                                    <i class="fa-brands fa-instagram"></i>
+                                                </div>
+                                                <span>instagram</span>
+                                            </div>
+                                            <span class="text-uppercase">follow</span>
+
+                                        </div>
+                                        <div
+                                            class="social-widget youtube d-flex justify-content-between align-items-center fs__14 px-3 py-2 rounded-pill text-white cursor__pointer">
+                                            <div class="d-flex align-items-center gap-3">
+                                                <div class="social-icon">
+                                                    <i class="fa-brands fa-youtube"></i>
+                                                </div>
+                                                <span>youtube</span>
+                                            </div>
+                                            <span class="text-uppercase">follow</span>
+
+                                        </div>
+                                        <div
+                                            class="social-widget pinterest d-flex justify-content-between align-items-center fs__14 px-3 py-2 rounded-pill text-white cursor__pointer">
+                                            <div class="d-flex align-items-center gap-3">
+                                                <div class="social-icon">
+                                                    <i class="fa-brands fa-pinterest"></i>
+                                                </div>
+                                                <span>pinterest</span>
+                                            </div>
+                                            <span class="text-uppercase">follow</span>
+
+                                        </div>
+                                        <div
+                                            class="social-widget facebook d-flex justify-content-between align-items-center fs__14 px-3 py-2 rounded-pill text-white cursor__pointer">
+                                            <div class="d-flex align-items-center gap-3">
+                                                <div class="social-icon">
+                                                    <i class="fa-brands fa-facebook-f"></i>
+                                                </div>
+                                                <span>facebook</span>
+                                            </div>
+                                            <span class="text-uppercase">follow</span>
+
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- <h3 class = "fs-5 fw-bold">3 thoughts on <q class = "thoughts"></q> </h3> -->
+
+                </div>
+            </section>
+
+
+
+
+            <!-- Services  -->
+            <section>
+                <div class="services px-5">
+                    <div>
+                        <div class="swiper mySwiper services-swiper swiper-customization">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide d-flex gap-4">
+                                    <div class="icon">
+                                        <img src="./assets/imgs/public/service-01.png" alt="">
+                                    </div>
+                                    <div class="content">
+                                        <h3 class="fw-bold fs__16">Customer Service</h3>
+                                        <p class="lh-base text__pColor fs__14">
+                                            it's not actually free we just price it into products.
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide d-flex gap-4">
+                                    <div class="icon">
+                                        <img src="./assets/imgs/public/services-1.png" alt="">
+                                    </div>
+                                    <div class="content">
+                                        <h3 class="fw-bold fs__16">FastFree Shipping</h3>
+                                        <p class="lh-base text__pColor fs__14">
+                                            Get free shipping in order of $150 or more (within the US)
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide d-flex gap-4">
+                                    <div class="icon">
+                                        <img src="./assets/imgs/public/services-2.png" alt="">
+                                    </div>
+                                    <div class="content">
+                                        <h3 class="fw-bold fs__16">Returns & Exchanges</h3>
+                                        <p class="lh-base text__pColor fs__14">
+                                            We offer free returns and exchanges withing 30 days of purchase.
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide d-flex gap-4">
+                                    <div class="icon">
+                                        <img src="./assets/imgs/public/services-3.png" alt="">
+                                    </div>
+                                    <div class="content">
+                                        <h3 class="fw-bold fs__16">Secure Payment</h3>
+                                        <p class="lh-base text__pColor fs__14">
+                                            Your payment information are proccessed securely and encrypted
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+
+
+                            <div class="d-none d-md-block d-lg-none swiper-button swiper-button-next"></div>
+                            <div class="d-none d-md-block d-lg-none swiper-button swiper-button-prev"></div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
     </div>
-    
+
 
 
     <div class="mobile-icons py-3 px-2 d-lg-none position-fixed w-100 bottom-0 start-0 bg-white px-3">
 
         <div class="icons d-flex gap-4 align-items-center justify-content-between">
-                        <div class="icon">
-                            <a class = "text-decoration-none text-black" href="./index.html"><i class="fa-solid fa-house"></i></a>
-                        </div>
-                        <div class="icon d-block cursor__pointer" data-bs-toggle="offcanvas"
-                            data-bs-target="#search-canvas" aria-controls="search-canvas">
-                            <i class="fa-solid fa-magnifying-glass"></i>
-                        </div>
-                        <div class="icon  d-flex align-items-center gap-1 cursor__pointer"
-                            data-bs-toggle="modal" data-bs-target="#login">
-                            <i class="fa-solid fa-circle-user"></i>
-                            
-                        </div>
-                        <div class="icon wish-count count position-relative d-none d-lg-block cursor__pointer"
-                            data-count="0" data-bs-toggle="offcanvas" data-bs-target="#wish-canvas"
-                            aria-controls="wish-canvas">
-                            <i class="fa-regular fa-heart"></i>
-                            <div class="wishlist"></div>
-                        </div>
+            <div class="icon">
+                <a class="text-decoration-none text-black" href="./index.html"><i class="fa-solid fa-house"></i></a>
+            </div>
+            <div class="icon d-block cursor__pointer" data-bs-toggle="offcanvas" data-bs-target="#search-canvas"
+                aria-controls="search-canvas">
+                <i class="fa-solid fa-magnifying-glass"></i>
+            </div>
+            <div class="icon  d-flex align-items-center gap-1 cursor__pointer" data-bs-toggle="modal"
+                data-bs-target="#login">
+                <i class="fa-solid fa-circle-user"></i>
 
-                        <div class="icon cart-count count position-relative cursor__pointer" data-count="0">
-                            <i class="fa-solid fa-cart-shopping" data-bs-toggle="offcanvas"
-                                data-bs-target="#offcanvasRight" aria-controls="offcanvasRight"></i>
-                        </div>
-                    </div>
+            </div>
+            <div class="icon wish-count count position-relative d-none d-lg-block cursor__pointer" data-count="0"
+                data-bs-toggle="offcanvas" data-bs-target="#wish-canvas" aria-controls="wish-canvas">
+                <i class="fa-regular fa-heart"></i>
+                <div class="wishlist"></div>
+            </div>
+
+            <div class="icon cart-count count position-relative cursor__pointer" data-count="0">
+                <i class="fa-solid fa-cart-shopping" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight"
+                    aria-controls="offcanvasRight"></i>
+            </div>
+        </div>
 
     </div>
 
@@ -564,25 +593,26 @@
                             </div>
                         </div>
 
-                    </div>           
+                    </div>
                 </div>
             </div>
         </div>
         <div class="custom__container">
-                    <div class="footer-bottom d-flex flex-wrap justify-content-between py-5 border border-0 border-top border-dark">
-                            <div class = "text__777 fs__14">
-                                Copyright © 2025 <a class = "text-white" href="#">Mohammed Taysir</a>. All rights reserved.
-                            </div>
-                            <div class="payments">
-                                <img class = "img-fluid bg-white p-2 rounded-1 my-2" src="./assets/imgs/payments/payment.png" alt="">
-                                <img class = "img-fluid bg-white p-2 rounded-1" src="./assets/imgs/payments/payment2.png" alt="">
-                                <img class = "img-fluid bg-white p-2 rounded-1" src="./assets/imgs/payments/payment3.png" alt="">
-                                <img class = "img-fluid bg-white p-2 rounded-1" src="./assets/imgs/payments/payment4.png" alt="">
-                                <img class = "img-fluid bg-white p-2 rounded-1" src="./assets/imgs/payments/payment5.png" alt="">
-                            </div>
-                        </div>
+            <div
+                class="footer-bottom d-flex flex-wrap justify-content-between py-5 border border-0 border-top border-dark">
+                <div class="text__777 fs__14">
+                    Copyright © 2025 <a class="text-white" href="#">Mohammed Taysir</a>. All rights reserved.
+                </div>
+                <div class="payments">
+                    <img class="img-fluid bg-white p-2 rounded-1 my-2" src="./assets/imgs/payments/payment.png" alt="">
+                    <img class="img-fluid bg-white p-2 rounded-1" src="./assets/imgs/payments/payment2.png" alt="">
+                    <img class="img-fluid bg-white p-2 rounded-1" src="./assets/imgs/payments/payment3.png" alt="">
+                    <img class="img-fluid bg-white p-2 rounded-1" src="./assets/imgs/payments/payment4.png" alt="">
+                    <img class="img-fluid bg-white p-2 rounded-1" src="./assets/imgs/payments/payment5.png" alt="">
+                </div>
+            </div>
         </div>
-  
+
     </footer>
 
     <!-- Axios cdn  -->
@@ -599,6 +629,7 @@
     <script src="assets/js/customSwiper.js"></script>
 
     <!-- Custom JS File  -->
-     <script src = "./assets/js/blog.js" type = "module"></script>
+    <script src="./assets/js/blog.js" type="module"></script>
 </body>
+
 </html>

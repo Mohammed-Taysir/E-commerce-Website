@@ -106,52 +106,26 @@
 
     <!-- Page Start  -->
     <div class="page rounded-page overflowx-hidden">
-        <div class="container-fluid px-1 px-lg-4 py-4">
-            <nav class="navbar navbar-expand-lg ">
-                <div class="container-fluid">
-                    <a class="navbar-brand site-logo" href="#">
-                        <img src="./assets/imgs/public/logo-black.png" alt="">
-                    </a>
-                    <button class="order-first border border-0 navbar-toggler" type="button" data-bs-toggle="offcanvas"
-                        data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+        <header>
+            <div class="container-fluid px-1 px-lg-4 py-4">
+                <nav class="navbar navbar-expand-lg ">
+                    <div class="container-fluid">
+                        <a class="navbar-brand site-logo" href="#">
+                            <img src="./assets/imgs/public/logo-black.png" alt="">
+                        </a>
+                        <button class="order-first border border-0 navbar-toggler" type="button"
+                            data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
+                            aria-controls="offcanvasNavbar">
 
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
-                    <div class="collapse navbar-collapse d-none d-lg-flex" id="navbarSupportedContent">
-                        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                            <li class="nav-item">
-                                <a class="nav-link active" aria-current="page" href="./index.html">Home</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="./shop.html?category=all&page=1">Shop</a>
-                            </li>
-                            <li class="nav-item"><a class="nav-link"
-                                    href="./shop.html?category=headphones&page=1">Headphones</a>
-                            </li>
-                            <li class="nav-item"><a class="nav-link"
-                                    href="./shop.html?category=accessories&page=1">Accessories</a>
-                            </li>
-
-                            <li class="nav-item">
-                                <a class="nav-link" href="./blogs.html">Blog</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="./contact.html">Contact</a>
-                            </li>
-
-                        </ul>
-                    </div>
-                    <div class="offcanvas nav-canvas offcanvas-start rounded-4 d-lg-none" tabindex="-1"
-                        id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
-                        <div class="offcanvas-header">
-                            <h5 class="offcanvas-title fs-6" id="offcanvasNavbarLabel">Menu</h5>
-                            <button type="button" class="btn-close" data-bs-dismiss="offcanvas"
-                                aria-label="Close"></button>
-                        </div>
-                        <div class="offcanvas-body">
-                            <ul class="navbar-nav justify-content-start flex-grow-1 pe-3">
-                                <li class="nav-item"><a class="nav-link active" href="./index.html">Home</a></li>
-                                <li class="nav-item"><a class="nav-link" href="./shop.html?category=all&page=1">Shop</a>
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <div class="collapse navbar-collapse d-none d-lg-flex" id="navbarSupportedContent">
+                            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                                <li class="nav-item">
+                                    <a class="nav-link active" aria-current="page" href="./index.html">Home</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="./shop.html?category=all&page=1">Shop</a>
                                 </li>
                                 <li class="nav-item"><a class="nav-link"
                                         href="./shop.html?category=headphones&page=1">Headphones</a>
@@ -160,263 +134,197 @@
                                         href="./shop.html?category=accessories&page=1">Accessories</a>
                                 </li>
 
-                                <li class="nav-item"><a class="nav-link" href="./blogs.html">Blog</a></li>
-                                <li class="nav-item"><a class="nav-link" href="./contact.html">Contact</a></li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="./blogs.html">Blog</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="./contact.html">Contact</a>
+                                </li>
+
                             </ul>
-
                         </div>
-                    </div>
-                    <div class="icons d-flex gap-4 align-items-center">
-                        <div class="icon d-none d-lg-block cursor__pointer" data-bs-toggle="offcanvas"
-                            data-bs-target="#search-canvas" aria-controls="search-canvas">
-                            <i class="fa-solid fa-magnifying-glass"></i>
-                        </div>
-                        <div class="icon d-none d-lg-flex align-items-center gap-1 cursor__pointer"
-                            data-bs-toggle="modal" data-bs-target="#login">
-                            <i class="fa-solid fa-circle-user"></i>
-                            <span class="fw-normal">Account</span>
-                        </div>
-                        <div class="icon wish-count count position-relative d-none d-lg-block cursor__pointer"
-                            data-count="0" data-bs-toggle="offcanvas" data-bs-target="#wish-canvas"
-                            aria-controls="wish-canvas">
-                            <i class="fa-regular fa-heart"></i>
-                            <div class="wishlist"></div>
-                        </div>
-
-                        <div class="icon cart-count count position-relative cursor__pointer" data-count="0">
-                            <i class="fa-solid fa-cart-shopping" data-bs-toggle="offcanvas"
-                                data-bs-target="#offcanvasRight" aria-controls="offcanvasRight"></i>
-                        </div>
-                    </div>
-
-
-
-                </div>
-
-            </nav>
-            <div class="offcanvas offcanvas-end search-canvas rounded-5" tabindex="-1" id="search-canvas"
-                aria-labelledby="search-canvas">
-                <div class="offcanvas-header border border-0 border-bottom">
-                    <h5 id="search-canvas" class="p-2 fw-semibold">Search</h5>
-                    <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas"
-                        aria-label="Close"></button>
-                </div>
-                <div class="offcanvas-body">
-                    <div class="position-relative">
-                        <input class="form-control form-control-lg border-0 search-bar ps-5" type="text"
-                            placeholder="Search every thing..." aria-label=".form-control-lg example">
-                        <i
-                            class="fa-solid fa-magnifying-glass position-absolute top-50 translate-middle-y search-canvas-icon"></i>
-                    </div>
-                </div>
-            </div>
-            <div class="offcanvas offcanvas-end wish-canvas rounded-5" tabindex="-1" id="wish-canvas"
-                aria-labelledby="wish-canvas">
-                <div class="offcanvas-header border border-0 border-bottom">
-                    <h5 id="search-canvas" class="p-2 fw-semibold">Wishlist</h5>
-                    <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas"
-                        aria-label="Close"></button>
-                </div>
-                <div class="offcanvas-body wishlist-body">
-
-                </div>
-            </div>
-            <div class="offcanvas cart-canvas offcanvas-end rounded-5" tabindex="-1" id="offcanvasRight"
-                aria-labelledby="offcanvasRightLabel">
-                <div class="offcanvas-header">
-                    <h5 class="offcanvas-title fw-bold" id="offcanvasRightLabel">Your Cart</h5>
-                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-                </div>
-                <div class="offcanvas-body w-100">
-                    <div class="body-head py-3">
-                        <p class="fs__14 text-center">
-                            Add $<span class="badge border__main offer-price">500.00</span> to cart and get free
-                            shipping!
-                        </p>
-                        <div class="progress offer-progress position-relative rounded-pill">
-                            <div class="position-absolute bg-dark  h-100 top-0 start-0"></div>
-
-                        </div>
-                    </div>
-                    <div class="cart-body">
-
-                    </div>
-                </div>
-            </div>
-            <!-- Modal -->
-            <div class="modal fade login-modal " id="login" tabindex="-1" aria-labelledby="login" aria-hidden="true">
-                <div class="modal-dialog modal-xl modal-fullscreen-lg-down 100vh">
-                    <div class="modal-content d-flex flex-row flex-wrap">
-                        <div class="login-image mb-0 h-100 w-50 d-xl-block d-none">
-                            <img class="img-fluid w-100 h-100 object-fit-cover"
-                                src="./assets/imgs/login_register/collection-speakers.jpg" alt="">
-                        </div>
-                        <div class="login-body w-50">
-                            <div class="modal-header border-0">
-
-                                </h1>
-                                <button type="button" class="btn-close" data-bs-dismiss="modal"
+                        <div class="offcanvas nav-canvas offcanvas-start rounded-4 d-lg-none" tabindex="-1"
+                            id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+                            <div class="offcanvas-header">
+                                <h5 class="offcanvas-title fs-6" id="offcanvasNavbarLabel">Menu</h5>
+                                <button type="button" class="btn-close" data-bs-dismiss="offcanvas"
                                     aria-label="Close"></button>
                             </div>
-                            <div class="modal-body">
-                                <h1 class="modal-title fs-5 ms-auto text-center mb-0 pb-0" id="login-title">Login</h1>
-                                <form class="login-form d-flex flex-column gap-3 p-5 mt-0" action="">
-                                    <div>
-                                        <label for="username" class="form-label fs__15 fw-medium">Username or email
-                                            address*</label>
-                                        <input name="username" id="username" class="form-control form-control-lg"
-                                            type="text" aria-label=".form-control-lg username">
-                                    </div>
-                                    <div>
-                                        <label for="password" class="form-label fs__15 fw-medium">password*</label>
-                                        <input name="password" id="password" class="form-control form-control-lg"
-                                            type="password" aria-describedby="passwordHelpBlock">
-                                    </div>
-                                    <div class="form-check">
-                                        <input class="form-check-input" type="checkbox" value="" id="remember">
-                                        <label class="form-check-label fs__15 fw-medium" for="remember">
-                                            Remember me
-                                        </label>
-                                    </div>
+                            <div class="offcanvas-body">
+                                <ul class="navbar-nav justify-content-start flex-grow-1 pe-3">
+                                    <li class="nav-item"><a class="nav-link active" href="./index.html">Home</a></li>
+                                    <li class="nav-item"><a class="nav-link"
+                                            href="./shop.html?category=all&page=1">Shop</a>
+                                    </li>
+                                    <li class="nav-item"><a class="nav-link"
+                                            href="./shop.html?category=headphones&page=1">Headphones</a>
+                                    </li>
+                                    <li class="nav-item"><a class="nav-link"
+                                            href="./shop.html?category=accessories&page=1">Accessories</a>
+                                    </li>
 
-                                    <input class="login-submit fs__14 fw-semibold border-0 py-3 rounded-pill"
-                                        type="submit" value="Login">
-
-                                    <div class="p-3 fs__13 fw-bold border d-none">
-                                        Error: <span class="error-message fw-normal"></span>
-                                    </div>
-                                    <div class="text-center">
-                                        <a class="text-decoration-none text-black fs__15 fw-semibold" href="#">Lost your
-                                            password?</a>
-                                    </div>
-
-
-                                    <p class="fs__13 text-center mt-3">
-                                        By continuing, you accept the Website Regulations , Regulations for the sale of
-                                        alcoholic beverages and the <a href="#">Privacy Policy</a>
-                                    </p>
-                                    <p class="text-center fs__15 mb-0 border border-0 border-top pt-5">
-                                        You dont have an account yet? <a href="./register.html">Register Now</a>
-                                    </p>
-
-                                </form>
-
-
+                                    <li class="nav-item"><a class="nav-link" href="./blogs.html">Blog</a></li>
+                                    <li class="nav-item"><a class="nav-link" href="./contact.html">Contact</a></li>
+                                </ul>
 
                             </div>
+                        </div>
+                        <div class="icons d-flex gap-4 align-items-center">
+                            <div class="icon d-none d-lg-block cursor__pointer" data-bs-toggle="offcanvas"
+                                data-bs-target="#search-canvas" aria-controls="search-canvas">
+                                <i class="fa-solid fa-magnifying-glass"></i>
+                            </div>
+                            <div class="icon d-none d-lg-flex align-items-center gap-1 cursor__pointer"
+                                data-bs-toggle="modal" data-bs-target="#login">
+                                <i class="fa-solid fa-circle-user"></i>
+                                <span class="fw-normal">Account</span>
+                            </div>
+                            <div class="icon wish-count count position-relative d-none d-lg-block cursor__pointer"
+                                data-count="0" data-bs-toggle="offcanvas" data-bs-target="#wish-canvas"
+                                aria-controls="wish-canvas">
+                                <i class="fa-regular fa-heart"></i>
+                                <div class="wishlist"></div>
+                            </div>
 
+                            <div class="icon cart-count count position-relative cursor__pointer" data-count="0">
+                                <i class="fa-solid fa-cart-shopping" data-bs-toggle="offcanvas"
+                                    data-bs-target="#offcanvasRight" aria-controls="offcanvasRight"></i>
+                            </div>
+                        </div>
+
+
+
+                    </div>
+
+                </nav>
+                <div class="offcanvas offcanvas-end search-canvas rounded-5" tabindex="-1" id="search-canvas"
+                    aria-labelledby="search-canvas">
+                    <div class="offcanvas-header border border-0 border-bottom">
+                        <h5 id="search-canvas" class="p-2 fw-semibold">Search</h5>
+                        <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas"
+                            aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body">
+                        <div class="position-relative">
+                            <input class="form-control form-control-lg border-0 search-bar ps-5" type="text"
+                                placeholder="Search every thing..." aria-label=".form-control-lg example">
+                            <i
+                                class="fa-solid fa-magnifying-glass position-absolute top-50 translate-middle-y search-canvas-icon"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="offcanvas offcanvas-end wish-canvas rounded-5" tabindex="-1" id="wish-canvas"
+                    aria-labelledby="wish-canvas">
+                    <div class="offcanvas-header border border-0 border-bottom">
+                        <h5 id="search-canvas" class="p-2 fw-semibold">Wishlist</h5>
+                        <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas"
+                            aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body wishlist-body">
+
+                    </div>
+                </div>
+                <div class="offcanvas cart-canvas offcanvas-end rounded-5" tabindex="-1" id="offcanvasRight"
+                    aria-labelledby="offcanvasRightLabel">
+                    <div class="offcanvas-header">
+                        <h5 class="offcanvas-title fw-bold" id="offcanvasRightLabel">Your Cart</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body w-100">
+                        <div class="body-head py-3">
+                            <p class="fs__14 text-center">
+                                Add $<span class="badge border__main offer-price">500.00</span> to cart and get free
+                                shipping!
+                            </p>
+                            <div class="progress offer-progress position-relative rounded-pill">
+                                <div class="position-absolute bg-dark  h-100 top-0 start-0"></div>
+
+                            </div>
+                        </div>
+                        <div class="cart-body">
+
+                        </div>
+                    </div>
+                </div>
+                <!-- Modal -->
+                <div class="modal fade login-modal " id="login" tabindex="-1" aria-labelledby="login"
+                    aria-hidden="true">
+                    <div class="modal-dialog modal-xl modal-fullscreen-lg-down 100vh">
+                        <div class="modal-content d-flex flex-row flex-wrap">
+                            <div class="login-image mb-0 h-100 w-50 d-xl-block d-none">
+                                <img class="img-fluid w-100 h-100 object-fit-cover"
+                                    src="./assets/imgs/login_register/collection-speakers.jpg" alt="">
+                            </div>
+                            <div class="login-body w-50">
+                                <div class="modal-header border-0">
+
+                                    </h1>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                        aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                    <h1 class="modal-title fs-5 ms-auto text-center mb-0 pb-0" id="login-title">Login
+                                    </h1>
+                                    <form class="login-form d-flex flex-column gap-3 p-5 mt-0" action="">
+                                        <div>
+                                            <label for="username" class="form-label fs__15 fw-medium">Username or email
+                                                address*</label>
+                                            <input name="username" id="username" class="form-control form-control-lg"
+                                                type="text" aria-label=".form-control-lg username">
+                                        </div>
+                                        <div>
+                                            <label for="password" class="form-label fs__15 fw-medium">password*</label>
+                                            <input name="password" id="password" class="form-control form-control-lg"
+                                                type="password" aria-describedby="passwordHelpBlock">
+                                        </div>
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="checkbox" value="" id="remember">
+                                            <label class="form-check-label fs__15 fw-medium" for="remember">
+                                                Remember me
+                                            </label>
+                                        </div>
+
+                                        <input class="login-submit fs__14 fw-semibold border-0 py-3 rounded-pill"
+                                            type="submit" value="Login">
+
+                                        <div class="p-3 fs__13 fw-bold border d-none">
+                                            Error: <span class="error-message fw-normal"></span>
+                                        </div>
+                                        <div class="text-center">
+                                            <a class="text-decoration-none text-black fs__15 fw-semibold" href="#">Lost
+                                                your
+                                                password?</a>
+                                        </div>
+
+
+                                        <p class="fs__13 text-center mt-3">
+                                            By continuing, you accept the Website Regulations , Regulations for the sale
+                                            of
+                                            alcoholic beverages and the <a href="#">Privacy Policy</a>
+                                        </p>
+                                        <p class="text-center fs__15 mb-0 border border-0 border-top pt-5">
+                                            You dont have an account yet? <a href="./register.html">Register Now</a>
+                                        </p>
+
+                                    </form>
+
+
+
+                                </div>
+
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
+        </header>
 
-        <!-- Start Sidebar -->
-        <div class="shop d-flex flex-column flex-lg-row">
-            <div class="side-bar">
-                <div class="custom__container d-none d-lg-flex flex-column gap-4">
-                    <div class="d-flex flex-column gap-3 w-100">
-                        <h2 class="fw-bolder fs__17">Product Categories</h2>
-                        <form action="" class="d-flex flex-column gap-2">
-                            <div class="form-check">
-                                <input class="form-check-input" name="categroy" type="radio" value="all" id="all">
-                                <label class="form-check-label" for="all">
-                                    All
-                                </label>
-                            </div>
-                            <div class="form-check">
-                                <input class="form-check-input" name="categroy" type="radio" value="accessories"
-                                    id="accessories">
-                                <label class="form-check-label" for="accessories">
-                                    Accessories
-                                </label>
-                            </div>
-                            <div class="form-check">
-                                <input class="form-check-input" name="categroy" type="radio" value="camera" id="camera">
-                                <label class="form-check-label" for="camera">
-                                    Camera
-                                </label>
-                            </div>
-                            <div class="form-check">
-                                <input class="form-check-input" name="categroy" type="radio" value="earphone"
-                                    id="earphone">
-                                <label class="form-check-label" for="earphone">
-                                    Earphones
-                                </label>
-                            </div>
-                            <div class="form-check">
-                                <input class="form-check-input" name="categroy" type="radio" value="headphones"
-                                    id="headphones">
-                                <label class="form-check-label" for="headphones">
-                                    Headphones
-                                </label>
-                            </div>
-                            <div class="form-check">
-                                <input class="form-check-input" name="categroy" type="radio" value="microphones"
-                                    id="microphones">
-                                <label class="form-check-label" for="microphones">
-                                    Microphones
-                                </label>
-                            </div>
-                            <div class="form-check">
-                                <input class="form-check-input" name="categroy" type="radio" value="smartphones"
-                                    id="smartphones">
-                                <label class="form-check-label" for="smartphones">
-                                    Smartphone & Gadges
-                                </label>
-                            </div>
-                            <div class="form-check">
-                                <input class="form-check-input" name="categroy" type="radio" value="smartwatches"
-                                    id="smartwatches">
-                                <label class="form-check-label" for="smartwatches">
-                                    Smartwatches
-                                </label>
-                            </div>
-                            <div class="form-check">
-                                <input class="form-check-input" name="categroy" type="radio" value="speakers"
-                                    id="speakers">
-                                <label class="form-check-label" for="speakers">
-                                    Speakers
-                                </label>
-                            </div>
-                        </form>
-                    </div>
-                    <div class="price-filter d-flex flex-column gap-3">
-                        <h3 class="fw-bold fs__17">Widget price filter</h3>
-                        <div class="d-flex align-items-center gap-3">
-                            <div class="d-flex flex-column gap-1">
-                                <label class="fs__12 text__gray" for="">Min price</label>
-                                <input class="price-input min-price rounded-pill py-2 px-4 fw-semibold" type="text"
-                                    placeholder="Min price" value="0" />
-                            </div>
-                            <span class="h-100 pt-3"><i class="fa-solid fa-minus"></i></span>
-                            <div class="d-flex flex-column gap-1">
-                                <label class="fs__12 text__gray" for="">Max price</label>
-                                <input class="price-input max-price rounded-pill py-2 px-4 fw-semibold" type="text"
-                                    placeholder="Max price" value="590">
-                            </div>
-                        </div>
-                        <div id="slider"></div>
-                        <div class="d-flex align-items-center gap-3">
-                            <button
-                                class="filter-button order-last rounded-pill border-0 fw-semibold fs__15">Filter</button>
-                            <div>Price: $<span class="min-range-price">0</span> <i class="fa-solid fa-minus"></i>
-                                $<span class="max-range-price">0</span></div>
-                        </div>
-                    </div>
-                </div>
-                <button class="btn btn-primary d-lg-none ms-2" type="button" data-bs-toggle="offcanvas"
-                    data-bs-target="#offcanvasWithBothOptions" aria-controls="offcanvasWithBothOptions"><i
-                        class="fa-solid fa-filter"></i></button>
-
-                <div class="offcanvas offcanvas-start" data-bs-scroll="true" tabindex="-1" id="offcanvasWithBothOptions"
-                    aria-labelledby="offcanvasWithBothOptionsLabel">
-                    <div class="offcanvas-header">
-                        <h5 class="offcanvas-title" id="offcanvasWithBothOptionsLabel">Filter Products</h5>
-                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-                    </div>
-                    <div class="offcanvas-body">
-                        <div class="custom__container d-flex flex-column gap-4">
+        <main>
+            <!-- Start Shop -->
+            <section>
+                <div class="shop d-flex flex-column flex-lg-row">
+                    <div class="side-bar">
+                        <div class="custom__container d-none d-lg-flex flex-column gap-4">
                             <div class="d-flex flex-column gap-3 w-100">
                                 <h2 class="fw-bolder fs__17">Product Categories</h2>
                                 <form action="" class="d-flex flex-column gap-2">
@@ -510,83 +418,193 @@
                                 </div>
                             </div>
                         </div>
+                        <button class="btn btn-primary d-lg-none ms-2" type="button" data-bs-toggle="offcanvas"
+                            data-bs-target="#offcanvasWithBothOptions" aria-controls="offcanvasWithBothOptions"><i
+                                class="fa-solid fa-filter"></i></button>
+
+                        <div class="offcanvas offcanvas-start" data-bs-scroll="true" tabindex="-1"
+                            id="offcanvasWithBothOptions" aria-labelledby="offcanvasWithBothOptionsLabel">
+                            <div class="offcanvas-header">
+                                <h5 class="offcanvas-title" id="offcanvasWithBothOptionsLabel">Filter Products</h5>
+                                <button type="button" class="btn-close" data-bs-dismiss="offcanvas"
+                                    aria-label="Close"></button>
+                            </div>
+                            <div class="offcanvas-body">
+                                <div class="custom__container d-flex flex-column gap-4">
+                                    <div class="d-flex flex-column gap-3 w-100">
+                                        <h2 class="fw-bolder fs__17">Product Categories</h2>
+                                        <form action="" class="d-flex flex-column gap-2">
+                                            <div class="form-check">
+                                                <input class="form-check-input" name="categroy" type="radio" value="all"
+                                                    id="all">
+                                                <label class="form-check-label" for="all">
+                                                    All
+                                                </label>
+                                            </div>
+                                            <div class="form-check">
+                                                <input class="form-check-input" name="categroy" type="radio"
+                                                    value="accessories" id="accessories">
+                                                <label class="form-check-label" for="accessories">
+                                                    Accessories
+                                                </label>
+                                            </div>
+                                            <div class="form-check">
+                                                <input class="form-check-input" name="categroy" type="radio"
+                                                    value="camera" id="camera">
+                                                <label class="form-check-label" for="camera">
+                                                    Camera
+                                                </label>
+                                            </div>
+                                            <div class="form-check">
+                                                <input class="form-check-input" name="categroy" type="radio"
+                                                    value="earphone" id="earphone">
+                                                <label class="form-check-label" for="earphone">
+                                                    Earphones
+                                                </label>
+                                            </div>
+                                            <div class="form-check">
+                                                <input class="form-check-input" name="categroy" type="radio"
+                                                    value="headphones" id="headphones">
+                                                <label class="form-check-label" for="headphones">
+                                                    Headphones
+                                                </label>
+                                            </div>
+                                            <div class="form-check">
+                                                <input class="form-check-input" name="categroy" type="radio"
+                                                    value="microphones" id="microphones">
+                                                <label class="form-check-label" for="microphones">
+                                                    Microphones
+                                                </label>
+                                            </div>
+                                            <div class="form-check">
+                                                <input class="form-check-input" name="categroy" type="radio"
+                                                    value="smartphones" id="smartphones">
+                                                <label class="form-check-label" for="smartphones">
+                                                    Smartphone & Gadges
+                                                </label>
+                                            </div>
+                                            <div class="form-check">
+                                                <input class="form-check-input" name="categroy" type="radio"
+                                                    value="smartwatches" id="smartwatches">
+                                                <label class="form-check-label" for="smartwatches">
+                                                    Smartwatches
+                                                </label>
+                                            </div>
+                                            <div class="form-check">
+                                                <input class="form-check-input" name="categroy" type="radio"
+                                                    value="speakers" id="speakers">
+                                                <label class="form-check-label" for="speakers">
+                                                    Speakers
+                                                </label>
+                                            </div>
+                                        </form>
+                                    </div>
+                                    <div class="price-filter d-flex flex-column gap-3">
+                                        <h3 class="fw-bold fs__17">Widget price filter</h3>
+                                        <div class="d-flex align-items-center gap-3">
+                                            <div class="d-flex flex-column gap-1">
+                                                <label class="fs__12 text__gray" for="">Min price</label>
+                                                <input class="price-input min-price rounded-pill py-2 px-4 fw-semibold"
+                                                    type="text" placeholder="Min price" value="0" />
+                                            </div>
+                                            <span class="h-100 pt-3"><i class="fa-solid fa-minus"></i></span>
+                                            <div class="d-flex flex-column gap-1">
+                                                <label class="fs__12 text__gray" for="">Max price</label>
+                                                <input class="price-input max-price rounded-pill py-2 px-4 fw-semibold"
+                                                    type="text" placeholder="Max price" value="590">
+                                            </div>
+                                        </div>
+                                        <div id="slider"></div>
+                                        <div class="d-flex align-items-center gap-3">
+                                            <button
+                                                class="filter-button order-last rounded-pill border-0 fw-semibold fs__15">Filter</button>
+                                            <div>Price: $<span class="min-range-price">0</span> <i
+                                                    class="fa-solid fa-minus"></i>
+                                                $<span class="max-range-price">0</span></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="shop-content min-vh-100 flex-grow-1  ">
+                        <div class="container-fluid w-100 h-100 mb-4 position-relative">
+                            <div class="row">
+
+                            </div>
+
+                            <ul class="pagination-list list-unstyled d-flex gap-4 mt-4 align-items-center">
+
+                            </ul>
+
+                        </div>
+
                     </div>
                 </div>
-            </div>
-            <div class="shop-content min-vh-100 flex-grow-1  ">
-                <div class="container-fluid w-100 h-100 mb-4 position-relative">
-                    <div class="row">
+            </section>
 
-                    </div>
+            <!-- End Sidebar -->
 
-                    <ul class="pagination-list list-unstyled d-flex gap-4 mt-4 align-items-center">
+            <!-- Services  -->
+            <section>
+                <div class="services px-5">
+                    <div>
+                        <div class="swiper mySwiper services-swiper swiper-customization">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide d-flex gap-4">
+                                    <div class="icon">
+                                        <img src="./assets/imgs/public/service-01.png" alt="">
+                                    </div>
+                                    <div class="content">
+                                        <h3 class="fw-bold fs__16">Customer Service</h3>
+                                        <p class="lh-base text__pColor fs__14">
+                                            it's not actually free we just price it into products.
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide d-flex gap-4">
+                                    <div class="icon">
+                                        <img src="./assets/imgs/public/services-1.png" alt="">
+                                    </div>
+                                    <div class="content">
+                                        <h3 class="fw-bold fs__16">FastFree Shipping</h3>
+                                        <p class="lh-base text__pColor fs__14">
+                                            Get free shipping in order of $150 or more (within the US)
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide d-flex gap-4">
+                                    <div class="icon">
+                                        <img src="./assets/imgs/public/services-2.png" alt="">
+                                    </div>
+                                    <div class="content">
+                                        <h3 class="fw-bold fs__16">Returns & Exchanges</h3>
+                                        <p class="lh-base text__pColor fs__14">
+                                            We offer free returns and exchanges withing 30 days of purchase.
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide d-flex gap-4">
+                                    <div class="icon">
+                                        <img src="./assets/imgs/public/services-3.png" alt="">
+                                    </div>
+                                    <div class="content">
+                                        <h3 class="fw-bold fs__16">Secure Payment</h3>
+                                        <p class="lh-base text__pColor fs__14">
+                                            Your payment information are proccessed securely and encrypted
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
 
-                    </ul>
 
-                </div>
-
-            </div>
-        </div>
-
-        <!-- End Sidebar -->
-
-        <!-- Services  -->
-        <div class="services px-5">
-            <div>
-                <div class="swiper mySwiper services-swiper swiper-customization">
-                    <div class="swiper-wrapper">
-                        <div class="swiper-slide d-flex gap-4">
-                            <div class="icon">
-                                <img src="./assets/imgs/public/service-01.png" alt="">
-                            </div>
-                            <div class="content">
-                                <h3 class="fw-bold fs__16">Customer Service</h3>
-                                <p class="lh-base text__pColor fs__14">
-                                    it's not actually free we just price it into products.
-                                </p>
-                            </div>
-                        </div>
-                        <div class="swiper-slide d-flex gap-4">
-                            <div class="icon">
-                                <img src="./assets/imgs/public/services-1.png" alt="">
-                            </div>
-                            <div class="content">
-                                <h3 class="fw-bold fs__16">FastFree Shipping</h3>
-                                <p class="lh-base text__pColor fs__14">
-                                    Get free shipping in order of $150 or more (within the US)
-                                </p>
-                            </div>
-                        </div>
-                        <div class="swiper-slide d-flex gap-4">
-                            <div class="icon">
-                                <img src="./assets/imgs/public/services-2.png" alt="">
-                            </div>
-                            <div class="content">
-                                <h3 class="fw-bold fs__16">Returns & Exchanges</h3>
-                                <p class="lh-base text__pColor fs__14">
-                                    We offer free returns and exchanges withing 30 days of purchase.
-                                </p>
-                            </div>
-                        </div>
-                        <div class="swiper-slide d-flex gap-4">
-                            <div class="icon">
-                                <img src="./assets/imgs/public/services-3.png" alt="">
-                            </div>
-                            <div class="content">
-                                <h3 class="fw-bold fs__16">Secure Payment</h3>
-                                <p class="lh-base text__pColor fs__14">
-                                    Your payment information are proccessed securely and encrypted
-                                </p>
-                            </div>
+                            <div class="d-none d-md-block d-lg-none swiper-button swiper-button-next"></div>
+                            <div class="d-none d-md-block d-lg-none swiper-button swiper-button-prev"></div>
                         </div>
                     </div>
-
-
-                    <div class="d-none d-md-block d-lg-none swiper-button swiper-button-next"></div>
-                    <div class="d-none d-md-block d-lg-none swiper-button swiper-button-prev"></div>
                 </div>
-            </div>
-        </div>
+            </section>
+        </main>
     </div>
     <div class="mobile-icons py-3 px-2 d-lg-none position-fixed w-100 bottom-0 start-0 bg-white px-3">
 

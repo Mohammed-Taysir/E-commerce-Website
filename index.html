@@ -102,796 +102,844 @@
 
     <!-- Page Start  -->
     <div class="page rounded-page">
-        <div class="container-fluid px-1 px-lg-4 py-4">
-            <nav class="navbar navbar-expand-lg ">
-                <div class="container-fluid">
-                    <a class="navbar-brand site-logo" href="#">
-                        <img src="./assets/imgs/public/logo-black.png" alt="">
-                    </a>
-                    <button class="order-first border border-0 navbar-toggler" type="button" data-bs-toggle="offcanvas"
-                        data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+        <header>
+            <div class="container-fluid px-1 px-lg-4 py-4">
+                <nav class="navbar navbar-expand-lg ">
+                    <div class="container-fluid">
+                        <a class="navbar-brand site-logo" href="#">
+                            <img src="./assets/imgs/public/logo-black.png" alt="">
+                        </a>
+                        <button class="order-first border border-0 navbar-toggler" type="button"
+                            data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
+                            aria-controls="offcanvasNavbar">
 
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
-                    <div class="collapse navbar-collapse d-none d-lg-flex" id="navbarSupportedContent">
-                        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                            <li class="nav-item">
-                                <a class="nav-link active" aria-current="page" href="./index.html">Home</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="./shop.html?category=all&page=1">Shop</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="./shop.html?category=headphones&page=1">Headphones</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="./shop.html?category=accessories&page=1">Accessories</a>
-                            </li>
-
-                            <li class="nav-item">
-                                <a class="nav-link" href="./blogs.html">Blog</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="./contact.html">Contact</a>
-                            </li>
-
-                        </ul>
-                    </div>
-                    <div class="offcanvas nav-canvas offcanvas-start rounded-4 d-lg-none" tabindex="-1"
-                        id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
-                        <div class="offcanvas-header">
-                            <h5 class="offcanvas-title fs-6" id="offcanvasNavbarLabel">Menu</h5>
-                            <button type="button" class="btn-close" data-bs-dismiss="offcanvas"
-                                aria-label="Close"></button>
-                        </div>
-                        <div class="offcanvas-body">
-                            <ul class="navbar-nav justify-content-start flex-grow-1 pe-3">
-                                <li class="nav-item"><a class="nav-link active" href="./index.html">Home</a></li>
-                                <li class="nav-item"><a class="nav-link" href="./shop.html?category=all&page=1">Shop</a>
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <div class="collapse navbar-collapse d-none d-lg-flex" id="navbarSupportedContent">
+                            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                                <li class="nav-item">
+                                    <a class="nav-link active" aria-current="page" href="./index.html">Home</a>
                                 </li>
-                                <li class="nav-item"><a class="nav-link"
-                                        href="./shop.html?category=headphones&page=1">Headphones</a>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="./shop.html?category=all&page=1">Shop</a>
                                 </li>
-                                <li class="nav-item"><a class="nav-link"
-                                        href="./shop.html?category=accessories&page=1">Accessories</a>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="./shop.html?category=headphones&page=1">Headphones</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="./shop.html?category=accessories&page=1">Accessories</a>
                                 </li>
 
-                                <li class="nav-item"><a class="nav-link" href="./blogs.html">Blog</a></li>
-                                <li class="nav-item"><a class="nav-link" href="./contact.html">Contact</a></li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="./blogs.html">Blog</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="./contact.html">Contact</a>
+                                </li>
+
                             </ul>
-
                         </div>
-                    </div>
-                    <div class="icons d-flex gap-4 align-items-center">
-                        <div class="icon d-none d-lg-block cursor__pointer" data-bs-toggle="offcanvas"
-                            data-bs-target="#search-canvas" aria-controls="search-canvas">
-                            <i class="fa-solid fa-magnifying-glass"></i>
-                        </div>
-                        <div class="icon d-none d-lg-flex align-items-center gap-1 cursor__pointer"
-                            data-bs-toggle="modal" data-bs-target="#login">
-                            <i class="fa-solid fa-circle-user"></i>
-                            <span class="fw-normal">Account</span>
-                        </div>
-                        <div class="icon wish-count count position-relative d-none d-lg-block cursor__pointer"
-                            data-count="0" data-bs-toggle="offcanvas" data-bs-target="#wish-canvas"
-                            aria-controls="wish-canvas">
-                            <i class="fa-regular fa-heart"></i>
-                            <div class="wishlist"></div>
-                        </div>
-
-                        <div class="icon cart-count count position-relative cursor__pointer" data-count="0">
-                            <i class="fa-solid fa-cart-shopping" data-bs-toggle="offcanvas"
-                                data-bs-target="#offcanvasRight" aria-controls="offcanvasRight"></i>
-                        </div>
-                    </div>
-
-
-
-                </div>
-
-            </nav>
-            <div class="offcanvas offcanvas-end search-canvas rounded-5" tabindex="-1" id="search-canvas"
-                aria-labelledby="search-canvas">
-                <div class="offcanvas-header border border-0 border-bottom">
-                    <h5 id="search-canvas" class="p-2 fw-semibold">Search</h5>
-                    <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas"
-                        aria-label="Close"></button>
-                </div>
-                <div class="offcanvas-body">
-                    <div class="position-relative">
-                        <input class="form-control form-control-lg border-0 search-bar ps-5" type="text"
-                            placeholder="Search every thing..." aria-label=".form-control-lg example">
-                        <i
-                            class="fa-solid fa-magnifying-glass position-absolute top-50 translate-middle-y search-canvas-icon"></i>
-                    </div>
-                </div>
-            </div>
-            <div class="offcanvas offcanvas-end wish-canvas rounded-5" tabindex="-1" id="wish-canvas"
-                aria-labelledby="wish-canvas">
-                <div class="offcanvas-header border border-0 border-bottom">
-                    <h5 id="search-canvas" class="p-2 fw-semibold">Wishlist</h5>
-                    <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas"
-                        aria-label="Close"></button>
-                </div>
-                <div class="offcanvas-body wishlist-body">
-
-                </div>
-            </div>
-            <div class="offcanvas cart-canvas offcanvas-end rounded-5" tabindex="-1" id="offcanvasRight"
-                aria-labelledby="offcanvasRightLabel">
-                <div class="offcanvas-header">
-                    <h5 class="offcanvas-title fw-bold" id="offcanvasRightLabel">Your Cart</h5>
-                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-                </div>
-                <div class="offcanvas-body w-100">
-                    <div class="body-head py-3">
-                        <p class="fs__14 text-center">
-                            Add $<span class="badge border__main offer-price">500.00</span> to cart and get free
-                            shipping!
-                        </p>
-                        <div class="progress offer-progress position-relative rounded-pill">
-                            <div class="position-absolute bg-dark  h-100 top-0 start-0"></div>
-
-                        </div>
-                    </div>
-                    <div class="cart-body">
-
-                    </div>
-                </div>
-            </div>
-            <!-- Modal -->
-            <div class="modal fade login-modal " id="login" tabindex="-1" aria-labelledby="login" aria-hidden="true">
-                <div class="modal-dialog modal-xl modal-fullscreen-lg-down 100vh">
-                    <div class="modal-content d-flex flex-row flex-wrap">
-                        <div class="login-image mb-0 h-100 w-50 d-xl-block d-none">
-                            <img class="img-fluid w-100 h-100 object-fit-cover"
-                                src="./assets/imgs/login_register/collection-speakers.jpg" alt="">
-                        </div>
-                        <div class="login-body w-50">
-                            <div class="modal-header border-0">
-
-                                </h1>
-                                <button type="button" class="btn-close" data-bs-dismiss="modal"
+                        <div class="offcanvas nav-canvas offcanvas-start rounded-4 d-lg-none" tabindex="-1"
+                            id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+                            <div class="offcanvas-header">
+                                <h5 class="offcanvas-title fs-6" id="offcanvasNavbarLabel">Menu</h5>
+                                <button type="button" class="btn-close" data-bs-dismiss="offcanvas"
                                     aria-label="Close"></button>
                             </div>
-                            <div class="modal-body">
-                                <h1 class="modal-title fs-5 ms-auto text-center mb-0 pb-0" id="login-title">Login</h1>
-                                <form class="login-form d-flex flex-column gap-3 p-5 mt-0" action="">
-                                    <div>
-                                        <label for="username" class="form-label fs__15 fw-medium">Username or email
-                                            address*</label>
-                                        <input name="username" id="username" class="form-control form-control-lg"
-                                            type="text" aria-label=".form-control-lg username">
-                                    </div>
-                                    <div>
-                                        <label for="password" class="form-label fs__15 fw-medium">password*</label>
-                                        <input name="password" id="password" class="form-control form-control-lg"
-                                            type="password" aria-describedby="passwordHelpBlock">
-                                    </div>
-                                    <div class="form-check">
-                                        <input class="form-check-input" type="checkbox" value="" id="remember">
-                                        <label class="form-check-label fs__15 fw-medium" for="remember">
-                                            Remember me
-                                        </label>
-                                    </div>
+                            <div class="offcanvas-body">
+                                <ul class="navbar-nav justify-content-start flex-grow-1 pe-3">
+                                    <li class="nav-item"><a class="nav-link active" href="./index.html">Home</a></li>
+                                    <li class="nav-item"><a class="nav-link"
+                                            href="./shop.html?category=all&page=1">Shop</a>
+                                    </li>
+                                    <li class="nav-item"><a class="nav-link"
+                                            href="./shop.html?category=headphones&page=1">Headphones</a>
+                                    </li>
+                                    <li class="nav-item"><a class="nav-link"
+                                            href="./shop.html?category=accessories&page=1">Accessories</a>
+                                    </li>
 
-                                    <input class="login-submit fs__14 fw-semibold border-0 py-3 rounded-pill"
-                                        type="submit" value="Login">
-
-                                    <div class="p-3 fs__13 fw-bold border d-none">
-                                        Error: <span class="error-message fw-normal"></span>
-                                    </div>
-                                    <div class="text-center">
-                                        <a class="text-decoration-none text-black fs__15 fw-semibold" href="#">Lost your
-                                            password?</a>
-                                    </div>
-
-
-                                    <p class="fs__13 text-center mt-3">
-                                        By continuing, you accept the Website Regulations , Regulations for the sale of
-                                        alcoholic beverages and the <a href="#">Privacy Policy</a>
-                                    </p>
-                                    <p class="text-center fs__15 mb-0 border border-0 border-top pt-5">
-                                        You dont have an account yet? <a href="./register.html">Register Now</a>
-                                    </p>
-
-                                </form>
-
-
+                                    <li class="nav-item"><a class="nav-link" href="./blogs.html">Blog</a></li>
+                                    <li class="nav-item"><a class="nav-link" href="./contact.html">Contact</a></li>
+                                </ul>
 
                             </div>
+                        </div>
+                        <div class="icons d-flex gap-4 align-items-center">
+                            <div class="icon d-none d-lg-block cursor__pointer" data-bs-toggle="offcanvas"
+                                data-bs-target="#search-canvas" aria-controls="search-canvas">
+                                <i class="fa-solid fa-magnifying-glass"></i>
+                            </div>
+                            <div class="icon d-none d-lg-flex align-items-center gap-1 cursor__pointer"
+                                data-bs-toggle="modal" data-bs-target="#login">
+                                <i class="fa-solid fa-circle-user"></i>
+                                <span class="fw-normal">Account</span>
+                            </div>
+                            <div class="icon wish-count count position-relative d-none d-lg-block cursor__pointer"
+                                data-count="0" data-bs-toggle="offcanvas" data-bs-target="#wish-canvas"
+                                aria-controls="wish-canvas">
+                                <i class="fa-regular fa-heart"></i>
+                                <div class="wishlist"></div>
+                            </div>
 
+                            <div class="icon cart-count count position-relative cursor__pointer" data-count="0">
+                                <i class="fa-solid fa-cart-shopping" data-bs-toggle="offcanvas"
+                                    data-bs-target="#offcanvasRight" aria-controls="offcanvasRight"></i>
+                            </div>
                         </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <div class="swiper mySwiper site-banner overflow-hidden swiper-customization">
-            <div class="swiper-wrapper">
-                <div class="swiper-slide position-relative d-flex justify-content-center align-items-center">
-                    <div class="banner-media position-absolute overflow-hidden">
-                        <img src="./assets/imgs/sitebanner-slider/slider-01.jpg" alt="">
-                    </div>
-                    <div class="banner-content text-center z-2 d-flex flex-column gap-3 align-items-center">
-                        <p class="text-white fs__17 fw-bold">Highest Quality</p>
-                        <h1 class="text-white fw-bold slide-title">High Performance and Elegant Design</h1>
-                        <p class="slide-description">
-                            Sleek designs, cutting-edge tech, unmatched performance for modern living
-                        </p>
-
-                        <a href="./shop.html?category=headphones&page=1"
-                            class="view-headphones text-decoration-none text-dark rounded-pill bg-white width__fit-content">View
-                            Headphones</a>
-                    </div>
-                </div>
-                <div class="swiper-slide position-relative d-flex justify-content-center align-items-center">
-                    <div class="banner-media position-absolute overflow-hidden">
-                        <img src="./assets/imgs/sitebanner-slider/slider-02.jpg" alt="">
-                    </div>
-                    <div class="banner-content text-center z-2 d-flex flex-column gap-3 align-items-center">
-                        <p class="text-white fs__17 fw-bold">Superior Craftsmanship</p>
-                        <h1 class="text-white fw-bold slide-title">Technology That Inspires Confidence</h1>
-                        <p class="slide-description">
-                            Experience innovation, style, and performance in every electronic product.
-                        </p>
-
-                        <a href="./shop.html?category=headphones&page=1"
-                            class="view-headphones text-decoration-none text-dark rounded-pill bg-white width__fit-content">View
-                            Headphones</a>
-                    </div>
-                </div>
-                <div class="swiper-slide position-relative d-flex justify-content-center align-items-center">
-                    <div class="banner-media position-absolute overflow-hidden">
-                        <img src="./assets/imgs/sitebanner-slider/slider-03.jpg" alt="">
-                    </div>
-                    <div class="banner-content text-center z-2 d-flex flex-column gap-3 align-items-center">
-                        <p class="text-white fs__17 fw-bold">Highest Quality</p>
-                        <h1 class="text-white fw-bold slide-title">Experience Power, Discover Style</h1>
-                        <p class="slide-description">
-                            Technology redefined: sleek, powerful, reliable, designed for your lifestyle
-                        </p>
-
-                        <a href="./shop.html?category=headphones&page=1"
-                            class="view-headphones .main-view-headphones text-decoration-none text-dark rounded-pill bg-white width__fit-content">View
-                            Headphones</a>
-                    </div>
-                </div>
-
-            </div>
-            <div class="swiper-button-next swiper-button text-dark"></div>
-            <div class="swiper-button-prev swiper-button text-dark"></div>
-            <div class="swiper-pagination"></div>
-        </div>
-
-        <div class="custom__container pt-4">
-            <div class="swiper mySwiper logos-banner">
-                <div class="swiper-wrapper">
-                    <div class="swiper-slide">
-                        <img class="img-fluid" src="./assets/imgs/banner-logos/logo-01.png" alt="">
-                    </div>
-                    <div class="swiper-slide">
-                        <img class="img-fluid" src="./assets/imgs/banner-logos/logo-02.png" alt="">
-                    </div>
-                    <div class="swiper-slide">
-                        <img class="img-fluid" src="./assets/imgs/banner-logos/logo-03.png" alt="">
-                    </div>
-                    <div class="swiper-slide">
-                        <img class="img-fluid" src="./assets/imgs/banner-logos/logo-04.png" alt="">
-                    </div>
-                    <div class="swiper-slide">
-                        <img class="img-fluid" src="./assets/imgs/banner-logos/logo-05.png" alt="">
-                    </div>
-                    <div class="swiper-slide">
-                        <img class="img-fluid" src="./assets/imgs/banner-logos/logo-06.png" alt="">
-                    </div>
-                    <div class="swiper-slide">
-                        <img class="img-fluid" src="./assets/imgs/banner-logos/logo-08.png" alt="">
-                    </div>
-
-                </div>
-                <div class="swiper-pagination logos-pagination"></div>
-            </div>
-        </div>
-        <!-- Categories Slider  -->
-        <div class="custom__container py-4">
-            <div class="swiper mySwiper categories-slider swiper-customization">
-                <div class="swiper-wrapper">
-                    <div class="swiper-slide cat-slide btn rounded-4 d-flex flex-column align-items-center gap-4">
-                        <div class="cat-header text-center">
-                            <h3 class="fw-bold">Earphones</h3>
-                            <span>10 products</span>
-                        </div>
-                        <div class="cat-body">
-                            <img class="img-fluid" src="./assets/imgs/products/categories/category-earphones.png"
-                                alt="">
-                        </div>
-                        <div class="cat-footer">
-                            <a href="./shop.html?category=earphone&page=1"
-                                class="view-products text-decoration-none text-dark fw-bold rounded-pill bg-white width__fit-content fs__14">View
-                                Products</a>
-                        </div>
-                    </div>
-                    <div class="swiper-slide cat-slide btn rounded-4 d-flex flex-column align-items-center gap-4">
-                        <div class="cat-header text-center">
-                            <h3 class="fw-bold">Headphones</h3>
-                            <span>8 products</span>
-                        </div>
-                        <div class="cat-body">
-                            <img class="img-fluid" src="./assets/imgs/products/categories/category-headphones.png"
-                                alt="">
-                        </div>
-                        <div class="cat-footer">
-                            <a href="./shop.html?category=headphones&page=1"
-                                class="view-products text-decoration-none text-dark fw-bold rounded-pill bg-white width__fit-content fs__14">View
-                                Products</a>
-                        </div>
-                    </div>
-                    <div class="swiper-slide cat-slide btn rounded-4 d-flex flex-column align-items-center gap-4">
-                        <div class="cat-header text-center">
-                            <h3 class="fw-bold">Microphones</h3>
-                            <span>8 products</span>
-                        </div>
-                        <div class="cat-body">
-                            <img class="img-fluid" src="./assets/imgs/products/categories/category-microphone.png"
-                                alt="">
-                        </div>
-                        <div class="cat-footer">
-                            <a href="./shop.html?category=microphones&page=1"
-                                class="view-products text-decoration-none text-dark fw-bold rounded-pill bg-white width__fit-content fs__14">View
-                                Products</a>
-                        </div>
-                    </div>
-                    <div class="swiper-slide cat-slide btn rounded-4 d-flex flex-column align-items-center gap-4">
-                        <div class="cat-header text-center">
-                            <h3 class="fw-bold">Smart Watches</h3>
-                            <span>7 products</span>
-                        </div>
-                        <div class="cat-body">
-                            <img class="img-fluid" src="./assets/imgs/products/categories/smartwatch.svg" alt="">
-                        </div>
-                        <div class="cat-footer">
-                            <a href="./shop.html?category=smartwatches&page=1"
-                                class="view-products text-decoration-none text-dark fw-bold rounded-pill bg-white width__fit-content fs__14">View
-                                Products</a>
-                        </div>
-                    </div>
-                    <div class="swiper-slide cat-slide btn rounded-4 d-flex flex-column gap-4">
-                        <div class="cat-header text-center">
-                            <h3 class="fw-bold">Speakers</h3>
-                            <span>11 products</span>
-                        </div>
-                        <div class="cat-body">
-                            <img class="img-fluid" src="./assets/imgs/products/categories/category-speakers.png" alt="">
-                        </div>
-                        <div class="cat-footer">
-                            <a href="./shop.html?category=speakers&page=1"
-                                class="view-products text-decoration-none text-dark fw-bold rounded-pill bg-white width__fit-content fs__14">View
-                                Products</a>
-                        </div>
-                    </div>
 
 
-                </div>
-                <div class="swiper-button swiper-button-next swiper-button text-dark"></div>
-                <div class="swiper-button swiper-button-prev swiper-button text-dark"></div>
-                <div class="swiper-pagination"></div>
-            </div>
-        </div>
 
-        <div class="custom__container pb-4">
-            <!-- Headphone Banner  -->
-            <div class="headphone-banner rounded-4 overflow-hidden vh-100">
-                <div class="content w-50 h-100 d-flex flex-column justify-content-center gap-4">
-                    <p class="fw-bold text-white premium">Premium Standards</p>
-                    <h3 class="headphone-banner-title position-relative text-white">Elevate Your Audia Experience With
-                        Sony Headphones</h3>
-                    <p class="headphone-description">Elevate your life with electronics designed for style and
-                        performance</p>
-                    <a class="shop-now text-decoration-none text-dark fw-bold rounded-pill bg-white width__fit-content"
-                        href="./shop.html?category=headphones&page=1">Shop Now <i
-                            class="fa-solid fa-arrow-right"></i></a>
-                </div>
-            </div>
-
-            <div class="row gx-lg-5">
-                <div class="col-md-12 col-lg-6 min-vh-100 position-relative py-4 rounded-4 overflow-hidden">
-                    <div
-                        class="contnet p-5 position-absolute center__translate__x d-flex flex-column align-items-center w-100">
-                        <p class="fw-bold">Unrevivaled Precision</p>
-                        <h3 class="text-center row-banner-title">Where Innovation Meets Imeresive sound</h3>
-                        <p class="row-banner-description">Power meets precison in every detail</p>
-                        <a class="shop-now text-decoration-none text-dark fw-bold rounded-pill bg-white width__fit-content"
-                            href="#">Shop Now <i class="fa-solid fa-arrow-right"></i></a>
                     </div>
-                    <img class="img-fluid rounded-4 h-100 w-100" src="./assets/imgs/public/banner-01.jpg" alt="">
-                </div>
-                <div class="col-md-12 col-lg-6 min-vh-100 position-relative py-4 rounded-4 overflow-hidden">
-                    <div
-                        class="contnet w-100 p-5 position-absolute center__translate__x d-flex flex-column align-items-center bottom-0">
-                        <p class="fw-bold">Peak Perfection</p>
-                        <h3 class="text-center row-banner-title">Smart Solutions Sleek, Designs</h3>
-                        <p class="row-banner-description">Smart solutions for a connected world</p>
-                        <a class="shop-now text-decoration-none text-dark fw-bold rounded-pill bg-white width__fit-content"
-                            href="./shop.html?category=speakers&page=1">Shop Now <i
-                                class="fa-solid fa-arrow-right"></i></a>
-                    </div>
-                    <img class="img-fluid rounded-4 h-100 w-100" src="./assets/imgs/public/banner-03.jpg" alt="">
-                </div>
-            </div>
-        </div>
 
-        <!-- Most Solid Of The Week  -->
-        <div class="custom__container most-solid pb-4 position-relative">
-            <div
-                class="loader-container position-absolute bg-transparent top-0 bottom-0 start-0 end-0 d-flex align-items-center justify-content-center">
-                <div class="loader"></div>
-
-            </div>
-            <div class="d-flex gap-lg-5 flex-wrap">
-                <h2 class="d-flex align-items-center justify-content-center fw-bolder">Most Solid Of The Week</h2>
-                <nav>
-                    <ul class="list-unstyled d-flex gap-4 align-items-center">
-                        <li class="fw-bold d-flex align-items-center justify-content-center position-relative cursor__pointer active"
-                            data-cat="headphones">Headphones</li>
-                        <li class="fw-bold d-flex align-items-center justify-content-center position-relative cursor__pointer"
-                            data-cat="microphones">Microphones</li>
-                        <li class="fw-bold d-flex align-items-center justify-content-center position-relative cursor__pointer"
-                            data-cat="smartwatches">Smartwatches</li>
-                        <li class="fw-bold d-flex align-items-center justify-content-center position-relative cursor__pointer"
-                            data-cat="speakers">Speakers</li>
-                    </ul>
                 </nav>
-            </div>
-            <div>
-                <div class="swiper mySwiper most-solid-swiper swiper-customization">
-                    <div class="swiper-wrapper products-container">
-
+                <div class="offcanvas offcanvas-end search-canvas rounded-5" tabindex="-1" id="search-canvas"
+                    aria-labelledby="search-canvas">
+                    <div class="offcanvas-header border border-0 border-bottom">
+                        <h5 id="search-canvas" class="p-2 fw-semibold">Search</h5>
+                        <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas"
+                            aria-label="Close"></button>
                     </div>
-                    <div class="swiper-button swiper-button-next swiper-button text-dark"></div>
-                    <div class="swiper-button swiper-button-prev swiper-button text-dark"></div>
-                </div>
-            </div>
-        </div>
-        <!-- Capture Section  -->
-        <div class="capture  py-4">
-
-            <div class="custom__container position-relative">
-                <div class="d-flex align-items-center capture-head gap-5 flex-wrap">
-                    <h2 class="d-flex align-items-center">Capture Every Detail</h2>
-                    <p class="d-flex-items-center pt-2">Capture every nuance of your voice with this high-performance
-                        microphone.</p>
-                </div>
-                <div
-                    class="video-part p-3 min-vh-100 d-flex justify-content-center align-items-center position-relative rounded-4 overflow-hidden">
-                    <video class="img-fluid w-100 rounded-4 position-absolute" autoplay muted loop playsinline>
-                        <source src="./assets/video/video-06.mp4">
-                    </video>
-                    <div class="content position-relative d-flex flex-column gap-3 align-items-center">
-                        <p class="text-white fw-bold">Highest Quality</p>
-                        <h3 class="text-white text-center">Redefine Your Sound With precison Microphones</h3>
-                        <p class="text-center">Innovate tech, timeless desgin, unlimate experiance</p>
-                        <a class="shop-now text-decoration-none text-dark fw-bold rounded-pill bg-white width__fit-content"
-                            href="#">Shop Now <i class="fa-solid fa-arrow-right"></i></a>
+                    <div class="offcanvas-body">
+                        <div class="position-relative">
+                            <input class="form-control form-control-lg border-0 search-bar ps-5" type="text"
+                                placeholder="Search every thing..." aria-label=".form-control-lg example">
+                            <i
+                                class="fa-solid fa-magnifying-glass position-absolute top-50 translate-middle-y search-canvas-icon"></i>
+                        </div>
                     </div>
                 </div>
+                <div class="offcanvas offcanvas-end wish-canvas rounded-5" tabindex="-1" id="wish-canvas"
+                    aria-labelledby="wish-canvas">
+                    <div class="offcanvas-header border border-0 border-bottom">
+                        <h5 id="search-canvas" class="p-2 fw-semibold">Wishlist</h5>
+                        <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas"
+                            aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body wishlist-body">
 
-            </div>
-        </div>
+                    </div>
+                </div>
+                <div class="offcanvas cart-canvas offcanvas-end rounded-5" tabindex="-1" id="offcanvasRight"
+                    aria-labelledby="offcanvasRightLabel">
+                    <div class="offcanvas-header">
+                        <h5 class="offcanvas-title fw-bold" id="offcanvasRightLabel">Your Cart</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body w-100">
+                        <div class="body-head py-3">
+                            <p class="fs__14 text-center">
+                                Add $<span class="badge border__main offer-price">500.00</span> to cart and get free
+                                shipping!
+                            </p>
+                            <div class="progress offer-progress position-relative rounded-pill">
+                                <div class="position-absolute bg-dark  h-100 top-0 start-0"></div>
 
-        <!-- Testimonials Section  -->
-        <div class="testimonials">
-            <div class="general-head">
-                <h2 class="text-center mb-3">Our Happy Clients</h2>
-                <p class="text-center">See what our satisfied customers have to say about our electronic accessories.
-                </p>
+                            </div>
+                        </div>
+                        <div class="cart-body">
+
+                        </div>
+                    </div>
+                </div>
+                <!-- Modal -->
+                <div class="modal fade login-modal " id="login" tabindex="-1" aria-labelledby="login"
+                    aria-hidden="true">
+                    <div class="modal-dialog modal-xl modal-fullscreen-lg-down 100vh">
+                        <div class="modal-content d-flex flex-row flex-wrap">
+                            <div class="login-image mb-0 h-100 w-50 d-xl-block d-none">
+                                <img class="img-fluid w-100 h-100 object-fit-cover"
+                                    src="./assets/imgs/login_register/collection-speakers.jpg" alt="">
+                            </div>
+                            <div class="login-body w-50">
+                                <div class="modal-header border-0">
+
+                                    </h1>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                        aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                    <h1 class="modal-title fs-5 ms-auto text-center mb-0 pb-0" id="login-title">Login
+                                    </h1>
+                                    <form class="login-form d-flex flex-column gap-3 p-5 mt-0" action="">
+                                        <div>
+                                            <label for="username" class="form-label fs__15 fw-medium">Username or email
+                                                address*</label>
+                                            <input name="username" id="username" class="form-control form-control-lg"
+                                                type="text" aria-label=".form-control-lg username">
+                                        </div>
+                                        <div>
+                                            <label for="password" class="form-label fs__15 fw-medium">password*</label>
+                                            <input name="password" id="password" class="form-control form-control-lg"
+                                                type="password" aria-describedby="passwordHelpBlock">
+                                        </div>
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="checkbox" value="" id="remember">
+                                            <label class="form-check-label fs__15 fw-medium" for="remember">
+                                                Remember me
+                                            </label>
+                                        </div>
+
+                                        <input class="login-submit fs__14 fw-semibold border-0 py-3 rounded-pill"
+                                            type="submit" value="Login">
+
+                                        <div class="p-3 fs__13 fw-bold border d-none">
+                                            Error: <span class="error-message fw-normal"></span>
+                                        </div>
+                                        <div class="text-center">
+                                            <a class="text-decoration-none text-black fs__15 fw-semibold" href="#">Lost
+                                                your
+                                                password?</a>
+                                        </div>
+
+
+                                        <p class="fs__13 text-center mt-3">
+                                            By continuing, you accept the Website Regulations , Regulations for the sale
+                                            of
+                                            alcoholic beverages and the <a href="#">Privacy Policy</a>
+                                        </p>
+                                        <p class="text-center fs__15 mb-0 border border-0 border-top pt-5">
+                                            You dont have an account yet? <a href="./register.html">Register Now</a>
+                                        </p>
+
+                                    </form>
+
+
+
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <div class="custom__container mt-5">
-                <div class="swiper mySwiper testi-swiper swiper-customization">
+        </header>
+
+        <main>
+            <section>
+                <div class="swiper mySwiper site-banner overflow-hidden swiper-customization">
                     <div class="swiper-wrapper">
-                        <div class="swiper-slide p-5  bg-white rounded-4">
-                            <div class="stars">
-                                <i class="fa-solid fa-star fs__12"></i>
-                                <i class="fa-solid fa-star fs__12"></i>
-                                <i class="fa-solid fa-star fs__12"></i>
-                                <i class="fa-solid fa-star fs__12"></i>
-                                <i class="fa-solid fa-star fs__12"></i>
+                        <div class="swiper-slide position-relative d-flex justify-content-center align-items-center">
+                            <div class="banner-media position-absolute overflow-hidden">
+                                <img src="./assets/imgs/sitebanner-slider/slider-01.jpg" alt="">
                             </div>
-                            <div class="content pb-4 border border-0 border-bottom">
-                                <h3 class="testi-title mt-2">Best Customer Service</h3>
-                                <p class="lh-base lead fs__16">
-                                    I've been using this product for a month now,
-                                    and I've had no issues. The customer service is top-notch,
-                                    and the product is exactly as described.
+                            <div class="banner-content text-center z-2 d-flex flex-column gap-3 align-items-center">
+                                <p class="text-white fs__17 fw-bold">Highest Quality</p>
+                                <h1 class="text-white fw-bold slide-title">High Performance and Elegant Design</h1>
+                                <p class="slide-description">
+                                    Sleek designs, cutting-edge tech, unmatched performance for modern living
                                 </p>
-                                <p class="fw-bold fs__13 mb-0">Jhon Malcovitch</p>
-                                <span class="fs__13 text__777">California, USA</span>
+
+                                <a href="./shop.html?category=headphones&page=1"
+                                    class="view-headphones text-decoration-none text-dark rounded-pill bg-white width__fit-content">View
+                                    Headphones</a>
                             </div>
                         </div>
-                        <div class="swiper-slide p-5 bg-white rounded-4">
-                            <div class="stars">
-                                <i class="fa-solid fa-star fs__12"></i>
-                                <i class="fa-solid fa-star fs__12"></i>
-                                <i class="fa-solid fa-star fs__12"></i>
-                                <i class="fa-solid fa-star fs__12"></i>
-                                <i class="fa-solid fa-star fs__12"></i>
+                        <div class="swiper-slide position-relative d-flex justify-content-center align-items-center">
+                            <div class="banner-media position-absolute overflow-hidden">
+                                <img src="./assets/imgs/sitebanner-slider/slider-02.jpg" alt="">
                             </div>
-                            <div class="content pb-4 border border-0 border-bottom">
-                                <h3 class="testi-title mt-2">Best Customer Service</h3>
-                                <p class="lh-base lead fs__16">
-                                    I've been using this product for a month now,
-                                    and I've had no issues. The customer service is top-notch,
-                                    and the product is exactly as described.
+                            <div class="banner-content text-center z-2 d-flex flex-column gap-3 align-items-center">
+                                <p class="text-white fs__17 fw-bold">Superior Craftsmanship</p>
+                                <h1 class="text-white fw-bold slide-title">Technology That Inspires Confidence</h1>
+                                <p class="slide-description">
+                                    Experience innovation, style, and performance in every electronic product.
                                 </p>
-                                <p class="fw-bold fs__13 mb-0">Jhon Malcovitch</p>
-                                <span class="fs__13 text__777">California, USA</span>
+
+                                <a href="./shop.html?category=headphones&page=1"
+                                    class="view-headphones text-decoration-none text-dark rounded-pill bg-white width__fit-content">View
+                                    Headphones</a>
                             </div>
                         </div>
-                        <div class="swiper-slide p-5 bg-white rounded-4">
-                            <div class="stars">
-                                <i class="fa-solid fa-star fs__12"></i>
-                                <i class="fa-solid fa-star fs__12"></i>
-                                <i class="fa-solid fa-star fs__12"></i>
-                                <i class="fa-solid fa-star fs__12"></i>
-                                <i class="fa-solid fa-star fs__12"></i>
+                        <div class="swiper-slide position-relative d-flex justify-content-center align-items-center">
+                            <div class="banner-media position-absolute overflow-hidden">
+                                <img src="./assets/imgs/sitebanner-slider/slider-03.jpg" alt="">
                             </div>
-                            <div class="content pb-4 border border-0 border-bottom">
-                                <h3 class="testi-title mt-2">Best Customer Service</h3>
-                                <p class="lh-base lead fs__16">
-                                    I've been using this product for a month now,
-                                    and I've had no issues. The customer service is top-notch,
-                                    and the product is exactly as described.
+                            <div class="banner-content text-center z-2 d-flex flex-column gap-3 align-items-center">
+                                <p class="text-white fs__17 fw-bold">Highest Quality</p>
+                                <h1 class="text-white fw-bold slide-title">Experience Power, Discover Style</h1>
+                                <p class="slide-description">
+                                    Technology redefined: sleek, powerful, reliable, designed for your lifestyle
                                 </p>
-                                <p class="fw-bold fs__13 mb-0">Jhon Malcovitch</p>
-                                <span class="fs__13 text__777">California, USA</span>
-                            </div>
-                        </div>
-                        <div class="swiper-slide p-5 bg-white rounded-4">
-                            <div class="stars">
-                                <i class="fa-solid fa-star fs__12"></i>
-                                <i class="fa-solid fa-star fs__12"></i>
-                                <i class="fa-solid fa-star fs__12"></i>
-                                <i class="fa-solid fa-star fs__12"></i>
-                                <i class="fa-solid fa-star fs__12"></i>
-                            </div>
-                            <div class="content pb-4 border border-0 border-bottom">
-                                <h3 class="testi-title mt-2">Best Customer Service</h3>
-                                <p class="lh-base lead fs__16">
-                                    I've been using this product for a month now,
-                                    and I've had no issues. The customer service is top-notch,
-                                    and the product is exactly as described.
-                                </p>
-                                <p class="fw-bold fs__13 mb-0">Jhon Malcovitch</p>
-                                <span class="fs__13 text__777">California, USA</span>
-                            </div>
-                        </div>
-                        <div class="swiper-slide p-5 bg-white rounded-4">
-                            <div class="stars">
-                                <i class="fa-solid fa-star fs__12"></i>
-                                <i class="fa-solid fa-star fs__12"></i>
-                                <i class="fa-solid fa-star fs__12"></i>
-                                <i class="fa-solid fa-star fs__12"></i>
-                                <i class="fa-solid fa-star fs__12"></i>
-                            </div>
-                            <div class="content pb-4 border border-0 border-bottom">
-                                <h3 class="testi-title mt-2">Best Customer Service</h3>
-                                <p class="lh-base lead fs__16">
-                                    I've been using this product for a month now,
-                                    and I've had no issues. The customer service is top-notch,
-                                    and the product is exactly as described.
-                                </p>
-                                <p class="fw-bold fs__13 mb-0">Jhon Malcovitch</p>
-                                <span class="fs__13 text__777">California, USA</span>
-                            </div>
-                        </div>
-                        <div class="swiper-slide p-5 bg-white rounded-4">
-                            <div class="stars">
-                                <i class="fa-solid fa-star fs__12"></i>
-                                <i class="fa-solid fa-star fs__12"></i>
-                                <i class="fa-solid fa-star fs__12"></i>
-                                <i class="fa-solid fa-star fs__12"></i>
-                                <i class="fa-solid fa-star fs__12"></i>
-                            </div>
-                            <div class="content pb-4 border border-0 border-bottom">
-                                <h3 class="testi-title mt-2">Best Customer Service</h3>
-                                <p class="lh-base lead fs__16">
-                                    I've been using this product for a month now,
-                                    and I've had no issues. The customer service is top-notch,
-                                    and the product is exactly as described.
-                                </p>
-                                <p class="fw-bold fs__13 mb-0">Jhon Malcovitch</p>
-                                <span class="fs__13 text__777">California, USA</span>
-                            </div>
-                        </div>
-                        <div class="swiper-slide p-5 bg-white rounded-4">
-                            <div class="stars">
-                                <i class="fa-solid fa-star fs__12"></i>
-                                <i class="fa-solid fa-star fs__12"></i>
-                                <i class="fa-solid fa-star fs__12"></i>
-                                <i class="fa-solid fa-star fs__12"></i>
-                                <i class="fa-solid fa-star fs__12"></i>
-                            </div>
-                            <div class="content pb-4 border border-0 border-bottom">
-                                <h3 class="testi-title mt-2">Best Customer Service</h3>
-                                <p class="lh-base lead fs__16">
-                                    I've been using this product for a month now,
-                                    and I've had no issues. The customer service is top-notch,
-                                    and the product is exactly as described.
-                                </p>
-                                <p class="fw-bold fs__13 mb-0">Jhon Malcovitch</p>
-                                <span class="fs__13 text__777">California, USA</span>
-                            </div>
-                        </div>
-                        <div class="swiper-slide p-5 bg-white rounded-4">
-                            <div class="stars">
-                                <i class="fa-solid fa-star fs__12"></i>
-                                <i class="fa-solid fa-star fs__12"></i>
-                                <i class="fa-solid fa-star fs__12"></i>
-                                <i class="fa-solid fa-star fs__12"></i>
-                                <i class="fa-solid fa-star fs__12"></i>
-                            </div>
-                            <div class="content pb-4 border border-0 border-bottom">
-                                <h3 class="testi-title mt-2">Best Customer Service</h3>
-                                <p class="lh-base lead fs__16">
-                                    I've been using this product for a month now,
-                                    and I've had no issues. The customer service is top-notch,
-                                    and the product is exactly as described.
-                                </p>
-                                <p class="fw-bold fs__13 mb-0">Jhon Malcovitch</p>
-                                <span class="fs__13 text__777">California, USA</span>
+
+                                <a href="./shop.html?category=headphones&page=1"
+                                    class="view-headphones .main-view-headphones text-decoration-none text-dark rounded-pill bg-white width__fit-content">View
+                                    Headphones</a>
                             </div>
                         </div>
 
                     </div>
-                    <div class="swiper-button swiper-button-next"></div>
-                    <div class="swiper-button swiper-button-prev"></div>
+                    <div class="swiper-button-next swiper-button text-dark"></div>
+                    <div class="swiper-button-prev swiper-button text-dark"></div>
+                    <div class="swiper-pagination"></div>
                 </div>
-                <div class="row mt-5 justify-content-between position-relative">
-                    <div class="col-lg-5 d-flex flex-column gap-2 text-center">
-                        <h3 class="fw-bolder">1.5k</h3>
-                        <h4 class="fs-4 fw-bolder">Happy Customers</h4>
-                        <p class="lh-base text__777">Ut sit amet aliquam libero. Vestibulum ut consectetur orci.
-                            Pellentesque nunc sem, consequat non blandit non dictum a mauris.</p>
-                    </div>
-                    <div class="col-lg-5 d-flex flex-column gap-2 text-center">
-                        <h3 class="fw-bolder">300k</h3>
-                        <h4 class="fs-4 fw-bolder">Total Sales per Month</h4>
-                        <p class="lh-base text__777">Ut sit amet aliquam libero. Vestibulum ut consectetur orci.
-                            Pellentesque nunc sem, consequat non blandit non dictum a mauris.</p>
-                    </div>
+            </section>
 
+            <section>
+                <div class="custom__container pt-4">
+                    <div class="swiper mySwiper logos-banner">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <img class="img-fluid" src="./assets/imgs/banner-logos/logo-01.png" alt="">
+                            </div>
+                            <div class="swiper-slide">
+                                <img class="img-fluid" src="./assets/imgs/banner-logos/logo-02.png" alt="">
+                            </div>
+                            <div class="swiper-slide">
+                                <img class="img-fluid" src="./assets/imgs/banner-logos/logo-03.png" alt="">
+                            </div>
+                            <div class="swiper-slide">
+                                <img class="img-fluid" src="./assets/imgs/banner-logos/logo-04.png" alt="">
+                            </div>
+                            <div class="swiper-slide">
+                                <img class="img-fluid" src="./assets/imgs/banner-logos/logo-05.png" alt="">
+                            </div>
+                            <div class="swiper-slide">
+                                <img class="img-fluid" src="./assets/imgs/banner-logos/logo-06.png" alt="">
+                            </div>
+                            <div class="swiper-slide">
+                                <img class="img-fluid" src="./assets/imgs/banner-logos/logo-08.png" alt="">
+                            </div>
+
+                        </div>
+                        <div class="swiper-pagination logos-pagination"></div>
+                    </div>
                 </div>
-            </div>
-        </div>
+            </section>
+            <!-- Categories Slider  -->
+            <section>
+                <div class="custom__container py-4">
+                    <div class="swiper mySwiper categories-slider swiper-customization">
+                        <div class="swiper-wrapper">
+                            <div
+                                class="swiper-slide cat-slide btn rounded-4 d-flex flex-column align-items-center gap-4">
+                                <div class="cat-header text-center">
+                                    <h3 class="fw-bold">Earphones</h3>
+                                    <span>10 products</span>
+                                </div>
+                                <div class="cat-body">
+                                    <img class="img-fluid"
+                                        src="./assets/imgs/products/categories/category-earphones.png" alt="">
+                                </div>
+                                <div class="cat-footer">
+                                    <a href="./shop.html?category=earphone&page=1"
+                                        class="view-products text-decoration-none text-dark fw-bold rounded-pill bg-white width__fit-content fs__14">View
+                                        Products</a>
+                                </div>
+                            </div>
+                            <div
+                                class="swiper-slide cat-slide btn rounded-4 d-flex flex-column align-items-center gap-4">
+                                <div class="cat-header text-center">
+                                    <h3 class="fw-bold">Headphones</h3>
+                                    <span>8 products</span>
+                                </div>
+                                <div class="cat-body">
+                                    <img class="img-fluid"
+                                        src="./assets/imgs/products/categories/category-headphones.png" alt="">
+                                </div>
+                                <div class="cat-footer">
+                                    <a href="./shop.html?category=headphones&page=1"
+                                        class="view-products text-decoration-none text-dark fw-bold rounded-pill bg-white width__fit-content fs__14">View
+                                        Products</a>
+                                </div>
+                            </div>
+                            <div
+                                class="swiper-slide cat-slide btn rounded-4 d-flex flex-column align-items-center gap-4">
+                                <div class="cat-header text-center">
+                                    <h3 class="fw-bold">Microphones</h3>
+                                    <span>8 products</span>
+                                </div>
+                                <div class="cat-body">
+                                    <img class="img-fluid"
+                                        src="./assets/imgs/products/categories/category-microphone.png" alt="">
+                                </div>
+                                <div class="cat-footer">
+                                    <a href="./shop.html?category=microphones&page=1"
+                                        class="view-products text-decoration-none text-dark fw-bold rounded-pill bg-white width__fit-content fs__14">View
+                                        Products</a>
+                                </div>
+                            </div>
+                            <div
+                                class="swiper-slide cat-slide btn rounded-4 d-flex flex-column align-items-center gap-4">
+                                <div class="cat-header text-center">
+                                    <h3 class="fw-bold">Smart Watches</h3>
+                                    <span>7 products</span>
+                                </div>
+                                <div class="cat-body">
+                                    <img class="img-fluid" src="./assets/imgs/products/categories/smartwatch.svg"
+                                        alt="">
+                                </div>
+                                <div class="cat-footer">
+                                    <a href="./shop.html?category=smartwatches&page=1"
+                                        class="view-products text-decoration-none text-dark fw-bold rounded-pill bg-white width__fit-content fs__14">View
+                                        Products</a>
+                                </div>
+                            </div>
+                            <div class="swiper-slide cat-slide btn rounded-4 d-flex flex-column gap-4">
+                                <div class="cat-header text-center">
+                                    <h3 class="fw-bold">Speakers</h3>
+                                    <span>11 products</span>
+                                </div>
+                                <div class="cat-body">
+                                    <img class="img-fluid" src="./assets/imgs/products/categories/category-speakers.png"
+                                        alt="">
+                                </div>
+                                <div class="cat-footer">
+                                    <a href="./shop.html?category=speakers&page=1"
+                                        class="view-products text-decoration-none text-dark fw-bold rounded-pill bg-white width__fit-content fs__14">View
+                                        Products</a>
+                                </div>
+                            </div>
 
-        <!-- Our Jurnal Section  -->
-        <div class="our-Journal">
-            <div class="general-head">
-                <h2 class="text-center mb-3">Our Journal</h2>
-                <p class="text-center">See what our satisfied customers have to say about our electronic accessories.
-                </p>
-            </div>
-            <div class="custom__container">
-                <div class="row g-4 our-journal-content mt-5">
-                    <div onclick="openBlog(1)" class="col-md-6 col-lg-4 post-card cursor__pointer position-relative">
+
+                        </div>
+                        <div class="swiper-button swiper-button-next swiper-button text-dark"></div>
+                        <div class="swiper-button swiper-button-prev swiper-button text-dark"></div>
+                        <div class="swiper-pagination"></div>
+                    </div>
+                </div>
+            </section>
+
+            <section>
+                <div class="custom__container pb-4">
+                    <!-- Headphone Banner  -->
+                    <div class="headphone-banner rounded-4 overflow-hidden vh-100">
+                        <div class="content w-50 h-100 d-flex flex-column justify-content-center gap-4">
+                            <p class="fw-bold text-white premium">Premium Standards</p>
+                            <h3 class="headphone-banner-title position-relative text-white">Elevate Your Audia
+                                Experience
+                                With
+                                Sony Headphones</h3>
+                            <p class="headphone-description">Elevate your life with electronics designed for style and
+                                performance</p>
+                            <a class="shop-now text-decoration-none text-dark fw-bold rounded-pill bg-white width__fit-content"
+                                href="./shop.html?category=headphones&page=1">Shop Now <i
+                                    class="fa-solid fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+
+                    <div class="row gx-lg-5">
+                        <div class="col-md-12 col-lg-6 min-vh-100 position-relative py-4 rounded-4 overflow-hidden">
+                            <div
+                                class="contnet p-5 position-absolute center__translate__x d-flex flex-column align-items-center w-100">
+                                <p class="fw-bold">Unrevivaled Precision</p>
+                                <h3 class="text-center row-banner-title">Where Innovation Meets Imeresive sound</h3>
+                                <p class="row-banner-description">Power meets precison in every detail</p>
+                                <a class="shop-now text-decoration-none text-dark fw-bold rounded-pill bg-white width__fit-content"
+                                    href="#">Shop Now <i class="fa-solid fa-arrow-right"></i></a>
+                            </div>
+                            <img class="img-fluid rounded-4 h-100 w-100" src="./assets/imgs/public/banner-01.jpg"
+                                alt="">
+                        </div>
+                        <div class="col-md-12 col-lg-6 min-vh-100 position-relative py-4 rounded-4 overflow-hidden">
+                            <div
+                                class="contnet w-100 p-5 position-absolute center__translate__x d-flex flex-column align-items-center bottom-0">
+                                <p class="fw-bold">Peak Perfection</p>
+                                <h3 class="text-center row-banner-title">Smart Solutions Sleek, Designs</h3>
+                                <p class="row-banner-description">Smart solutions for a connected world</p>
+                                <a class="shop-now text-decoration-none text-dark fw-bold rounded-pill bg-white width__fit-content"
+                                    href="./shop.html?category=speakers&page=1">Shop Now <i
+                                        class="fa-solid fa-arrow-right"></i></a>
+                            </div>
+                            <img class="img-fluid rounded-4 h-100 w-100" src="./assets/imgs/public/banner-03.jpg"
+                                alt="">
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Most Solid Of The Week  -->
+            <section>
+                <div class="custom__container most-solid pb-4 position-relative">
+                    <div
+                        class="loader-container position-absolute bg-transparent top-0 bottom-0 start-0 end-0 d-flex align-items-center justify-content-center">
+                        <div class="loader"></div>
+
+                    </div>
+                    <div class="d-flex gap-lg-5 flex-wrap">
+                        <h2 class="d-flex align-items-center justify-content-center fw-bolder">Most Solid Of The Week
+                        </h2>
+                        <nav>
+                            <ul class="list-unstyled d-flex gap-4 align-items-center">
+                                <li class="fw-bold d-flex align-items-center justify-content-center position-relative cursor__pointer active"
+                                    data-cat="headphones">Headphones</li>
+                                <li class="fw-bold d-flex align-items-center justify-content-center position-relative cursor__pointer"
+                                    data-cat="microphones">Microphones</li>
+                                <li class="fw-bold d-flex align-items-center justify-content-center position-relative cursor__pointer"
+                                    data-cat="smartwatches">Smartwatches</li>
+                                <li class="fw-bold d-flex align-items-center justify-content-center position-relative cursor__pointer"
+                                    data-cat="speakers">Speakers</li>
+                            </ul>
+                        </nav>
+                    </div>
+                    <div>
+                        <div class="swiper mySwiper most-solid-swiper swiper-customization">
+                            <div class="swiper-wrapper products-container">
+
+                            </div>
+                            <div class="swiper-button swiper-button-next swiper-button text-dark"></div>
+                            <div class="swiper-button swiper-button-prev swiper-button text-dark"></div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- Capture Section  -->
+            <section>
+                <div class="capture  py-4">
+
+                    <div class="custom__container position-relative">
+                        <div class="d-flex align-items-center capture-head gap-5 flex-wrap">
+                            <h2 class="d-flex align-items-center">Capture Every Detail</h2>
+                            <p class="d-flex-items-center pt-2">Capture every nuance of your voice with this
+                                high-performance
+                                microphone.</p>
+                        </div>
                         <div
-                            class="bg-white rounded-pill position-absolute px-3 py-2  fw-semibold flying-post-category fs__12">
-                            Product Guides</div>
-                        <div class="post-img">
-                            <img class="img-fluid rounded-4" src="./assets/imgs/public/blog-1.jpg" alt="">
-                        </div>
-                        <div class="post-content py-4">
-                            <h3 class="fw-bolder lh-base journal-post-title underline__hover">Essential Tips for
-                                Maintaining Your Electronic Devices</h3>
-                            <div class="d-flex gap-3 align-items-center">
-                                <span class="text__pColor fs__13">by <span class="fw-bold">Sinan</span></span>
-                                <span class="fs__13 text__777">26 Nov 2024</span>
+                            class="video-part p-3 min-vh-100 d-flex justify-content-center align-items-center position-relative rounded-4 overflow-hidden">
+                            <video class="img-fluid w-100 rounded-4 position-absolute" autoplay muted loop playsinline>
+                                <source src="./assets/video/video-06.mp4">
+                            </video>
+                            <div class="content position-relative d-flex flex-column gap-3 align-items-center">
+                                <p class="text-white fw-bold">Highest Quality</p>
+                                <h3 class="text-white text-center">Redefine Your Sound With precison Microphones</h3>
+                                <p class="text-center">Innovate tech, timeless desgin, unlimate experiance</p>
+                                <a class="shop-now text-decoration-none text-dark fw-bold rounded-pill bg-white width__fit-content"
+                                    href="#">Shop Now <i class="fa-solid fa-arrow-right"></i></a>
                             </div>
                         </div>
+
                     </div>
-                    <div onclick="openBlog(2)" class="col-md-6 col-lg-4 position-relative post-card cursor__pointer">
-                        <div
-                            class="bg-white rounded-pill position-absolute px-3 py-2  fw-semibold flying-post-category fs__12">
-                            Product Guides</div>
-                        <div class="post-img">
-                            <img class="img-fluid rounded-4" src="./assets/imgs/public/blog-2.jpg" alt="">
-                        </div>
-                        <div class="post-content py-4">
-                            <h3 class="fw-bolder lh-base journal-post-title underline__hover">Top 5 Home Electronics to
-                                Upgrade Your Living Space</h3>
-                            <div class="d-flex gap-3 align-items-center">
-                                <span class="text__pColor fs__13">by <span class="fw-bold">Sinan</span></span>
-                                <span class="fs__13 text__777">26 Nov 2024</span>
+                </div>
+            </section>
+
+            <!-- Testimonials Section  -->
+            <section>
+                <div class="testimonials">
+                    <div class="general-head">
+                        <h2 class="text-center mb-3">Our Happy Clients</h2>
+                        <p class="text-center">See what our satisfied customers have to say about our electronic
+                            accessories.
+                        </p>
+                    </div>
+                    <div class="custom__container mt-5">
+                        <div class="swiper mySwiper testi-swiper swiper-customization">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide p-5  bg-white rounded-4">
+                                    <div class="stars">
+                                        <i class="fa-solid fa-star fs__12"></i>
+                                        <i class="fa-solid fa-star fs__12"></i>
+                                        <i class="fa-solid fa-star fs__12"></i>
+                                        <i class="fa-solid fa-star fs__12"></i>
+                                        <i class="fa-solid fa-star fs__12"></i>
+                                    </div>
+                                    <div class="content pb-4 border border-0 border-bottom">
+                                        <h3 class="testi-title mt-2">Best Customer Service</h3>
+                                        <p class="lh-base lead fs__16">
+                                            I've been using this product for a month now,
+                                            and I've had no issues. The customer service is top-notch,
+                                            and the product is exactly as described.
+                                        </p>
+                                        <p class="fw-bold fs__13 mb-0">Jhon Malcovitch</p>
+                                        <span class="fs__13 text__777">California, USA</span>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide p-5 bg-white rounded-4">
+                                    <div class="stars">
+                                        <i class="fa-solid fa-star fs__12"></i>
+                                        <i class="fa-solid fa-star fs__12"></i>
+                                        <i class="fa-solid fa-star fs__12"></i>
+                                        <i class="fa-solid fa-star fs__12"></i>
+                                        <i class="fa-solid fa-star fs__12"></i>
+                                    </div>
+                                    <div class="content pb-4 border border-0 border-bottom">
+                                        <h3 class="testi-title mt-2">Best Customer Service</h3>
+                                        <p class="lh-base lead fs__16">
+                                            I've been using this product for a month now,
+                                            and I've had no issues. The customer service is top-notch,
+                                            and the product is exactly as described.
+                                        </p>
+                                        <p class="fw-bold fs__13 mb-0">Jhon Malcovitch</p>
+                                        <span class="fs__13 text__777">California, USA</span>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide p-5 bg-white rounded-4">
+                                    <div class="stars">
+                                        <i class="fa-solid fa-star fs__12"></i>
+                                        <i class="fa-solid fa-star fs__12"></i>
+                                        <i class="fa-solid fa-star fs__12"></i>
+                                        <i class="fa-solid fa-star fs__12"></i>
+                                        <i class="fa-solid fa-star fs__12"></i>
+                                    </div>
+                                    <div class="content pb-4 border border-0 border-bottom">
+                                        <h3 class="testi-title mt-2">Best Customer Service</h3>
+                                        <p class="lh-base lead fs__16">
+                                            I've been using this product for a month now,
+                                            and I've had no issues. The customer service is top-notch,
+                                            and the product is exactly as described.
+                                        </p>
+                                        <p class="fw-bold fs__13 mb-0">Jhon Malcovitch</p>
+                                        <span class="fs__13 text__777">California, USA</span>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide p-5 bg-white rounded-4">
+                                    <div class="stars">
+                                        <i class="fa-solid fa-star fs__12"></i>
+                                        <i class="fa-solid fa-star fs__12"></i>
+                                        <i class="fa-solid fa-star fs__12"></i>
+                                        <i class="fa-solid fa-star fs__12"></i>
+                                        <i class="fa-solid fa-star fs__12"></i>
+                                    </div>
+                                    <div class="content pb-4 border border-0 border-bottom">
+                                        <h3 class="testi-title mt-2">Best Customer Service</h3>
+                                        <p class="lh-base lead fs__16">
+                                            I've been using this product for a month now,
+                                            and I've had no issues. The customer service is top-notch,
+                                            and the product is exactly as described.
+                                        </p>
+                                        <p class="fw-bold fs__13 mb-0">Jhon Malcovitch</p>
+                                        <span class="fs__13 text__777">California, USA</span>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide p-5 bg-white rounded-4">
+                                    <div class="stars">
+                                        <i class="fa-solid fa-star fs__12"></i>
+                                        <i class="fa-solid fa-star fs__12"></i>
+                                        <i class="fa-solid fa-star fs__12"></i>
+                                        <i class="fa-solid fa-star fs__12"></i>
+                                        <i class="fa-solid fa-star fs__12"></i>
+                                    </div>
+                                    <div class="content pb-4 border border-0 border-bottom">
+                                        <h3 class="testi-title mt-2">Best Customer Service</h3>
+                                        <p class="lh-base lead fs__16">
+                                            I've been using this product for a month now,
+                                            and I've had no issues. The customer service is top-notch,
+                                            and the product is exactly as described.
+                                        </p>
+                                        <p class="fw-bold fs__13 mb-0">Jhon Malcovitch</p>
+                                        <span class="fs__13 text__777">California, USA</span>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide p-5 bg-white rounded-4">
+                                    <div class="stars">
+                                        <i class="fa-solid fa-star fs__12"></i>
+                                        <i class="fa-solid fa-star fs__12"></i>
+                                        <i class="fa-solid fa-star fs__12"></i>
+                                        <i class="fa-solid fa-star fs__12"></i>
+                                        <i class="fa-solid fa-star fs__12"></i>
+                                    </div>
+                                    <div class="content pb-4 border border-0 border-bottom">
+                                        <h3 class="testi-title mt-2">Best Customer Service</h3>
+                                        <p class="lh-base lead fs__16">
+                                            I've been using this product for a month now,
+                                            and I've had no issues. The customer service is top-notch,
+                                            and the product is exactly as described.
+                                        </p>
+                                        <p class="fw-bold fs__13 mb-0">Jhon Malcovitch</p>
+                                        <span class="fs__13 text__777">California, USA</span>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide p-5 bg-white rounded-4">
+                                    <div class="stars">
+                                        <i class="fa-solid fa-star fs__12"></i>
+                                        <i class="fa-solid fa-star fs__12"></i>
+                                        <i class="fa-solid fa-star fs__12"></i>
+                                        <i class="fa-solid fa-star fs__12"></i>
+                                        <i class="fa-solid fa-star fs__12"></i>
+                                    </div>
+                                    <div class="content pb-4 border border-0 border-bottom">
+                                        <h3 class="testi-title mt-2">Best Customer Service</h3>
+                                        <p class="lh-base lead fs__16">
+                                            I've been using this product for a month now,
+                                            and I've had no issues. The customer service is top-notch,
+                                            and the product is exactly as described.
+                                        </p>
+                                        <p class="fw-bold fs__13 mb-0">Jhon Malcovitch</p>
+                                        <span class="fs__13 text__777">California, USA</span>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide p-5 bg-white rounded-4">
+                                    <div class="stars">
+                                        <i class="fa-solid fa-star fs__12"></i>
+                                        <i class="fa-solid fa-star fs__12"></i>
+                                        <i class="fa-solid fa-star fs__12"></i>
+                                        <i class="fa-solid fa-star fs__12"></i>
+                                        <i class="fa-solid fa-star fs__12"></i>
+                                    </div>
+                                    <div class="content pb-4 border border-0 border-bottom">
+                                        <h3 class="testi-title mt-2">Best Customer Service</h3>
+                                        <p class="lh-base lead fs__16">
+                                            I've been using this product for a month now,
+                                            and I've had no issues. The customer service is top-notch,
+                                            and the product is exactly as described.
+                                        </p>
+                                        <p class="fw-bold fs__13 mb-0">Jhon Malcovitch</p>
+                                        <span class="fs__13 text__777">California, USA</span>
+                                    </div>
+                                </div>
+
                             </div>
+                            <div class="swiper-button swiper-button-next"></div>
+                            <div class="swiper-button swiper-button-prev"></div>
+                        </div>
+                        <div class="row mt-5 justify-content-between position-relative">
+                            <div class="col-lg-5 d-flex flex-column gap-2 text-center">
+                                <h3 class="fw-bolder">1.5k</h3>
+                                <h4 class="fs-4 fw-bolder">Happy Customers</h4>
+                                <p class="lh-base text__777">Ut sit amet aliquam libero. Vestibulum ut consectetur orci.
+                                    Pellentesque nunc sem, consequat non blandit non dictum a mauris.</p>
+                            </div>
+                            <div class="col-lg-5 d-flex flex-column gap-2 text-center">
+                                <h3 class="fw-bolder">300k</h3>
+                                <h4 class="fs-4 fw-bolder">Total Sales per Month</h4>
+                                <p class="lh-base text__777">Ut sit amet aliquam libero. Vestibulum ut consectetur orci.
+                                    Pellentesque nunc sem, consequat non blandit non dictum a mauris.</p>
+                            </div>
+
                         </div>
                     </div>
-                    <div onclick="openBlog(3)" class="col-md-6 col-lg-4 position-relative post-card cursor__pointer">
-                        <div
-                            class="bg-white rounded-pill position-absolute px-3 py-2  fw-semibold flying-post-category fs__12">
-                            Product Guides</div>
-                        <div class="post-img">
-                            <img class="img-fluid rounded-4" src="./assets/imgs/public/blog-3.jpg" alt="">
-                        </div>
-                        <div class="post-content py-4">
-                            <h3 class="fw-bolder lh-base journal-post-title underline__hover">How to Choose the Perfect
-                                Smartphone: A Buyer’s Guide</h3>
-                            <div class="d-flex gap-3 align-items-center">
-                                <span class="text__pColor fs__13">by <span class="fw-bold">Sinan</span></span>
-                                <span class="fs__13 text__777">26 Nov 2024</span>
+                </div>
+            </section>
+
+            <!-- Our Jurnal Section  -->
+            <section>
+                <div class="our-Journal">
+                    <div class="general-head">
+                        <h2 class="text-center mb-3">Our Journal</h2>
+                        <p class="text-center">See what our satisfied customers have to say about our electronic
+                            accessories.
+                        </p>
+                    </div>
+                    <div class="custom__container">
+                        <div class="row g-4 our-journal-content mt-5">
+                            <div onclick="openBlog(1)"
+                                class="col-md-6 col-lg-4 post-card cursor__pointer position-relative">
+                                <div
+                                    class="bg-white rounded-pill position-absolute px-3 py-2  fw-semibold flying-post-category fs__12">
+                                    Product Guides</div>
+                                <div class="post-img">
+                                    <img class="img-fluid rounded-4" src="./assets/imgs/public/blog-1.jpg" alt="">
+                                </div>
+                                <div class="post-content py-4">
+                                    <h3 class="fw-bolder lh-base journal-post-title underline__hover">Essential Tips for
+                                        Maintaining Your Electronic Devices</h3>
+                                    <div class="d-flex gap-3 align-items-center">
+                                        <span class="text__pColor fs__13">by <span class="fw-bold">Sinan</span></span>
+                                        <span class="fs__13 text__777">26 Nov 2024</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div onclick="openBlog(2)"
+                                class="col-md-6 col-lg-4 position-relative post-card cursor__pointer">
+                                <div
+                                    class="bg-white rounded-pill position-absolute px-3 py-2  fw-semibold flying-post-category fs__12">
+                                    Product Guides</div>
+                                <div class="post-img">
+                                    <img class="img-fluid rounded-4" src="./assets/imgs/public/blog-2.jpg" alt="">
+                                </div>
+                                <div class="post-content py-4">
+                                    <h3 class="fw-bolder lh-base journal-post-title underline__hover">Top 5 Home
+                                        Electronics
+                                        to
+                                        Upgrade Your Living Space</h3>
+                                    <div class="d-flex gap-3 align-items-center">
+                                        <span class="text__pColor fs__13">by <span class="fw-bold">Sinan</span></span>
+                                        <span class="fs__13 text__777">26 Nov 2024</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div onclick="openBlog(3)"
+                                class="col-md-6 col-lg-4 position-relative post-card cursor__pointer">
+                                <div
+                                    class="bg-white rounded-pill position-absolute px-3 py-2  fw-semibold flying-post-category fs__12">
+                                    Product Guides</div>
+                                <div class="post-img">
+                                    <img class="img-fluid rounded-4" src="./assets/imgs/public/blog-3.jpg" alt="">
+                                </div>
+                                <div class="post-content py-4">
+                                    <h3 class="fw-bolder lh-base journal-post-title underline__hover">How to Choose the
+                                        Perfect
+                                        Smartphone: A Buyer’s Guide</h3>
+                                    <div class="d-flex gap-3 align-items-center">
+                                        <span class="text__pColor fs__13">by <span class="fw-bold">Sinan</span></span>
+                                        <span class="fs__13 text__777">26 Nov 2024</span>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
-            </div>
-        </div>
+            </section>
 
-        <!-- Services  -->
-        <div class="services px-5">
-            <div>
-                <div class="swiper mySwiper services-swiper swiper-customization">
-                    <div class="swiper-wrapper">
-                        <div class="swiper-slide d-flex gap-4">
-                            <div class="icon">
-                                <img src="./assets/imgs/public/service-01.png" alt="">
+            <!-- Services  -->
+            <section>
+                <div class="services px-5">
+                    <div>
+                        <div class="swiper mySwiper services-swiper swiper-customization">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide d-flex gap-4">
+                                    <div class="icon">
+                                        <img src="./assets/imgs/public/service-01.png" alt="">
+                                    </div>
+                                    <div class="content">
+                                        <h3 class="fw-bold fs__16">Customer Service</h3>
+                                        <p class="lh-base text__pColor fs__14">
+                                            it's not actually free we just price it into products.
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide d-flex gap-4">
+                                    <div class="icon">
+                                        <img src="./assets/imgs/public/services-1.png" alt="">
+                                    </div>
+                                    <div class="content">
+                                        <h3 class="fw-bold fs__16">FastFree Shipping</h3>
+                                        <p class="lh-base text__pColor fs__14">
+                                            Get free shipping in order of $150 or more (within the US)
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide d-flex gap-4">
+                                    <div class="icon">
+                                        <img src="./assets/imgs/public/services-2.png" alt="">
+                                    </div>
+                                    <div class="content">
+                                        <h3 class="fw-bold fs__16">Returns & Exchanges</h3>
+                                        <p class="lh-base text__pColor fs__14">
+                                            We offer free returns and exchanges withing 30 days of purchase.
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide d-flex gap-4">
+                                    <div class="icon">
+                                        <img src="./assets/imgs/public/services-3.png" alt="">
+                                    </div>
+                                    <div class="content">
+                                        <h3 class="fw-bold fs__16">Secure Payment</h3>
+                                        <p class="lh-base text__pColor fs__14">
+                                            Your payment information are proccessed securely and encrypted
+                                        </p>
+                                    </div>
+                                </div>
                             </div>
-                            <div class="content">
-                                <h3 class="fw-bold fs__16">Customer Service</h3>
-                                <p class="lh-base text__pColor fs__14">
-                                    it's not actually free we just price it into products.
-                                </p>
-                            </div>
-                        </div>
-                        <div class="swiper-slide d-flex gap-4">
-                            <div class="icon">
-                                <img src="./assets/imgs/public/services-1.png" alt="">
-                            </div>
-                            <div class="content">
-                                <h3 class="fw-bold fs__16">FastFree Shipping</h3>
-                                <p class="lh-base text__pColor fs__14">
-                                    Get free shipping in order of $150 or more (within the US)
-                                </p>
-                            </div>
-                        </div>
-                        <div class="swiper-slide d-flex gap-4">
-                            <div class="icon">
-                                <img src="./assets/imgs/public/services-2.png" alt="">
-                            </div>
-                            <div class="content">
-                                <h3 class="fw-bold fs__16">Returns & Exchanges</h3>
-                                <p class="lh-base text__pColor fs__14">
-                                    We offer free returns and exchanges withing 30 days of purchase.
-                                </p>
-                            </div>
-                        </div>
-                        <div class="swiper-slide d-flex gap-4">
-                            <div class="icon">
-                                <img src="./assets/imgs/public/services-3.png" alt="">
-                            </div>
-                            <div class="content">
-                                <h3 class="fw-bold fs__16">Secure Payment</h3>
-                                <p class="lh-base text__pColor fs__14">
-                                    Your payment information are proccessed securely and encrypted
-                                </p>
-                            </div>
+
+
+                            <div class="d-none d-md-block d-lg-none swiper-button swiper-button-next"></div>
+                            <div class="d-none d-md-block d-lg-none swiper-button swiper-button-prev"></div>
                         </div>
                     </div>
-
-
-                    <div class="d-none d-md-block d-lg-none swiper-button swiper-button-next"></div>
-                    <div class="d-none d-md-block d-lg-none swiper-button swiper-button-prev"></div>
+                </div>
+            </section>
+            <div class="position-fixed bottom-0 end-0 p-3" style="z-index: 9999">
+                <div id="globalToast" class="toast align-items-center text-bg-success border-0" role="alert"
+                    aria-live="assertive" aria-atomic="true">
+                    <div class="d-flex">
+                        <div class="toast-body" id="globalToastBody"></div>
+                        <button type="button" class="btn-close btn-close-white me-2 m-auto" data-bs-dismiss="toast"
+                            aria-label="Close"></button>
+                    </div>
                 </div>
             </div>
-        </div>
-        <div class="position-fixed bottom-0 end-0 p-3" style="z-index: 9999">
-            <div id="globalToast" class="toast align-items-center text-bg-success border-0" role="alert"
-                aria-live="assertive" aria-atomic="true">
-                <div class="d-flex">
-                    <div class="toast-body" id="globalToastBody"></div>
-                    <button type="button" class="btn-close btn-close-white me-2 m-auto" data-bs-dismiss="toast"
-                        aria-label="Close"></button>
-                </div>
-            </div>
-        </div>
+        </main>
     </div>
 
 
